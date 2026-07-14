@@ -36,9 +36,7 @@ Participants are required to have the latest version of UiPath Studio and UiPath
 - Download: [UiPath Studio Community](https://download.uipath.com/UiPathStudioCommunity.msi){target=_blank}
 
 !!! tip "It's dangerous to go alone! Download this project as support."
-    **Application Testing ILT - Students.zip** (302.7 KB)
-
-    *(Ask your instructor for the current download link for this exercise project.)*
+    :material-file-download: [**Application Testing ILT - Students.zip**](https://articulateusercontent.com/rise/courses/wbarvVGUFeVtnNnsoksCvGVOBH9YzS_J/7Xwfgsy_LGoBkxr3-Application%2520Testing%2520ILT%2520-%2520Students.zip) (302.7 KB)
 
 ---
 
