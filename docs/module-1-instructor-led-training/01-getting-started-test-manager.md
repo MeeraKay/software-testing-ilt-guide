@@ -41,7 +41,7 @@ Importing the project follows a schema that converts external system projects (e
 
     This is the project you'll be working on for the rest of the day.
 
-    :material-file-download: **UIB_UiBank_2024_03_01_18_18_46_3481.tmh** (7.2 KB) — project import file for Test Manager
+    :material-file-download: [**UIB_UiBank_2024_03_01_18_18_46_3481.tmh**](https://articulateusercontent.com/rise/courses/wbarvVGUFeVtnNnsoksCvGVOBH9YzS_J/RjVBhG7OV_uDYf4i-UIB_UiBank_2024_03_01_18_18_46_3481.tmh) (7.2 KB) — project import file for Test Manager
 
 ---
 

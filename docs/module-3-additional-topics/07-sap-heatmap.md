@@ -41,7 +41,7 @@ Powered by AI and machine learning, Change Impact Analysis for SAP scopes testin
     4. Give it a name, and choose **Upload from CSV** as the data source.
     5. Add the CSV file below, then save.
 
-    :material-file-download: **Heatmap DEMO CSV 2024.csv** (131.6 KB) — sample SAP heatmap data for the exercise
+    :material-file-download: [**Heatmap DEMO CSV 2024.csv**](https://articulateusercontent.com/rise/courses/wbarvVGUFeVtnNnsoksCvGVOBH9YzS_J/lPxVywfkxC2iUCBo-Heatmap%2520DEMO%2520CSV%25202024.csv) (131.6 KB) — sample SAP heatmap data for the exercise
 
     **Finish by adding a test case to one transaction:**
 
