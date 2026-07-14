@@ -13,7 +13,7 @@ To receive your **Diploma of Completion**, you must complete the following exerc
     - You're given an Excel file containing the word "UiPath" hashed with multiple hashing methods.
     - Using the data-driven method, check that for every hash method, the output matches the one returned by [sha1-online.com](http://www.sha1-online.com/){target=_blank}.
 
-    :material-file-download: **Results.xlsx** (20.1 KB) — download for the Hash Check exercise
+    :material-file-download: [**Results.xlsx**](https://articulateusercontent.com/rise/courses/wbarvVGUFeVtnNnsoksCvGVOBH9YzS_J/CcGwN40lyA8YqfFP-Results.xlsx) (20.1 KB) — download for the Hash Check exercise
 
 ---
 
