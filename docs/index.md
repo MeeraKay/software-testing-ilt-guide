@@ -40,9 +40,9 @@ Participants are required to have the latest version of UiPath Studio and UiPath
 
 ---
 
-[Start Module 1 →](module-1-instructor-led-training/index.md){ .md-button .md-button--primary }
-[Start Module 2 →](module-2-course-completion-exercises/index.md){ .md-button }
-[Start Module 3 →](module-3-additional-topics/index.md){ .md-button }
+[Start Instructor Led Training →](module-1-instructor-led-training/index.md){ .md-button .md-button--primary }
+[Start Course Completion Exercises →](module-2-course-completion-exercises/index.md){ .md-button }
+[Start Additonal Topics →](module-3-additional-topics/index.md){ .md-button }
 
 Or use the navigation above to jump to any lesson.
 
