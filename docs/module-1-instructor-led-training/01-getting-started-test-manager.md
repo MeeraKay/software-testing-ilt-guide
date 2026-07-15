@@ -2,13 +2,13 @@
 
 ## What is Test Manager?
 
-Test Manager is a web application, part of UiPath Test Cloud, where you can plan, run, manage, and analyze testing of applications.
+**Test Manager** is a web application, part of UiPath Test Cloud, where you can **plan**, **run**, **manage**, and **analyze** testing of applications.
 
-Test Cloud offers a strong automation and testing ecosystem for managing all your testing operations: from automating tests, to distributing them, executing, and managing — you can perform all of these things in the context of a customizable cloud organization.
+Test Cloud offers a strong automation and testing ecosystem for managing all your testing operations: from **automating tests**, to **distributing** them, **executing**, and **managing** — you can perform all of these things in the context of a customizable cloud organization.
 
 ## Why is Test Manager useful?
 
-Testing involves a wide range of activities, from the creation and execution of manual and automated test cases to reporting, requirement and defect management, CI/CD integration, and others.
+Testing involves a wide range of activities, from the **creation** and **execution** of manual and automated test cases to reporting, requirement and defect management, CI/CD integration, and others.
 
 One of the biggest challenges is making testing an integral part of the development process. This requires linking software development assets (e.g. user stories, epics, requirements) to software testing assets (e.g. test cases, test results, test executions), as well as a solution to manage and synchronize all the data generated in both processes. Test Manager is the component serving these purposes.
 
