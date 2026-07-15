@@ -27,6 +27,12 @@ One of the biggest challenges is making testing an integral part of the developm
 7. Test sets are executed — automated and/or manual — from Test Manager.
 8. Based on the test execution results, reports are generated. If needed, defects are generated (optional, and only if you link to an external ALM tool).
 
+!!! info "The native Automation Cloud interface"
+    Allows you to perform RPA testing.
+
+!!! info "The Test Cloud interface"
+    Allows you to perform application testing only.
+
 ## Import Project
 
 You can import projects from external sources to conduct testing operations through Test Manager. Use this feature to transfer entire testing projects from different Application Lifecycle Management (ALM) systems into Test Manager.
