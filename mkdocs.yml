@@ -7,18 +7,9 @@ theme:
   icon:
     logo: material/robot-outline
   palette:
-    - scheme: default
-      primary: deep orange
-      accent: orange
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate
-      primary: deep orange
-      accent: orange
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+    scheme: default
+    primary: deep orange
+    accent: orange
   features:
     - navigation.tabs
     - navigation.sections
@@ -50,7 +41,7 @@ plugins:
 
 nav:
   - Home: index.md
-  - "Module 1":
+  - "Instructor-Led Training":
       - "Overview": module-1-instructor-led-training/index.md
       - "1. Getting Started with Test Manager": module-1-instructor-led-training/01-getting-started-test-manager.md
       - "2. Agentic Testing: From Requirement to Test Cases": module-1-instructor-led-training/02-agentic-testing.md
@@ -65,7 +56,7 @@ nav:
       - "11. Execute Test Cases in Test Manager": module-1-instructor-led-training/11-execute-test-cases.md
       - "12. Building Your Own AI Agents": module-1-instructor-led-training/12-building-your-own-ai-agents.md
       - "You did it!": module-1-instructor-led-training/you-did-it.md
-  - "Module 2":
+  - "Course Completion Exercises":
       - "Overview": module-2-course-completion-exercises/index.md
       - "1. Autopilot for Developers": module-2-course-completion-exercises/01-autopilot-for-developers.md
       - "2. Integration Service": module-2-course-completion-exercises/02-integration-service.md
@@ -74,7 +65,7 @@ nav:
       - "5. Coded Test Cases": module-2-course-completion-exercises/05-coded-test-cases.md
       - "6. Additional Exercises": module-2-course-completion-exercises/06-additional-exercises.md
       - "Receive Credit": module-2-course-completion-exercises/you-did-it.md
-  - "Module 3":
+  - "Additional Topics":
       - "Overview": module-3-additional-topics/index.md
       - "Templates": module-3-additional-topics/01-templates.md
       - "Testing Framework": module-3-additional-topics/02-testing-framework.md
