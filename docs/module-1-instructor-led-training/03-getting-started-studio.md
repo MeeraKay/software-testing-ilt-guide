@@ -4,8 +4,7 @@
 
 Studio provides specialized tools to integrate testing into the development and automation process. Studio allows you to perform both Application and RPA testing. You can use Studio to create, design, and map test cases and execution results to requirements and defects (e.g. Jira, Xray).
 
-!!! note "Image needed"
-    Insert a screenshot of the **UiPath Studio backstage view** here.
+![UiPath Studio Backstage View](../assets/images/Studio Backstage View.png)
 
 ## Test Automation Project
 

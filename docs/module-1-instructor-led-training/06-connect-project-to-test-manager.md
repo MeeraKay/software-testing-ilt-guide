@@ -21,8 +21,7 @@ To complete the integration with Studio, you need to configure the Test Manager 
 
 Now you'll find the test cases that were part of the exercise, as well as the manual test cases, here in Studio — in the **Test Explorer**.
 
-!!! note "Image needed"
-    Insert a screenshot of the **Test Explorer panel in Studio** here.
+![Connect to Test Manager](../assets/images/test-manager-connect.png)
 
 ## Import the Object Repository library
 

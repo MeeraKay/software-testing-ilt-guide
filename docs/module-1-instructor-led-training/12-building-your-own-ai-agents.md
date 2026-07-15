@@ -66,8 +66,7 @@ Agents handle tasks that robots may not be able to, while robots provide control
 !!! example "Exercise"
     Build an agent that generates data for the "Apply for a Loan" workflow, calls it as a tool, and reports the results.
 
-!!! note "Image needed"
-    Insert the **SAP Agent example** screenshot/diagram here.
+![SAP Agent Example](../assets/images/SAP conn.png)
 
 ---
 

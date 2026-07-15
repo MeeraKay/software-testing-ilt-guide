@@ -35,8 +35,7 @@ Recovering from unexpected errors is one of the challenges of testing terminal-b
     ### Step 4 — Terminal Session
     Drag and drop the **Terminal Session** activity into the designer, using the configuration shown in the source course.
 
-    !!! note "Image needed"
-        Insert the **Terminal Session activity configuration** screenshot here.
+    ![Terminal Session Configuration](../assets/images/Terminal setup.png)
 
     ### Step 5 — Record
     Click OK — the Recorder wizard opens. Perform the required actions, then save and exit; the recorded actions are automatically converted into workflow activities and added to your test case. Alternatively, build the test case by dragging and dropping the required activities.
@@ -47,8 +46,7 @@ Recovering from unexpected errors is one of the challenges of testing terminal-b
     ### Step 7 — Transmit
     Click **Type**, select **Send Control Key**, keep **Transmit** as the Control Key option (default), and click OK.
 
-    !!! note "Image needed"
-        Insert the terminal response screenshot here.
+    ![Terminal Response](../assets/images/Terminal 1.png)
 
     ### Step 8 — Density data
     The Horizons System returns two matching options: `3` and `301`. Since we want the Moon's physical properties (including density), use `301` — repeat the Type/Transmit steps to send it.
