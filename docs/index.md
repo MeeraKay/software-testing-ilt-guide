@@ -39,8 +39,29 @@ By the end of this course, you will:
 
 Participants are required to have the latest version of UiPath Studio and UiPath Assistant installed on their systems. Access to the Automation Cloud environment, along with the necessary services and licenses, will be provided to ensure a seamless experience during the session.
 
+### Pre-Training Setup Checklist
+
+Before attending the training, ensure you have completed the following:
+
+- ☐ UiPath Studio Community Edition installed (version 2024.10 or later)
+- ☐ UiPath Assistant running on your system
+- ☐ Access to Automation Cloud environment verified
+- ☐ Downloaded: <a href="https://articulateusercontent.com/rise/courses/wbarvVGUFeVtnNnsoksCvGVOBH9YzS_J/7Xwfgsy_LGoBkxr3-Application%2520Testing%2520ILT%2520-%2520Students.zip" target="_blank">Application Testing ILT - Students.zip</a> (302.7 KB)
+
+### Downloads & Resources
+
 - Visit: <a href="https://www.uipath.com/product/studio" target="_blank">UiPath Studio for Agentic, Robotic & API Workflows</a>
 - Download: <a href="https://download.uipath.com/UiPathStudioCommunity.msi" target="_blank">UiPath Studio Community</a>
+
+### Troubleshooting
+
+If you encounter issues during setup, check the following:
+
+- **Studio won't install?** Ensure you have administrator permissions on your computer and at least 2 GB of free disk space.
+- **Can't access Automation Cloud?** Verify your UiPath account credentials and that your organization has provisioned the necessary licenses.
+- **UiPath Assistant not running?** Restart your computer or manually launch UiPath Assistant from your Start menu.
+
+Still stuck? Reach out to your instructor before the training begins.
 
 !!! tip "It's dangerous to go alone! Download this project as support."
     :material-file-download: <a href="https://articulateusercontent.com/rise/courses/wbarvVGUFeVtnNnsoksCvGVOBH9YzS_J/7Xwfgsy_LGoBkxr3-Application%2520Testing%2520ILT%2520-%2520Students.zip" target="_blank">**Application Testing ILT - Students.zip**</a> (302.7 KB)
