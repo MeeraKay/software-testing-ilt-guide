@@ -65,12 +65,10 @@ Before attending the training, ensure you have completed the following:
 
 [Start Additional Topics →](module-3-additional-topics/index.md)
 
-Or use the navigation above to jump to any lesson.
 
 ---
 
-Here's something worth holding onto as you work through this training:
-
-Agentic testing doesn't replace testers — it extends them. Autopilot for Testers and custom AI agents handle the repetitive, pattern-based work so you can focus on judgment calls: what to test, why it matters, and how to interpret the results. Robots and agents work best together — robots bring determinism and control, agents bring adaptability and reasoning.
-
-That's what this training is about: **building real, reliable test automation, augmented by AI at every step.**
+!!! quote "Here's something worth holding onto as you work through this training"
+    Agentic testing doesn't replace testers — it extends them. Autopilot for Testers and custom AI agents handle the repetitive, pattern-based work so you can focus on judgment calls: what to test, why it matters, and how to interpret the results. Robots and agents work best together — robots bring determinism and control, agents bring adaptability and reasoning.
+    
+    That's what this training is about: **building real, reliable test automation, augmented by AI at every step.**
