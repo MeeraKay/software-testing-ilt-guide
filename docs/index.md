@@ -60,8 +60,10 @@ Before attending the training, ensure you have completed the following:
 ---
 
 [Start Instructor Led Training →](module-1-instructor-led-training/index.md){ .md-button .md-button--primary }
+
 [Start Course Completion Exercises →](module-2-course-completion-exercises/index.md){ .md-button }
-[Start Additonal Topics →](module-3-additional-topics/index.md){ .md-button }
+
+[Start Additional Topics →](module-3-additional-topics/index.md){ .md-button }
 
 Or use the navigation above to jump to any lesson.
 
