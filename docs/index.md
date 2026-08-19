@@ -57,21 +57,6 @@ Before attending the training, ensure you have completed the following:
 
 ✅ <a href="https://download.uipath.com/UiPathStudioCommunity.msi" target="_blank">UiPath Studio Community</a>
 
-### Troubleshooting
-
-If you encounter issues during setup, check the following:
-
-✅ **Studio won't install?** Ensure you have administrator permissions on your computer and at least 2 GB of free disk space.
-
-✅ **Can't access Automation Cloud?** Verify your UiPath account credentials and that your organization has provisioned the necessary licenses.
-
-✅ **UiPath Assistant not running?** Restart your computer or manually launch UiPath Assistant from your Start menu.
-
-✅ Still stuck? Reach out to your instructor before the training begins.
-
-!!! tip "It's dangerous to go alone! Download this project as support."
-    :material-file-download: <a href="https://articulateusercontent.com/rise/courses/wbarvVGUFeVtnNnsoksCvGVOBH9YzS_J/7Xwfgsy_LGoBkxr3-Application%2520Testing%2520ILT%2520-%2520Students.zip" target="_blank">**Application Testing ILT - Students.zip**</a> (302.7 KB)
-
 ---
 
 [Start Instructor Led Training →](module-1-instructor-led-training/index.md){ .md-button .md-button--primary }
