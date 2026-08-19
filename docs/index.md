@@ -21,12 +21,17 @@ This training guides you through UiPath's Test Cloud, from planning and designin
 
 By the end of this course, you will:
 
-1. ✅ Import a real test project into Test Manager and explore its structure
-2. ✅ Design test cases and organize them into executable test sets
-3. ✅ Automate a manual test case in Studio using Object Repository and data-driven testing
-4. ✅ Publish automated tests to Orchestrator and execute them end-to-end
-5. ✅ Use Agentic features (Autopilot for Testers) to accelerate test design and execution
-6. ✅ Build a custom AI agent to assist with test automation workflows
+✅ Import a real test project into Test Manager and explore its structure
+
+✅ Design test cases and organize them into executable test sets
+
+✅ Automate a manual test case in Studio using Object Repository and data-driven testing
+
+✅ Publish automated tests to Orchestrator and execute them end-to-end
+
+✅ Use Agentic features (Autopilot for Testers) to accelerate test design and execution
+
+✅ Build a custom AI agent to assist with test automation workflows
 
 **Real deliverable:** By day's end, you'll have **automated and executed a complete test set** for the UiBank sample banking application — from test design in Test Manager through execution in Orchestrator.
 
