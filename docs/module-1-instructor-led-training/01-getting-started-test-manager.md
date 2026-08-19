@@ -14,7 +14,7 @@ One of the biggest challenges is making testing an integral part of the developm
 
 ## How does Test Manager work?
 
-![Test Manager Architecture](../assets/images/Test Manager architecture.png)
+![Test Manager Architecture](../assets/images/Test Manager Architecture Jul.png)
 
 ## The typical testing flow with Test Manager
 
