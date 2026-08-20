@@ -10,7 +10,7 @@ This module is the core of the day: you'll get oriented in Test Manager, see how
 - Connect Studio to Test Manager and turn a manual test case into an automated one
 - Apply data-driven testing so one test case can cover many scenarios
 - Configure access, licensing, and execution resources in Orchestrator
-- Publish test cases to Orchestrator and execute them — manually and automatically — from Test Manager
+- Publish test cases to Orchestrator and execute them --” manually and automatically --” from Test Manager
 - Build your own AI agent
 
 ## Steps
@@ -32,6 +32,7 @@ This module is the core of the day: you'll get oriented in Test Manager, see how
 
 ---
 
-[Next → 00. UiPath Test Cloud](00-uipath-test-cloud.md){: .md-button .md-button--primary}
+[Next >’ 00. UiPath Test Cloud](00-uipath-test-cloud.md){: .md-button .md-button--primary}
 
 ---
+

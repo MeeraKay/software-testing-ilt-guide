@@ -1,4 +1,4 @@
-# 5. Test Automation Project
+# Test Automation Project
 
 ## Test Automation project
 
@@ -26,6 +26,7 @@ Test Cases, Data-Driven Test Cases, Test Data, and Test Results.
 
 ---
 
-[Next → 06. Connect Project to Test Manager](06-connect-project-to-test-manager.md){: .md-button .md-button--primary}
+[Next >’ 06. Connect Project to Test Manager](06-connect-project-to-test-manager.md){: .md-button .md-button--primary}
 
 ---
+

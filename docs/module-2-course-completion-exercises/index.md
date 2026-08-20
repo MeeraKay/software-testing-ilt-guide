@@ -24,6 +24,7 @@ Then head to [Receive Credit](you-did-it.md) to submit your work.
 
 ---
 
-[Next → 01. Autopilot for Developers](01-autopilot-for-developers.md){: .md-button .md-button--primary}
+[Next >’ 01. Autopilot for Developers](01-autopilot-for-developers.md){: .md-button .md-button--primary}
 
 ---
+

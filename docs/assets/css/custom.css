@@ -152,3 +152,44 @@ th {
   background-color: rgba(33, 150, 243, 0.1);
   color: #64B5F6;
 }
+
+/* Image styling - clean, integrated with shadow effect */
+.md-typeset img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: block;
+  margin: 20px auto;
+}
+
+/* Dark mode image shadow adjustment */
+[data-md-color-scheme="dark"] .md-typeset img {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Search results proportionate sizing */
+.md-search-result__list {
+  font-size: 0.9rem;
+}
+
+.md-search-result__article h1 {
+  font-size: 1.2rem !important;
+  margin: 0.5rem 0 !important;
+}
+
+.md-search-result__article h2,
+.md-search-result__article h3 {
+  font-size: 1rem !important;
+  margin: 0.3rem 0 !important;
+}
+
+.md-search-result__article p {
+  font-size: 0.85rem;
+  margin: 0.25rem 0;
+}
+
+.md-search-result__teaser {
+  font-size: 0.8rem;
+  line-height: 1.4;
+}

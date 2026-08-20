@@ -8,38 +8,38 @@
 
 Test Cloud represents UiPath's strategic initiative to lead the category of agentic testing in the application testing market. Envisioned as a tailored version of Automation Cloud for application testers, Test Cloud creates a welcoming environment specifically for them.
 
-It represents more than just a tool — it embodies UiPath's commitment to prioritizing and enhancing application testing. This commitment is the cornerstone of Test Cloud's identity.
+It represents more than just a tool --” it embodies UiPath's commitment to prioritizing and enhancing application testing. This commitment is the cornerstone of Test Cloud's identity.
 
 ## What Happens Today vs. Test Cloud
 
 | **What happens today** | **How Test Cloud improves it** |
 |---|---|
-| **Manual effort:** A person has to spin up environments, click through UIs, and record results—slow, repetitive, expensive, and error-prone. | **Fully automated, cloud-hosted runs:** Test Cloud executes pre-built UiPath test cases on demand or on a schedule. No laptops left running overnight, and far fewer "I missed a step" slips. |
-| **Limited scale:** A human (or a small lab) can only run so many scenarios in a day. | **Parallel, elastic execution:** Dozens—or hundreds—of tests can fire off simultaneously, so full regression suites finish in minutes instead of hours. |
+| **Manual effort:** A person has to spin up environments, click through UIs, and record results--”slow, repetitive, expensive, and error-prone. | **Fully automated, cloud-hosted runs:** Test Cloud executes pre-built UiPath test cases on demand or on a schedule. No laptops left running overnight, and far fewer "I missed a step" slips. |
+| **Limited scale:** A human (or a small lab) can only run so many scenarios in a day. | **Parallel, elastic execution:** Dozens--”or hundreds--”of tests can fire off simultaneously, so full regression suites finish in minutes instead of hours. |
 | **Hard to fit into CI/CD:** Manual checkpoints slow pipelines and delay feedback to developers. | **Native CI/CD hooks:** Test Cloud exposes APIs and out-of-the-box connectors for Azure DevOps, GitHub Actions, Jenkins, etc., so every commit can trigger smoke, functional, or UI tests automatically. |
-| **Quality depends on script discipline, but scripts are hard to share and govern.** | **Centralized versioning & governance:** Test cases, data, and results are stored and managed in one place—making reviews, audit trails, and reuse much simpler. |
+| **Quality depends on script discipline, but scripts are hard to share and govern.** | **Centralized versioning & governance:** Test cases, data, and results are stored and managed in one place--”making reviews, audit trails, and reuse much simpler. |
 
 ## Core Benefits
 
-✅ **Speed & cost:** Machines run scripts far faster and cheaper than people can click, so releases go out quicker and budgets go further.
++… **Speed & cost:** Machines run scripts far faster and cheaper than people can click, so releases go out quicker and budgets go further.
 
-✅ **Reliability:** Repeatable, deterministic test runs catch regressions early, reducing production defects.
++… **Reliability:** Repeatable, deterministic test runs catch regressions early, reducing production defects.
 
-✅ **Scalability:** Cloud capacity grows with your pipeline; you're never limited by on-prem hardware.
++… **Scalability:** Cloud capacity grows with your pipeline; you're never limited by on-prem hardware.
 
-✅ **Balanced approach:** Manual exploratory testing still has its place, but Test Cloud handles the repetitive checks, freeing QAs and devs to focus on higher-value exploratory and usability work.
++… **Balanced approach:** Manual exploratory testing still has its place, but Test Cloud handles the repetitive checks, freeing QAs and devs to focus on higher-value exploratory and usability work.
 
 ## Key Components of Test Cloud
 
 Test Cloud brings together several powerful tools and services:
 
-✅ **Test Manager** — Plan, run, manage, and analyze application testing
++… **Test Manager** --” Plan, run, manage, and analyze application testing
 
-✅ **Studio** — Build and automate test cases with a visual designer
++… **Studio** --” Build and automate test cases with a visual designer
 
-✅ **Orchestrator** — Execute and manage test automation at scale
++… **Orchestrator** --” Execute and manage test automation at scale
 
-✅ **Agentic Testing** — Leverage AI agents (Autopilot for Testers, custom agents) to accelerate test design and execution
++… **Agentic Testing** --” Leverage AI agents (Autopilot for Testers, custom agents) to accelerate test design and execution
 
 ## User & Robot Licenses
 
@@ -57,19 +57,19 @@ The main value of Test Cloud relies on synergies between its components, as well
 
 **Requirements Management**
 
-✅ **Jira, ServiceNow, Redmine** — UiPath Test Manager can pull requirements as test requirements, keeping your testing aligned with project specifications.
++… **Jira, ServiceNow, Redmine** --” UiPath Test Manager can pull requirements as test requirements, keeping your testing aligned with project specifications.
 
 **Version Control**
 
-✅ **Git, TFS** — UiPath Studio integrates with multiple version control tools for collaborative automation development and change tracking.
++… **Git, TFS** --” UiPath Studio integrates with multiple version control tools for collaborative automation development and change tracking.
 
 **CI/CD & Deployment**
 
-✅ **Jenkins, Azure DevOps** — UiPath Test Suite integrates natively for continuous integration and continuous deployment, enabling automated testing at every build.
++… **Jenkins, Azure DevOps** --” UiPath Test Suite integrates natively for continuous integration and continuous deployment, enabling automated testing at every build.
 
 **Application Lifecycle Management**
 
-✅ **UiPath Test Manager Connect** (via Planview® Hub) — Seamless integration with a multitude of ALM tools
++… **UiPath Test Manager Connect** (via PlanviewÂ® Hub) --” Seamless integration with a multitude of ALM tools
 
 - Synchronize testing artifacts between Test Manager and your desired ALM tool
 
@@ -113,6 +113,7 @@ Throughout this training, you'll explore each of these components and learn how 
 
 ---
 
-[Next → 01. Getting Started with Test Manager](01-getting-started-test-manager.md){: .md-button .md-button--primary}
+[Next >’ 01. Getting Started with Test Manager](01-getting-started-test-manager.md){: .md-button .md-button--primary}
 
 ---
+

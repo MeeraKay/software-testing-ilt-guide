@@ -1,10 +1,10 @@
-# 1. Getting Started with Test Manager
+# Getting Started with Test Manager
 
 ## What is Test Manager?
 
 **Test Manager** is a web application, part of UiPath Test Cloud, where you can **plan**, **run**, **manage**, and **analyze** testing of applications.
 
-Test Cloud offers a strong automation and testing ecosystem for managing all your testing operations: from **automating tests**, to **distributing** them, **executing**, and **managing** — you can perform all of these things in the context of a customizable cloud organization.
+Test Cloud offers a strong automation and testing ecosystem for managing all your testing operations: from **automating tests**, to **distributing** them, **executing**, and **managing** --” you can perform all of these things in the context of a customizable cloud organization.
 
 ## Why is Test Manager useful?
 
@@ -34,7 +34,7 @@ One of the biggest challenges is making testing an integral part of the developm
     ### Execution & Reporting
 
     6. The test developer creates test sets in Test Manager.
-    7. Test sets are executed — automated and/or manual — from Test Manager.
+    7. Test sets are executed --” automated and/or manual --” from Test Manager.
     8. Based on the test execution results, reports are generated. If needed, defects are generated (optional, and only if you link to an external ALM tool).
 
 ## Import Project
@@ -46,14 +46,15 @@ Importing the project follows a schema that converts external system projects (e
 !!! example "It's your turn now!"
     Import the following TMH file into your Test Manager instance.
 
-    Modify the **Name** and **Prefix** by adding a suffix with your name — e.g. `UiBank_{your name}` and `UIB{initials}`.
+    Modify the **Name** and **Prefix** by adding a suffix with your name --” e.g. `UiBank_{your name}` and `UIB{initials}`.
 
     This is the project you'll be working on for the rest of the day.
 
-    <a href="https://articulateusercontent.com/rise/courses/wbarvVGUFeVtnNnsoksCvGVOBH9YzS_J/RjVBhG7OV_uDYf4i-UIB_UiBank_2024_03_01_18_18_46_3481.tmh" target="_blank">**UIB_UiBank_2024_03_01_18_18_46_3481.tmh**</a> (7.2 KB) — project import file for Test Manager
+    <a href="https://articulateusercontent.com/rise/courses/wbarvVGUFeVtnNnsoksCvGVOBH9YzS_J/RjVBhG7OV_uDYf4i-UIB_UiBank_2024_03_01_18_18_46_3481.tmh" target="_blank">**UIB_UiBank_2024_03_01_18_18_46_3481.tmh**</a> (7.2 KB) --” project import file for Test Manager
 
 ---
 
-[Next → 02. Agentic Testing](02-agentic-testing.md){: .md-button .md-button--primary}
+[Next >’ 02. Agentic Testing](02-agentic-testing.md){: .md-button .md-button--primary}
 
 ---
+

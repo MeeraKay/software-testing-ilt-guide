@@ -1,10 +1,10 @@
-# 2. Agentic Testing: From Requirement to Test Cases
+# Agentic Testing: From Requirement to Test Cases
 
 ## What is agentic testing?
 
-**Agentic Testing** means augmenting testers with AI agents to extend, accelerate, and simplify their work — ultimately helping them be more productive and find greater joy in testing.
+**Agentic Testing** means augmenting testers with AI agents to extend, accelerate, and simplify their work –” ultimately helping them be more productive and find greater joy in testing.
 
-## 1. Out-of-the-box agents — Autopilot for Testers
+## 1. Out-of-the-box agents –” Autopilot for Testers
 
 Autopilot for Testers is a collection of AI-powered digital systems (agents) designed to boost the productivity of testers throughout the entire testing lifecycle.
 
@@ -14,9 +14,9 @@ These capabilities are integrated into UiPath Studio Desktop and UiPath Test Man
 
 In the hands-on exercises ahead, you'll work with two key agents:
 
-✅ **Evaluation Agent** — Analyzes and evaluates requirements to ensure clarity, completeness, and testability
+✅ **Evaluation Agent** –” Analyzes and evaluates requirements to ensure clarity, completeness, and testability
 
-✅ **Test Case Generation Agent** — Automatically generates comprehensive test cases based on requirements, saving time and improving coverage
+✅ **Test Case Generation Agent** –” Automatically generates comprehensive test cases based on requirements, saving time and improving coverage
 
 ### Hands-on: From Requirement to Test Cases
 
@@ -24,7 +24,7 @@ Let's see how Autopilot for Testers helps you move from requirements to test cas
 
 <div style="background-color: #f5f5f5; border: 1px solid #ddd; border-radius: 4px; margin: 16px 0; overflow: hidden;">
   <div style="position: relative; padding: 16px; background-color: #f5f5f5;">
-    <button id="copyBtn" onclick="copyText()" style="position: absolute; top: 12px; right: 12px; background-color: white; border: 2px solid #ff6b35; color: #ff6b35; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-weight: 600; font-size: 13px; z-index: 1000; transition: all 0.3s ease;">📋 Copy</button>
+    <button type=”button” id=”copyBtn” style=”position: absolute; top: 12px; right: 12px; background-color: white; border: 2px solid #ff6b35; color: #ff6b35; padding: 10px 18px; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 13px; z-index: 1001; transition: all 0.3s ease; letter-spacing: 0.3px; pointer-events: auto; outline: none;”>📋 Copy</button>
     <pre id="requirementBlock" style="margin: 0; padding: 40px 16px 16px 16px; font-family: 'Courier New', monospace; font-size: 13px; line-height: 1.5; color: #333; white-space: pre-wrap; word-wrap: break-word;">As a potential UiBank customer, I want to apply for a loan via the UiPath Banking Application, so that I can quickly secure the funds I need.
 
 ## User Flow
@@ -83,25 +83,31 @@ Let's see how Autopilot for Testers helps you move from requirements to test cas
 </div>
 
 <script>
-function copyText() {
-  const text = document.getElementById('requirementBlock').innerText;
-  navigator.clipboard.writeText(text).then(() => {
-    const btn = document.getElementById('copyBtn');
-    const originalText = btn.innerHTML;
-    btn.innerHTML = '✓ Copied!';
-    btn.style.borderColor = '#4caf50';
-    btn.style.color = '#4caf50';
-    setTimeout(() => {
-      btn.innerHTML = originalText;
-      btn.style.borderColor = '#ff6b35';
-      btn.style.color = '#ff6b35';
-    }, 2000);
-  }).catch(err => console.log('Copy failed:', err));
-}
+document.addEventListener('DOMContentLoaded', function() {
+  const copyBtn = document.getElementById('copyBtn');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      const text = document.getElementById('requirementBlock').innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const originalText = copyBtn.innerHTML;
+        copyBtn.innerHTML = '✅ Copied!';
+        copyBtn.style.borderColor = '#4caf50';
+        copyBtn.style.color = '#4caf50';
+        setTimeout(() => {
+          copyBtn.innerHTML = originalText;
+          copyBtn.style.borderColor = '#ff6b35';
+          copyBtn.style.color = '#ff6b35';
+        }, 2000);
+      }).catch(err => console.log('Copy failed:', err));
+    });
+  }
+});
 </script>
 
 
-## 2. Built Your Way — Custom AI Agents
+## 2. Built Your Way – Custom AI Agents
 
 Beyond the out-of-the-box capabilities, you have the full power to build your own AI agents tailored specifically to your unique testing needs.
 
@@ -112,10 +118,11 @@ Custom agents give you the flexibility to:
 - Automate repetitive testing tasks your way
 - Extend Test Cloud with agent-driven innovation
 
-As the final topic of this instructor-led training, you'll **build your own custom AI agent** from scratch. You'll learn the anatomy of an agent, how to design it for your needs, and how to deploy it—creating something powerful and uniquely yours.
+As the final topic of this instructor-led training, you'll **build your own custom AI agent** from scratch. You'll learn the anatomy of an agent, how to design it for your needs, and how to deploy it–”creating something powerful and uniquely yours.
 
 ---
 
 [Next → Getting Started in Studio](03-getting-started-studio.md){: .md-button .md-button--primary}
 
 ---
+
