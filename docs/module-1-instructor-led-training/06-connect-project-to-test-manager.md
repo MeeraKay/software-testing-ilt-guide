@@ -34,4 +34,6 @@ The custom library now appears in the left panel alongside the other defined sou
 
 ---
 
-[← Test Automation Project](05-test-automation-project.md) · [Next: From Manual Test Case to Test Automation →](07-manual-to-automated-test-case.md)
+[Next → 07. Manual to Automated Test Case](07-manual-to-automated-test-case.md){: .md-button .md-button--primary}
+
+---

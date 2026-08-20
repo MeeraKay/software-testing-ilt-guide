@@ -12,9 +12,11 @@ For application testing we use a project of type **Test Automation**.
 
 We use the following activity packages:
 
-- `UiPath.System.Activities`
-- `UiPath.UIAutomation.Activities`
-- `UiPath.Testing.Activities`
+```
+UiPath.System.Activities
+UiPath.UIAutomation.Activities
+UiPath.Testing.Activities
+```
 
 ## Testing activities
 
@@ -47,15 +49,14 @@ A **test case** is a specification of the input, execution conditions, testing p
 
 Widely adopted as a best practice for test case design:
 
-=== "GIVEN"
-    In the Given part, setup to prepare for the desired testing action is performed.
+- **GIVEN** — Setup and prepare the conditions needed for the test. This includes initializing data, navigating to the correct page, and ensuring the application is in the right state.
 
-=== "WHEN"
-    In the When part, the workflow to be tested should be invoked, and the data to be compared with the "expected data" should be available.
+- **WHEN** — Execute the workflow or action being tested. Perform the steps that trigger the behavior you want to verify.
 
-=== "THEN"
-    In the Then part, the expected result should be compared with the actual result, and the "context clean-up" should be done.
+- **THEN** — Verify the expected results. Compare actual outcomes with expected outcomes, then clean up any test data or state changes made during the test.
 
 ---
 
-[← Agentic Testing](02-agentic-testing.md) · [Next: Object Repository →](04-object-repository.md)
+[Next → 04. Object Repository](04-object-repository.md){: .md-button .md-button--primary}
+
+---

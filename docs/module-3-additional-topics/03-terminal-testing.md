@@ -62,4 +62,6 @@ Recovering from unexpected errors is one of the challenges of testing terminal-b
 
 ---
 
-[← Testing Framework](02-testing-framework.md) · [Next: Best Practices →](04-best-practices.md)
+[Next → 04. Best Practices](04-best-practices.md){: .md-button .md-button--primary}
+
+---

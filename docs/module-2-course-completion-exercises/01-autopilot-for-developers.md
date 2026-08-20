@@ -55,4 +55,6 @@ These exercises use Autopilot in Studio Desktop to help you build and fix automa
 
 ---
 
-[← Overview](index.md) · [Next: Integration Service →](02-integration-service.md)
+[Next → 02. Integration Service](02-integration-service.md){: .md-button .md-button--primary}
+
+---

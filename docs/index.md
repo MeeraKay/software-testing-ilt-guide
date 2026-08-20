@@ -2,12 +2,18 @@
 
 **Thank you for joining the UiPath Software & Agentic Testing Instructor-Led Training!**
 
-This **Learner's Handbook** is your practical guide for the hands-on exercises. Think of it less as a manual and more as a co-pilot: it will walk you through each step, explain what's happening and why, and help you build real, working test automation by the end of the session.
+This **Learner's Handbook** is your practical guide for this 1-day training (plus exercise submission). Think of it less as a manual and more as a co-pilot: it will walk you through each step, explain what's happening and why, and help you build real, working test automation by the end of the session.
 
 !!! info "Prerequisites"
-    **Prerequisites:** Software Test Engineer Training - Learning Plan
-
-    **Course Duration:** 1 day training + exercise submission
+    **Mandatory Pre-requisites:**
+    
+    ✅ <a href="https://academy.uipath.com/courses/uipath-test-manager-overview" target="_blank">UiPath Test Manager Overview</a>
+    
+    ✅ <a href="https://academy.uipath.com/courses/desktop-test-automation-using-uipath-studio" target="_blank">Desktop Test Automation using UiPath Studio</a>
+    
+    **Optional Course:**
+    
+    ✅ <a href="https://academy.uipath.com/courses/software-test-engineer-fast-start" target="_blank">Software Test Engineer Fast Start</a>
 
 ## What You'll Build
 
@@ -59,12 +65,7 @@ Before attending the training, ensure you have completed the following:
 
 ---
 
-[Start Instructor Led Training →](module-1-instructor-led-training/index.md)
-
-[Start Course Completion Exercises →](module-2-course-completion-exercises/index.md)
-
-[Start Additional Topics →](module-3-additional-topics/index.md)
-
+[Next → UiPath Test Cloud](module-1-instructor-led-training/00-uipath-test-cloud.md){: .md-button .md-button--primary}
 
 ---
 

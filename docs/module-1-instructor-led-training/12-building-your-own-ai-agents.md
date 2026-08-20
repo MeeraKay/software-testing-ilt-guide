@@ -70,4 +70,6 @@ Agents handle tasks that robots may not be able to, while robots provide control
 
 ---
 
-[← Execute Test Cases in Test Manager](11-execute-test-cases.md) · [Continue: You did it! →](you-did-it.md)
+[Next → You Did It!](you-did-it.md){: .md-button .md-button--primary}
+
+---

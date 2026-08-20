@@ -13,4 +13,8 @@ Self-paced reference material to deepen your understanding and extend your skill
 - [SAP Heatmap and Change Impact Analysis](07-sap-heatmap.md)
 - [CI/CD](08-cicd.md)
 
-[Start with Templates →](01-templates.md){ .md-button .md-button--primary }
+---
+
+[Next → 01. Templates](01-templates.md){: .md-button .md-button--primary}
+
+---

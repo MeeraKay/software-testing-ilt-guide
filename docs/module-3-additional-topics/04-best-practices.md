@@ -41,4 +41,6 @@ Rules in the Application Testing category carry the `TA` code prefix and apply t
 
 ---
 
-[← Terminal Testing](03-terminal-testing.md) · [Next: Database Testing →](05-database-testing.md)
+[Next → 05. Database Testing](05-database-testing.md){: .md-button .md-button--primary}
+
+---

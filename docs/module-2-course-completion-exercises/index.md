@@ -13,13 +13,17 @@ To reinforce what you learned in the instructor-led session and qualify for your
 
 ## Steps
 
-1. [Autopilot for Developers](01-autopilot-for-developers.md)
-2. [Integration Service](02-integration-service.md)
-3. [Create a Custom Connection](03-custom-connection-integration-service.md)
-4. [API Testing](04-api-testing.md)
-5. [Coded Test Cases](05-coded-test-cases.md)
-6. [Additional Exercises](06-additional-exercises.md)
+- [Autopilot for Developers](01-autopilot-for-developers.md)
+- [Integration Service](02-integration-service.md)
+- [Create a Custom Connection](03-custom-connection-integration-service.md)
+- [API Testing](04-api-testing.md)
+- [Coded Test Cases](05-coded-test-cases.md)
+- [Additional Exercises](06-additional-exercises.md)
 
 Then head to [Receive Credit](you-did-it.md) to submit your work.
 
-[Start Step 1 →](01-autopilot-for-developers.md){ .md-button .md-button--primary }
+---
+
+[Next → 01. Autopilot for Developers](01-autopilot-for-developers.md){: .md-button .md-button--primary}
+
+---

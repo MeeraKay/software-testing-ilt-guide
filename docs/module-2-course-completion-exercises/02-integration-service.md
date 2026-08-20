@@ -27,4 +27,6 @@ By combining connectors, the Connector Builder, connections, and triggers, teste
 
 ---
 
-[← Autopilot for Developers](01-autopilot-for-developers.md) · [Next: Create a Custom Connection →](03-custom-connection-integration-service.md)
+[Next → 03. Custom Connection](03-custom-connection-integration-service.md){: .md-button .md-button--primary}
+
+---

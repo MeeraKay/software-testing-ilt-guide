@@ -37,4 +37,6 @@ Follow these steps to create and connect a custom connector using UiPath Integra
 
 ---
 
-[← Integration Service](02-integration-service.md) · [Next: API Testing →](04-api-testing.md)
+[Next → 04. API Testing](04-api-testing.md){: .md-button .md-button--primary}
+
+---

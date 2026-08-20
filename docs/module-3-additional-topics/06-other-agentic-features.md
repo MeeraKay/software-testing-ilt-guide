@@ -48,4 +48,6 @@ The report can include up to five sections, each with multiple insights. For eac
 
 ---
 
-[← Database Testing](05-database-testing.md) · [Next: SAP Heatmap and Change Impact Analysis →](07-sap-heatmap.md)
+[Next → 07. SAP Heatmap](07-sap-heatmap.md){: .md-button .md-button--primary}
+
+---

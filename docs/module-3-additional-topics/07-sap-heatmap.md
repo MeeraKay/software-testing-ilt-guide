@@ -53,4 +53,6 @@ Powered by AI and machine learning, Change Impact Analysis for SAP scopes testin
 
 ---
 
-[← Other Agentic Features in Test Manager](06-other-agentic-features.md) · [Next: CI/CD →](08-cicd.md)
+[Next → 08. CI/CD](08-cicd.md){: .md-button .md-button--primary}
+
+---

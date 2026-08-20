@@ -1,0 +1,154 @@
+/* Primary blue theme color - #2196F3 */
+:root {
+  --primary-blue: #2196F3;
+  --light-bg: #E3F2FD;
+}
+
+/* Light mode */
+[data-md-color-scheme="light"] {
+  --md-primary-fg-color: var(--primary-blue);
+  --md-accent-fg-color: var(--primary-blue);
+}
+
+/* Dark mode */
+[data-md-color-scheme="dark"] {
+  --md-primary-fg-color: #64B5F6;
+  --md-accent-fg-color: #64B5F6;
+}
+
+/* Consistent header hierarchy - single blue, varied sizes */
+.md-typeset h1 {
+  color: var(--primary-blue) !important;
+  font-weight: 700 !important;
+  font-size: 2.5em !important;
+}
+
+.md-typeset h2 {
+  color: var(--primary-blue) !important;
+  font-weight: 700 !important;
+  font-size: 1.75em !important;
+  margin-top: 1.5em !important;
+}
+
+.md-typeset h3 {
+  color: var(--primary-blue) !important;
+  font-weight: 600 !important;
+  font-size: 1.35em !important;
+  margin-top: 1.3em !important;
+}
+
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  color: var(--primary-blue) !important;
+  font-weight: 600 !important;
+}
+
+/* Links */
+a {
+  color: var(--primary-blue);
+}
+
+a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid var(--primary-blue);
+  padding-left: 12px;
+}
+
+/* Code blocks and inline code */
+code {
+  background-color: var(--light-bg);
+  color: var(--primary-blue);
+}
+
+[data-md-color-scheme="dark"] code {
+  background-color: rgba(33, 150, 243, 0.1);
+  color: #64B5F6;
+}
+
+/* Buttons and interactive elements */
+.md-button {
+  background-color: var(--primary-blue);
+  color: white;
+  display: block;
+  width: 360px !important;
+  padding: 12px 24px !important;
+  text-align: center;
+  margin: 10px auto !important;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.md-button:hover {
+  opacity: 0.85;
+}
+
+/* Table styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background-color: var(--primary-blue);
+  color: white;
+  font-weight: 600;
+  padding: 12px;
+  text-align: left;
+}
+
+/* Comparison table specific styling */
+.comparison-table {
+  border: 1px solid #ddd;
+}
+
+.comparison-table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.comparison-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+[data-md-color-scheme="dark"] .comparison-table tbody tr:nth-child(odd) {
+  background-color: #1a1a1a;
+}
+
+[data-md-color-scheme="dark"] .comparison-table tbody tr:nth-child(even) {
+  background-color: #0d0d0d;
+}
+
+[data-md-color-scheme="dark"] th {
+  background-color: rgba(33, 150, 243, 0.1);
+  color: #64B5F6;
+}
+
+/* Accent boxes */
+.md-typeset .admonition.info,
+.md-typeset details.info {
+  border-color: var(--primary-blue);
+}
+
+.md-typeset .admonition.info > .admonition-title,
+.md-typeset details.info > summary {
+  background-color: var(--light-bg);
+  color: var(--primary-blue);
+}
+
+[data-md-color-scheme="dark"] .md-typeset .admonition.info > .admonition-title,
+[data-md-color-scheme="dark"] .md-typeset details.info > summary {
+  background-color: rgba(33, 150, 243, 0.1);
+  color: #64B5F6;
+}

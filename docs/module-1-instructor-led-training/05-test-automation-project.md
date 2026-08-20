@@ -26,4 +26,6 @@ Test Cases, Data-Driven Test Cases, Test Data, and Test Results.
 
 ---
 
-[← Object Repository](04-object-repository.md) · [Next: Connect Your Project to Test Manager →](06-connect-project-to-test-manager.md)
+[Next → 06. Connect Project to Test Manager](06-connect-project-to-test-manager.md){: .md-button .md-button--primary}
+
+---

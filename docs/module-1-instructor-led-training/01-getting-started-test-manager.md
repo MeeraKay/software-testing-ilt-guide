@@ -18,20 +18,24 @@ One of the biggest challenges is making testing an integral part of the developm
 
 ## The typical testing flow with Test Manager
 
-1. Requirements are created either in Test Manager (TM) or in an external tool and imported into TM.
-2. The tester defines, generates (using Autopilot), or imports test cases in TM, and optionally documents them with Task Capture.
-3. The test developer reviews the documentation and automates the defined test cases (from step 2) in Studio.
-4. The test developer links the test case (automation) from Studio to the test case (design) in TM.
-5. The test developer publishes automated test cases from Studio to Orchestrator.
-6. The test developer creates test sets in Test Manager.
-7. Test sets are executed — automated and/or manual — from Test Manager.
-8. Based on the test execution results, reports are generated. If needed, defects are generated (optional, and only if you link to an external ALM tool).
+!!! note "Your Testing Journey"
 
-!!! info "The native Automation Cloud interface"
-    Allows you to perform RPA testing.
+    ### Planning & Design
 
-!!! info "The Test Cloud interface"
-    Allows you to perform application testing only.
+    1. Requirements are created either in Test Manager (TM) or in an external tool and imported into TM.
+    2. The tester defines, generates (using Autopilot), or imports test cases in TM, and optionally documents them with Task Capture.
+
+    ### Automation
+
+    3. The test developer reviews the documentation and automates the defined test cases (from step 2) in Studio.
+    4. The test developer links the test case (automation) from Studio to the test case (design) in TM.
+    5. The test developer publishes automated test cases from Studio to Orchestrator.
+
+    ### Execution & Reporting
+
+    6. The test developer creates test sets in Test Manager.
+    7. Test sets are executed — automated and/or manual — from Test Manager.
+    8. Based on the test execution results, reports are generated. If needed, defects are generated (optional, and only if you link to an external ALM tool).
 
 ## Import Project
 
@@ -46,8 +50,10 @@ Importing the project follows a schema that converts external system projects (e
 
     This is the project you'll be working on for the rest of the day.
 
-    :material-file-download: [**UIB_UiBank_2024_03_01_18_18_46_3481.tmh**](https://articulateusercontent.com/rise/courses/wbarvVGUFeVtnNnsoksCvGVOBH9YzS_J/RjVBhG7OV_uDYf4i-UIB_UiBank_2024_03_01_18_18_46_3481.tmh) (7.2 KB) — project import file for Test Manager
+    <a href="https://articulateusercontent.com/rise/courses/wbarvVGUFeVtnNnsoksCvGVOBH9YzS_J/RjVBhG7OV_uDYf4i-UIB_UiBank_2024_03_01_18_18_46_3481.tmh" target="_blank">**UIB_UiBank_2024_03_01_18_18_46_3481.tmh**</a> (7.2 KB) — project import file for Test Manager
 
 ---
 
-[← Overview](index.md) · [Next: Agentic Testing →](02-agentic-testing.md)
+[Next → 02. Agentic Testing](02-agentic-testing.md){: .md-button .md-button--primary}
+
+---

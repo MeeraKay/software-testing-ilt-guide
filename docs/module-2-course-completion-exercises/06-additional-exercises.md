@@ -17,4 +17,6 @@ To receive your **Diploma of Completion**, you must complete the following exerc
 
 ---
 
-[← Coded Test Cases](05-coded-test-cases.md) · [Continue: Receive Credit →](you-did-it.md)
+[Next → You Did It!](you-did-it.md){: .md-button .md-button--primary}
+
+---

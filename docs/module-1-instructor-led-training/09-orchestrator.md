@@ -140,4 +140,6 @@ Assets store and manage data used across multiple automation projects, including
 
 ---
 
-[← Data-Driven Testing](08-data-driven-testing.md) · [Next: Publishing Test Cases →](10-publishing-test-cases.md)
+[Next → 10. Publishing Test Cases](10-publishing-test-cases.md){: .md-button .md-button--primary}
+
+---

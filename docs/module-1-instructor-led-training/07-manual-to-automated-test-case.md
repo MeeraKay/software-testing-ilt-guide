@@ -47,4 +47,6 @@ Designed to help developers create and test automations faster and more easily. 
 
 ---
 
-[← Connect Your Project to Test Manager](06-connect-project-to-test-manager.md) · [Next: Data-Driven Testing →](08-data-driven-testing.md)
+[Next → 08. Data-Driven Testing](08-data-driven-testing.md){: .md-button .md-button--primary}
+
+---

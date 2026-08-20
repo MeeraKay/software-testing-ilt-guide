@@ -38,4 +38,6 @@ With UiPath Test Cloud, you can perform **Data Validation Testing**, a part of d
 
 ---
 
-[← Best Practices](04-best-practices.md) · [Next: Other Agentic Features in Test Manager →](06-other-agentic-features.md)
+[Next → 06. Other Agentic Features](06-other-agentic-features.md){: .md-button .md-button--primary}
+
+---

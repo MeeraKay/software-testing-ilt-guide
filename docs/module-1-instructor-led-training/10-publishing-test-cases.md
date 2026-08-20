@@ -37,4 +37,6 @@ To publish test cases created in Studio, you must set them as publishable — bo
 
 ---
 
-[← Orchestrator](09-orchestrator.md) · [Next: Execute Test Cases in Test Manager →](11-execute-test-cases.md)
+[Next → 11. Execute Test Cases](11-execute-test-cases.md){: .md-button .md-button--primary}
+
+---

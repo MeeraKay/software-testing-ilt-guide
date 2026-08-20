@@ -23,4 +23,6 @@
 
 ---
 
-[← From Manual Test Case to Test Automation](07-manual-to-automated-test-case.md) · [Next: Orchestrator →](09-orchestrator.md)
+[Next → 09. Orchestrator](09-orchestrator.md){: .md-button .md-button--primary}
+
+---

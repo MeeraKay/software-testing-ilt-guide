@@ -16,4 +16,8 @@ Once submitted, you're free to continue on to [Module 3 — Additional Topics](.
 
 Until next time, happy automation!
 
-[Explore Module 3 →](../module-3-additional-topics/index.md){ .md-button .md-button--primary }
+---
+
+[Next → Module 3: Additional Topics](../module-3-additional-topics/index.md){: .md-button .md-button--primary}
+
+---
