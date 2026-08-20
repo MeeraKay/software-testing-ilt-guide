@@ -18,7 +18,7 @@ Until next time, happy automation!
 
 ---
 
-[Next >’ Module 3: Additional Topics](../module-3-additional-topics/index.md){: .md-button .md-button--primary}
+[Next → Module 3: Additional Topics](../module-3-additional-topics/index.md){: .md-button .md-button--primary}
 
 ---
 

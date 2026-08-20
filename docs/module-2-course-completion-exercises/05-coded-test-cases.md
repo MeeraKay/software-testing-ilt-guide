@@ -67,7 +67,7 @@ Almost everything possible in low-code automations can be done in coded automati
 
 ---
 
-[Next >’ 06. Additional Exercises](06-additional-exercises.md){: .md-button .md-button--primary}
+[Next → Additional Exercises](06-additional-exercises.md){: .md-button .md-button--primary}
 
 ---
 

@@ -70,7 +70,7 @@ Agents handle tasks that robots may not be able to, while robots provide control
 
 ---
 
-[Next >’ You Did It!](you-did-it.md){: .md-button .md-button--primary}
+[Next → You Did It!](you-did-it.md){: .md-button .md-button--primary}
 
 ---
 

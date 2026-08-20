@@ -54,7 +54,7 @@ Importing the project follows a schema that converts external system projects (e
 
 ---
 
-[Next >’ 02. Agentic Testing](02-agentic-testing.md){: .md-button .md-button--primary}
+[Next → 02. Agentic Testing](02-agentic-testing.md){: .md-button .md-button--primary}
 
 ---
 

@@ -32,7 +32,7 @@ This module is the core of the day: you'll get oriented in Test Manager, see how
 
 ---
 
-[Next >’ 00. UiPath Test Cloud](00-uipath-test-cloud.md){: .md-button .md-button--primary}
+[Next → UiPath Test Cloud](00-uipath-test-cloud.md){: .md-button .md-button--primary}
 
 ---
 

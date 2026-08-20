@@ -43,6 +43,6 @@ Feel free to add your own custom flows and adapt the framework to your needs.
 
 ---
 
-[Next → 03. Terminal Testing](03-terminal-testing.md){: .md-button .md-button--primary}
+[Next → Terminal Testing](03-terminal-testing.md){: .md-button .md-button--primary}
 
 ---

@@ -37,7 +37,7 @@ To publish test cases created in Studio, you must set them as publishable --” 
 
 ---
 
-[Next >’ 11. Execute Test Cases](11-execute-test-cases.md){: .md-button .md-button--primary}
+[Next → Execute Test Cases](11-execute-test-cases.md){: .md-button .md-button--primary}
 
 ---
 

@@ -11,7 +11,7 @@ To reinforce your learning and qualify for course completion, proceed with the f
 
 ---
 
-[Next >’ Module 2: Course Completion Exercises](../module-2-course-completion-exercises/index.md){: .md-button .md-button--primary}
+[Next → Module 2: Course Completion Exercises](../module-2-course-completion-exercises/index.md){: .md-button .md-button--primary}
 
 ---
 

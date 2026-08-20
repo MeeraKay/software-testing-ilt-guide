@@ -104,7 +104,7 @@ You can only enforce a specific order for statically assigned test cases; dynami
 
 ---
 
-[Next >’ 12. Building Your Own AI Agents](12-building-your-own-ai-agents.md){: .md-button .md-button--primary}
+[Next → Building Your Own AI Agents](12-building-your-own-ai-agents.md){: .md-button .md-button--primary}
 
 ---
 

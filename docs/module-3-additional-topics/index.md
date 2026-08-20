@@ -15,6 +15,6 @@ Self-paced reference material to deepen your understanding and extend your skill
 
 ---
 
-[Next → 01. Templates](01-templates.md){: .md-button .md-button--primary}
+[Next → Templates](01-templates.md){: .md-button .md-button--primary}
 
 ---

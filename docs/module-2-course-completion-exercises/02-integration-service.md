@@ -27,7 +27,7 @@ By combining connectors, the Connector Builder, connections, and triggers, teste
 
 ---
 
-[Next >’ 03. Custom Connection](03-custom-connection-integration-service.md){: .md-button .md-button--primary}
+[Next → Custom Connection](03-custom-connection-integration-service.md){: .md-button .md-button--primary}
 
 ---
 

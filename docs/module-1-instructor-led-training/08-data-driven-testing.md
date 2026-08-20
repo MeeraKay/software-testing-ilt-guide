@@ -23,7 +23,7 @@
 
 ---
 
-[Next >’ 09. Orchestrator](09-orchestrator.md){: .md-button .md-button--primary}
+[Next → Orchestrator](09-orchestrator.md){: .md-button .md-button--primary}
 
 ---
 

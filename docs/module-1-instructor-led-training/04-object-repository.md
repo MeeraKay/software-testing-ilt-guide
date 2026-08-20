@@ -16,7 +16,7 @@ The Object Repository is a DOM-like repository system that lets you create, mana
 
 The structure of elements created with the Object Browser follows this hierarchy:
 
-**Application >’ Version >’ Screen >’ UI Element >’ UI Descriptors**
+**Application → Version → Screen → UI Element → UI Descriptors**
 
 ## Best practices
 
@@ -90,7 +90,7 @@ Once your UI Library is ready with captured elements, publish it to make it avai
 
 ---
 
-[Next >’ 05. Test Automation Project](05-test-automation-project.md){: .md-button .md-button--primary}
+[Next → Test Automation Project](05-test-automation-project.md){: .md-button .md-button--primary}
 
 ---
 

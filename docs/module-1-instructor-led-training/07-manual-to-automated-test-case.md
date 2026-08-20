@@ -41,13 +41,13 @@ Designed to help developers create and test automations faster and more easily. 
 !!! example "Exercise: create your first automated test case using Autopilot for Developers"
     1. Based on the requirements created in the previous exercise and the Test Studio project already created.
     2. Autopilot relies on the imported Object Repository to identify and interact with UI elements.
-    3. Go to **Test Explorer** >’ **Overview**.
+    3. Go to **Test Explorer** → **Overview**.
     4. Right-click on the test case name and select **Generate Test Case with Autopilot**.
     5. Adjust it and run it.
 
 ---
 
-[Next >’ 08. Data-Driven Testing](08-data-driven-testing.md){: .md-button .md-button--primary}
+[Next → Data-Driven Testing](08-data-driven-testing.md){: .md-button .md-button--primary}
 
 ---
 

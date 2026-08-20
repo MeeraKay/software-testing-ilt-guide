@@ -113,7 +113,7 @@ Throughout this training, you'll explore each of these components and learn how 
 
 ---
 
-[Next >’ 01. Getting Started with Test Manager](01-getting-started-test-manager.md){: .md-button .md-button--primary}
+[Next → Getting Started with Test Manager](01-getting-started-test-manager.md){: .md-button .md-button--primary}
 
 ---
 

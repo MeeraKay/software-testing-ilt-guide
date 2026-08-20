@@ -57,7 +57,7 @@ Widely adopted as a best practice for test case design:
 
 ---
 
-[Next >’ 04. Object Repository](04-object-repository.md){: .md-button .md-button--primary}
+[Next → Object Repository](04-object-repository.md){: .md-button .md-button--primary}
 
 ---
 

@@ -29,8 +29,8 @@ Custom roles can also be created to tailor permissions to specific needs.
 
 **Assigning to tenants:**
 
-1. Navigate to **Tenant >’ Manage Access** in Orchestrator.
-2. Click **Assign access >’ User/Robot Account/Group**.
+1. Navigate to **Tenant → Manage Access** in Orchestrator.
+2. Click **Assign access → User/Robot Account/Group**.
 3. Search for the user or group to assign.
 4. Select the appropriate role(s).
 5. Click **Assign** to confirm.
@@ -39,7 +39,7 @@ Custom roles can also be created to tailor permissions to specific needs.
 
 Folders in Orchestrator provide a hierarchical structure for organizing automation resources, including test cases, assets, and robots --” enabling fine-grained access control and resource management. Orchestrator supports up to seven levels of folder hierarchy, and access permissions are inherited from parent folders.
 
-1. Go to **Tenant >’ Folders**.
+1. Go to **Tenant → Folders**.
 2. Select the desired folder.
 3. Click **Assign Accounts/Groups**.
 4. Search for the user or group.
@@ -76,7 +76,7 @@ To get started with Test Cloud, you need at least one Test Cloud-specific user l
 
 1. Access the UiPath Automation Cloud **Admin Portal**.
 2. Go to **Licenses**.
-3. Click **License Allocations to Users >’ Allocate Licenses**.
+3. Click **License Allocations to Users → Allocate Licenses**.
 4. Choose the user(s) and assign the appropriate license type.
 5. Click **Save**.
 
@@ -98,7 +98,7 @@ To get started with Test Cloud, you need at least one Test Cloud-specific user l
 **Viewing and allocating runtimes:**
 
 1. Navigate to the Test Cloud Orchestrator.
-2. Go to **Tenant >’ License**.
+2. Go to **Tenant → License**.
 3. Under **Testing Robots**, click **See More** and allocate runtimes to machines or machine templates.
 
 !!! warning
@@ -140,7 +140,7 @@ Assets store and manage data used across multiple automation projects, including
 
 ---
 
-[Next >’ 10. Publishing Test Cases](10-publishing-test-cases.md){: .md-button .md-button--primary}
+[Next → Publishing Test Cases](10-publishing-test-cases.md){: .md-button .md-button--primary}
 
 ---
 

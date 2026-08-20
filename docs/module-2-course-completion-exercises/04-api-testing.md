@@ -50,7 +50,7 @@ Postman is a collaboration platform for API development --” its features simpl
 
 ---
 
-[Next >’ 05. Coded Test Cases](05-coded-test-cases.md){: .md-button .md-button--primary}
+[Next → Coded Test Cases](05-coded-test-cases.md){: .md-button .md-button--primary}
 
 ---
 

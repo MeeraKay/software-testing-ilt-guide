@@ -26,7 +26,7 @@ Test Cases, Data-Driven Test Cases, Test Data, and Test Results.
 
 ---
 
-[Next >’ 06. Connect Project to Test Manager](06-connect-project-to-test-manager.md){: .md-button .md-button--primary}
+[Next → Connect Project to Test Manager](06-connect-project-to-test-manager.md){: .md-button .md-button--primary}
 
 ---
 

@@ -17,7 +17,7 @@ To receive your **Diploma of Completion**, you must complete the following exerc
 
 ---
 
-[Next >’ You Did It!](you-did-it.md){: .md-button .md-button--primary}
+[Next → You Did It!](you-did-it.md){: .md-button .md-button--primary}
 
 ---
 

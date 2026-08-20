@@ -29,6 +29,6 @@ Use test case templates as base models for your test cases — for example, a te
 
 ---
 
-[Next → 02. Testing Framework](02-testing-framework.md){: .md-button .md-button--primary}
+[Next → Testing Framework](02-testing-framework.md){: .md-button .md-button--primary}
 
 ---

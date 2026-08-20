@@ -53,6 +53,6 @@ Powered by AI and machine learning, Change Impact Analysis for SAP scopes testin
 
 ---
 
-[Next → 08. CI/CD](08-cicd.md){: .md-button .md-button--primary}
+[Next → CI/CD](08-cicd.md){: .md-button .md-button--primary}
 
 ---
