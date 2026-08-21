@@ -63,7 +63,7 @@ Almost everything possible in low-code automations can be done in coded automati
 - Remove namespaces you imported at design time but no longer need.
 - If you need data from multiple applications, separate the phases of the coded automation so you don't mix data from different sources.
 
-ðŸ“– See the [UiPath Studio User Guide](https://docs.uipath.com){target=_blank} to learn more about using activity packages in coded automations.
+📄 See the [UiPath Studio User Guide](https://docs.uipath.com){target=_blank} to learn more about using activity packages in coded automations.
 
 ---
 

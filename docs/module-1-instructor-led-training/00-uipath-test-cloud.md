@@ -33,7 +33,7 @@ It represents more than just a tool — it embodies UiPath's commitment to prior
 
 Test Cloud brings together several powerful tools and services:
 
-✅ **Test Manager** Plan, run, manage, and analyze application testing
+✅ **Test Manager** — Plan, run, manage, and analyze application testing
 
 ✅ **Studio** — Build and automate test cases with a visual designer
 

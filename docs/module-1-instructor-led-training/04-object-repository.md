@@ -20,22 +20,22 @@ The structure of elements created with the Object Browser follows this hierarchy
 
 ## Best practices
 
-- **Reusability** --” Achieve reusability through local elements, snippets, and UI libraries in the Object Repository.
-- **Use descriptive names** --” Use meaningful, descriptive names for objects in the repository. Avoid generic names such as "Button1" and "Link2" --” they become confusing over time.
-- **Organize objects** --” Group objects within a repository by screen, type of object (buttons, input fields, etc.), or another logical categorization.
-- **Version control** --” When publishing a new version of the same UI library, make sure to properly increment the version number in the Publish window.
+- **Reusability** — Achieve reusability through local elements, snippets, and UI libraries in the Object Repository.
+- **Use descriptive names** — Use meaningful, descriptive names for objects in the repository. Avoid generic names such as "Button1" and "Link2" — they become confusing over time.
+- **Organize objects** — Group objects within a repository by screen, type of object (buttons, input fields, etc.), or another logical categorization.
+- **Version control** — When publishing a new version of the same UI library, make sure to properly increment the version number in the Publish window.
 
 ## Best Practices for Mapping UI Elements
 
-- **Use the Object Repository** --” Instead of relying on static selectors, always use the Object Repository for managing UI elements in your test automation.
+- **Use the Object Repository** — Instead of relying on static selectors, always use the Object Repository for managing UI elements in your test automation.
 
-- **Avoid absolute selectors** --” Avoid absolute selectors (e.g., full CSS or idx-based selectors) as they break with UI changes. Use relative or anchor-based selectors for reliability.
+- **Avoid absolute selectors** — Avoid absolute selectors (e.g., full CSS or idx-based selectors) as they break with UI changes. Use relative or anchor-based selectors for reliability.
 
-- **Use anchor-based selectors** --” When dealing with dynamic UI elements, use anchor-based selectors to make your selectors more robust and maintainable.
+- **Use anchor-based selectors** — When dealing with dynamic UI elements, use anchor-based selectors to make your selectors more robust and maintainable.
 
-- **Enable Chromium interaction method** --” Enable Chromium or Simulate interaction method for faster execution when interacting with web and desktop apps.
+- **Enable Chromium interaction method** — Enable Chromium or Simulate interaction method for faster execution when interacting with web and desktop apps.
 
-- **Implement retry mechanisms** --” Use Retry Scope or On Element Appear to handle intermittent UI delays and make your tests more resilient.
+- **Implement retry mechanisms** — Use Retry Scope or On Element Appear to handle intermittent UI delays and make your tests more resilient.
 
 ## Manual creation of a repository
 
@@ -47,15 +47,15 @@ Let's create a simple UI Library by capturing elements from your application.
 
 #### Steps
 
-- **Start with a library project** --” You'll be working with a Test Automation library project that's designed to store reusable UI elements.
+- **Start with a library project** — You'll be working with a Test Automation library project that's designed to store reusable UI elements.
 
-- **Click Capture Elements** --” In the Object Repository panel, click the "Capture Elements" button to begin capturing UI elements from your application.
+- **Click Capture Elements** — In the Object Repository panel, click the "Capture Elements" button to begin capturing UI elements from your application.
 
-- **Click Start Recording** --” This activates the capture mode, allowing you to interact with your application and select elements to capture.
+- **Click Start Recording** — This activates the capture mode, allowing you to interact with your application and select elements to capture.
 
-- **Click elements to capture** --” As you navigate through your application screens, click on the UI elements (buttons, text fields, links, etc.) that you want to capture and store in the repository.
+- **Click elements to capture** — As you navigate through your application screens, click on the UI elements (buttons, text fields, links, etc.) that you want to capture and store in the repository.
 
-- **Click Save** --” Once you've captured all the elements you need, click Save to store them in your UI Library. These elements are now reusable across your test automation projects.
+- **Click Save** — Once you've captured all the elements you need, click Save to store them in your UI Library. These elements are now reusable across your test automation projects.
 
 ![Capture Elements Dialog](../assets/images/capture-elements.png)
 
@@ -68,13 +68,13 @@ Once your UI Library is ready with captured elements, publish it to make it avai
 
 #### Steps
 
-- **Click Publish** --” In the library project, click the "Publish" button to initiate the publishing process.
+- **Click Publish** — In the library project, click the "Publish" button to initiate the publishing process.
 
-- **Select Custom from dropdown** --” In the publish dialog, select "Custom" from the dropdown menu to specify a custom location for your library.
+- **Select Custom from dropdown** — In the publish dialog, select "Custom" from the dropdown menu to specify a custom location for your library.
 
-- **Enter path in Custom URL** --” Provide the path or URL where you want to publish the library. This path makes the library accessible to other projects.
+- **Enter path in Custom URL** — Provide the path or URL where you want to publish the library. This path makes the library accessible to other projects.
 
-- **Click Publish** --” Confirm the publication by clicking "Publish" again. Your UI Library is now published and ready to be used in your test automation projects.
+- **Click Publish** — Confirm the publication by clicking "Publish" again. Your UI Library is now published and ready to be used in your test automation projects.
 
 ![Publish Repository](../assets/images/PublishRepository.png)
 
