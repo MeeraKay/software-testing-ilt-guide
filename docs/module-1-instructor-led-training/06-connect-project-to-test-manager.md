@@ -21,7 +21,7 @@ To complete the integration with Studio, you need to configure the Test Manager 
 
 ![Connect to Test Manager](../assets/images/test-manager-connect.png)
 
-Now, you will find the test cases that were part of the exercise, as well as the manual test cases here in Studio --” in the **Test Explorer**.
+Now, you will find the test cases that were part of the exercise, as well as the manual test cases here in Studio in the **Test Explorer**.
 
 ![Test Explorer](../assets/images/testExplorer.png)
 
@@ -33,6 +33,8 @@ Now, you will find the test cases that were part of the exercise, as well as the
 4. Click the ellipsis (**...**) button and browse to the custom location where the library was saved. Select the library and click **Add**.
 
 The custom library now appears in the left panel alongside the other defined sources.
+
+![Custom Library Listing](../assets/images/custom%20library%20listing.png)
 
 ---
 
