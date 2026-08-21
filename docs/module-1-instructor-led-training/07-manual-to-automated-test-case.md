@@ -4,10 +4,10 @@
 
 Test Explorer is a panel that shows information relevant to test automation. Use Test Explorer and its sub-panels to group tests together, perform debugging, or analyze activity coverage.
 
-When running or debugging a test case, you can also see the results and the **Activity Coverage** (the percentage of activities that were executed) in the Test Explorer panel.
+![Test Explorer Listing](../assets/images/TExpl%20listing.png)
 
 !!! note "Conditions"
-    Test Explorer results information is session-based --” if you close Studio, the information shown in Test Explorer is cleared. Test cases are listed in Test Explorer based on execution order.
+    Test Explorer results information is session-based. If you close Studio, the information shown in Test Explorer is cleared. Test cases are listed in Test Explorer based on execution order.
 
 ### Working with Test Explorer
 
