@@ -17,7 +17,7 @@ To show only relevant information, use the Test Explorer toolbar to filter test 
 
 Descriptor Coverage is a panel showing information on object recognition UI elements covered during execution. Coverage results appear in the Test Explorer, in the Descriptor Coverage panel. Use this panel to view activity coverage when working with [Selectors](https://docs.uipath.com){target=_blank} or [Object Repository](https://docs.uipath.com){target=_blank}.
 
-![Descriptor Coverage Panel](../assets/images/Discriptor%20Cov.png)
+![Descriptor Coverage Panel](../assets/images/Discriptor%20Cov.gif)
 
 ### Analyzing descriptor coverage results
 
