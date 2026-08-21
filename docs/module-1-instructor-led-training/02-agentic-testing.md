@@ -1,4 +1,4 @@
-# Agentic Testing: From Requirement to Test Cases
+﻿# Agentic Testing: From Requirement to Test Cases
 
 ## What is agentic testing?
 
