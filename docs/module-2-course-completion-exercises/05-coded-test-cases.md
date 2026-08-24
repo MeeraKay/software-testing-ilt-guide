@@ -1,4 +1,4 @@
-# 5. Coded Test Cases
+﻿# Coded Test Cases
 
 ## What are they?
 
@@ -10,13 +10,13 @@ Any .NET object can also be used, and additional .NET references can be pulled f
 
 ## Types of coded automations
 
-??? note "Coded Workflows"
+??? note “Coded Workflows”
     The equivalent of Sequences that are also entry points (e.g. `Main.xaml` in a new empty process project) — they can be set as a Main entry point too, and invoked like any XAML file using the Invoke Workflow File activity.
 
 ??? note "Coded Test Cases"
     The equivalent of Test Cases.
 
-??? note "Code Source Files"
+??? note “Code Source Files”
     No exact low-code equivalent — they're files containing source code, slightly similar to non-entry-point XAML files such as utility files or XAMLs implementing part of the business logic.
 
 The language used inside these files is **C#**, regardless of whether VB or C# is the expression language — chosen for its popularity among .NET developers, with which UiPath integrates well. Other languages may be supported in the future. Coded automations also allow custom classes and data types within workflows.
@@ -63,8 +63,11 @@ Almost everything possible in low-code automations can be done in coded automati
 - Remove namespaces you imported at design time but no longer need.
 - If you need data from multiple applications, separate the phases of the coded automation so you don't mix data from different sources.
 
-📖 See the [UiPath Studio User Guide](https://docs.uipath.com){target=_blank} to learn more about using activity packages in coded automations.
+📄 See the [UiPath Studio User Guide](https://docs.uipath.com){target=_blank} to learn more about using activity packages in coded automations.
 
 ---
 
-[← API Testing](04-api-testing.md) · [Next: Additional Exercises →](06-additional-exercises.md)
+[Next → Additional Exercises](06-additional-exercises.md){: .md-button .md-button--primary}
+
+---
+

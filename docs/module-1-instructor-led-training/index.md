@@ -10,22 +10,29 @@ This module is the core of the day: you'll get oriented in Test Manager, see how
 - Connect Studio to Test Manager and turn a manual test case into an automated one
 - Apply data-driven testing so one test case can cover many scenarios
 - Configure access, licensing, and execution resources in Orchestrator
-- Publish test cases to Orchestrator and execute them — manually and automatically — from Test Manager
+- Publish test cases to Orchestrator and execute them --” manually and automatically --” from Test Manager
 - Build your own AI agent
 
 ## Steps
 
-1. [Getting Started with Test Manager](01-getting-started-test-manager.md)
-2. [Agentic Testing: From Requirement to Test Cases](02-agentic-testing.md)
-3. [Getting Started in Studio](03-getting-started-studio.md)
-4. [Object Repository](04-object-repository.md)
-5. [Test Automation Project](05-test-automation-project.md)
-6. [Connect Your Project to Test Manager](06-connect-project-to-test-manager.md)
-7. [From Manual Test Case to Test Automation](07-manual-to-automated-test-case.md)
-8. [Data-Driven Testing and Test Data Management](08-data-driven-testing.md)
-9. [Orchestrator](09-orchestrator.md)
-10. [Publishing Test Cases](10-publishing-test-cases.md)
-11. [Execute Test Cases in Test Manager](11-execute-test-cases.md)
-12. [Building Your Own AI Agents](12-building-your-own-ai-agents.md)
+- [UiPath Test Cloud](00-uipath-test-cloud.md)
+- [Getting Started with Test Manager](01-getting-started-test-manager.md)
+- [Agentic Testing: From Requirement to Test Cases](02-agentic-testing.md)
+- [Getting Started in Studio](03-getting-started-studio.md)
+- [Object Repository](04-object-repository.md)
+- [Test Automation Project](05-test-automation-project.md)
+- [Connect Your Project to Test Manager](06-connect-project-to-test-manager.md)
+- [From Manual Test Case to Test Automation](07-manual-to-automated-test-case.md)
+- [Data-Driven Testing and Test Data Management](08-data-driven-testing.md)
+- [Orchestrator](09-orchestrator.md)
+- [Publishing Test Cases](10-publishing-test-cases.md)
+- [Execute Test Cases in Test Manager](11-execute-test-cases.md)
+- [Building Your Own AI Agents](12-building-your-own-ai-agents.md)
+- [You Did It!](you-did-it.md)
 
-[Start Step 1 →](01-getting-started-test-manager.md){ .md-button .md-button--primary }
+---
+
+[Next → UiPath Test Cloud](00-uipath-test-cloud.md){: .md-button .md-button--primary}
+
+---
+

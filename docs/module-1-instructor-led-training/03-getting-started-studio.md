@@ -1,4 +1,4 @@
-# 3. Getting Started in Studio
+# Getting Started in Studio
 
 ## UiPath Studio
 
@@ -12,9 +12,11 @@ For application testing we use a project of type **Test Automation**.
 
 We use the following activity packages:
 
-- `UiPath.System.Activities`
-- `UiPath.UIAutomation.Activities`
-- `UiPath.Testing.Activities`
+```
+UiPath.System.Activities
+UiPath.UIAutomation.Activities
+UiPath.Testing.Activities
+```
 
 ## Testing activities
 
@@ -34,12 +36,12 @@ The most important testing activities are the verify (assert) activities:
 
 ### Properties for verification activities
 
-- **ContinueOnFailure** — Specifies if the automation should continue even when the activity throws an error. Default is `True`. If set to `False` and an error is thrown, execution stops. If `True`, execution continues regardless of any error.
-- **TakeScreenshotIfFailed** — If `True`, takes a screenshot of the target process if the verification fails.
-- **TakeScreenshotIfSucceded** — If `True`, takes a screenshot of the target process if the verification succeeds.
-- **AlternativeVerificationTitle** — Specifies an alternative display name, overriding the default `DisplayName` shown in Orchestrator.
-- **OutputMessageFormat** — Specifies the format of the output message.
-- **Result** — Reflects the state of the verification activity. Use this to send notifications or create reports for failed verifications.
+- **ContinueOnFailure** --” Specifies if the automation should continue even when the activity throws an error. Default is `True`. If set to `False` and an error is thrown, execution stops. If `True`, execution continues regardless of any error.
+- **TakeScreenshotIfFailed** --” If `True`, takes a screenshot of the target process if the verification fails.
+- **TakeScreenshotIfSucceded** --” If `True`, takes a screenshot of the target process if the verification succeeds.
+- **AlternativeVerificationTitle** --” Specifies an alternative display name, overriding the default `DisplayName` shown in Orchestrator.
+- **OutputMessageFormat** --” Specifies the format of the output message.
+- **Result** --” Reflects the state of the verification activity. Use this to send notifications or create reports for failed verifications.
 
 ## Test case
 
@@ -47,15 +49,15 @@ A **test case** is a specification of the input, execution conditions, testing p
 
 Widely adopted as a best practice for test case design:
 
-=== "GIVEN"
-    In the Given part, setup to prepare for the desired testing action is performed.
+- **GIVEN** --” Setup and prepare the conditions needed for the test. This includes initializing data, navigating to the correct page, and ensuring the application is in the right state.
 
-=== "WHEN"
-    In the When part, the workflow to be tested should be invoked, and the data to be compared with the "expected data" should be available.
+- **WHEN** --” Execute the workflow or action being tested. Perform the steps that trigger the behavior you want to verify.
 
-=== "THEN"
-    In the Then part, the expected result should be compared with the actual result, and the "context clean-up" should be done.
+- **THEN** --” Verify the expected results. Compare actual outcomes with expected outcomes, then clean up any test data or state changes made during the test.
 
 ---
 
-[← Agentic Testing](02-agentic-testing.md) · [Next: Object Repository →](04-object-repository.md)
+[Next → Object Repository](04-object-repository.md){: .md-button .md-button--primary}
+
+---
+

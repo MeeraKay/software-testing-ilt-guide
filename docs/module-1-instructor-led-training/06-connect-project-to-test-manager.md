@@ -1,4 +1,4 @@
-# 6. Connect Your Project to Test Manager and Import the Object Repository
+# Connect Your Project to Test Manager and Import the Object Repository
 
 ## Launch the downloaded ILT Test Automation project
 
@@ -19,9 +19,11 @@ To complete the integration with Studio, you need to configure the Test Manager 
 6. Select your default project from the dropdown list.
 7. Click **OK** to save changes.
 
-Now you'll find the test cases that were part of the exercise, as well as the manual test cases, here in Studio — in the **Test Explorer**.
-
 ![Connect to Test Manager](../assets/images/test-manager-connect.png)
+
+Now, you will find the test cases that were part of the exercise, as well as the manual test cases here in Studio in the **Test Explorer**.
+
+![Test Explorer](../assets/images/testExplorer.png)
 
 ## Import the Object Repository library
 
@@ -32,6 +34,11 @@ Now you'll find the test cases that were part of the exercise, as well as the ma
 
 The custom library now appears in the left panel alongside the other defined sources.
 
+![Custom Library Listing](../assets/images/custom%20library%20listing.png)
+
 ---
 
-[← Test Automation Project](05-test-automation-project.md) · [Next: From Manual Test Case to Test Automation →](07-manual-to-automated-test-case.md)
+[Next → Manual to Automated Test Case](07-manual-to-automated-test-case.md){: .md-button .md-button--primary}
+
+---
+

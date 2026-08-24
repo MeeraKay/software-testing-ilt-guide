@@ -72,4 +72,6 @@ See "Implementing CI/CD pipelines for UiPath test automation" in the [UiPath Tes
 
 ---
 
-[← SAP Heatmap and Change Impact Analysis](07-sap-heatmap.md) · [Back to Home](../index.md)
+[Training Complete!](../../index.md){: .md-button .md-button--primary}
+
+---

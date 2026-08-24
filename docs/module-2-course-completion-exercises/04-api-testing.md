@@ -1,4 +1,4 @@
-# 4. API Testing
+# API Testing
 
 ## What is an API?
 
@@ -50,4 +50,7 @@ Postman is a collaboration platform for API development — its features simplif
 
 ---
 
-[← Create a Custom Connection](03-custom-connection-integration-service.md) · [Next: Coded Test Cases →](05-coded-test-cases.md)
+[Next → Coded Test Cases](05-coded-test-cases.md){: .md-button .md-button--primary}
+
+---
+

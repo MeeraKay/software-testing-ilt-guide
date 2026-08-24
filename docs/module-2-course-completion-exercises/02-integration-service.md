@@ -1,4 +1,4 @@
-# 2. Integration Service
+# Integration Service
 
 **UiPath Integration Service** is the platform component that lets UiPath robots connect to third-party applications through APIs — automating tasks across systems without diving into complex code, which improves efficiency and reduces manual errors.
 
@@ -27,4 +27,7 @@ By combining connectors, the Connector Builder, connections, and triggers, teste
 
 ---
 
-[← Autopilot for Developers](01-autopilot-for-developers.md) · [Next: Create a Custom Connection →](03-custom-connection-integration-service.md)
+[Next → Custom Connection](03-custom-connection-integration-service.md){: .md-button .md-button--primary}
+
+---
+
