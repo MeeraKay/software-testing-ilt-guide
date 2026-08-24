@@ -2,7 +2,7 @@
 
 A step-by-step learner's guide for the UiPath Software & Agentic Testing Instructor-Led Training. Built with [MkDocs](https://www.mkdocs.org/) and the [Material theme](https://squidfunk.github.io/mkdocs-material/).
 
-**Live site:** https://MeeraKay.github.io/software-testing-ilt-guide/
+**Live site:** https://meerakay.github.io/software-testing-ilt-guide/
 
 ## What's inside
 
