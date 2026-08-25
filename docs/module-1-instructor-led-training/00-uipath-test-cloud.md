@@ -41,6 +41,8 @@ Test Cloud brings together several powerful tools and services:
 
 ✅ **Agentic Testing** — Leverage AI agents (Autopilot for Testers, custom agents) to accelerate test design and execution
 
+![Test Cloud Ecosystem](../assets/images/Test Cloud ecosystem.png)
+
 ## User & Robot Licenses
 
 Test Cloud uses role-based licensing to match the needs of different team members:

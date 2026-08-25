@@ -2,7 +2,7 @@
 
 ## Introduction to data-driven testing
 
-**Learning objectives** --” by the end of this chapter, you will be able to:
+**Learning objectives**  by the end of this chapter, you will be able to:
 
 1. Understand data-driven testing.
 2. Manage test data.
@@ -19,7 +19,7 @@
 6. Apply best practices for test data management.
 
 !!! warning "Content gap in the source material"
-    The original course cuts off here --” the "apply best practices for test data management" list has no bullet points underneath it in the source. This section needs the missing best-practices content filled in before publishing. Flagging rather than guessing so nothing inaccurate gets published in your name.
+    The original course cuts off here  the "apply best practices for test data management" list has no bullet points underneath it in the source. This section needs the missing best-practices content filled in before publishing. Flagging rather than guessing so nothing inaccurate gets published in your name.
 
 ---
 
