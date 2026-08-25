@@ -72,6 +72,6 @@ See "Implementing CI/CD pipelines for UiPath test automation" in the [UiPath Tes
 
 ---
 
-[Training Complete!](../../index.md){: .md-button .md-button--primary}
+[Training Complete!](../index.md){: .md-button .md-button--primary}
 
 ---

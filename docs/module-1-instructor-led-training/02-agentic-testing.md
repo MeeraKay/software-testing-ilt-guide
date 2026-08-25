@@ -4,11 +4,13 @@
 
 **Agentic Testing** means augmenting testers with AI agents to extend, accelerate, and simplify their work ultimately helping them be more productive and find greater joy in testing.
 
-## 1. Out-of-the-box agents Autopilot for Testers
+## 1. Out-of-the-Box Agents: Autopilot for Testers
 
 Autopilot for Testers is a collection of AI-powered digital systems (agents) designed to boost the productivity of testers throughout the entire testing lifecycle.
 
 These capabilities are integrated into UiPath Studio Desktop and UiPath Test Manager.
+
+![Agent Type OOTB](../assets/images/Agent%20type%20OOTB.png)
 
 ### Agents you'll explore in hands-on
 
@@ -141,14 +143,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 Beyond the out-of-the-box capabilities, you have the full power to build your own AI agents tailored specifically to your unique testing needs.
 
+![Agent Type BYOM](../assets/images/Agent%20type%20BYOM.png)
+
 Custom agents give you the flexibility to:
 
-- Solve problems specific to your testing processes
-- Integrate with your existing tools and workflows
-- Automate repetitive testing tasks your way
-- Extend Test Cloud with agent-driven innovation
+✅ Solve problems specific to your testing processes
 
-As the final topic of this instructor-led training, you'll **build your own custom AI agent** from scratch. You'll learn the anatomy of an agent, how to design it for your needs, and how to deploy it–”creating something powerful and uniquely yours.
+✅ Integrate with your existing tools and workflows
+
+✅ Automate repetitive testing tasks your way
+
+✅ Extend Test Cloud with agent-driven innovation
+
+As the final topic of this instructor-led training, you'll **build your own custom AI agent** from scratch. You'll learn the anatomy of an agent, how to design it for your needs, and how to deploy it — creating something powerful and uniquely yours.
 
 ---
 

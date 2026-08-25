@@ -4,7 +4,7 @@
 
 **Test Manager** is a web application, part of UiPath Test Cloud, where you can **plan**, **run**, **manage**, and **analyze** testing of applications.
 
-Test Cloud offers a strong automation and testing ecosystem for managing all your testing operations: from **automating tests**, to **distributing** them, **executing**, and **managing**  you can perform all of these things in the context of a customizable cloud organization.
+Test Cloud offers a strong automation and testing ecosystem for managing all your testing operations: from **automating tests**, to **distributing** them, **executing**, and **managing** — you can perform all of these things in the context of a customizable cloud organization.
 
 ## Why is Test Manager useful?
 
@@ -22,20 +22,25 @@ One of the biggest challenges is making testing an integral part of the developm
 
     ### Planning & Design
 
-    1. Requirements are created either in Test Manager (TM) or in an external tool and imported into TM.
-    2. The tester defines, generates (using Autopilot), or imports test cases in TM, and optionally documents them with Task Capture.
+    ✅ Requirements are created either in Test Manager (TM) or in an external tool and imported into TM.
+
+    ✅ The tester defines, generates (using Autopilot), or imports test cases in TM, and optionally documents them with Task Capture.
 
     ### Automation
 
-    3. The test developer reviews the documentation and automates the defined test cases (from step 2) in Studio.
-    4. The test developer links the test case (automation) from Studio to the test case (design) in TM.
-    5. The test developer publishes automated test cases from Studio to Orchestrator.
+    ✅ The test developer reviews the documentation and automates the defined test cases (from the previous step) in Studio.
+
+    ✅ The test developer links the test case (automation) from Studio to the test case (design) in TM.
+
+    ✅ The test developer publishes automated test cases from Studio to Orchestrator.
 
     ### Execution & Reporting
 
-    6. The test developer creates test sets in Test Manager.
-    7. Test sets are executed  automated and/or manual  from Test Manager.
-    8. Based on the test execution results, reports are generated. If needed, defects are generated (optional, and only if you link to an external ALM tool).
+    ✅ The test developer creates test sets in Test Manager.
+
+    ✅ Test sets are executed — automated and/or manual — from Test Manager.
+
+    ✅ Based on the test execution results, reports are generated. If needed, defects are generated (optional, and only if you link to an external ALM tool).
 
 ## Import Project
 

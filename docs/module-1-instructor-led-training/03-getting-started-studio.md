@@ -36,12 +36,17 @@ The most important testing activities are the verify (assert) activities:
 
 ### Properties for verification activities
 
-- **ContinueOnFailure**  Specifies if the automation should continue even when the activity throws an error. Default is `True`. If set to `False` and an error is thrown, execution stops. If `True`, execution continues regardless of any error.
-- **TakeScreenshotIfFailed**  If `True`, takes a screenshot of the target process if the verification fails.
-- **TakeScreenshotIfSucceded**  If `True`, takes a screenshot of the target process if the verification succeeds.
-- **AlternativeVerificationTitle**  Specifies an alternative display name, overriding the default `DisplayName` shown in Orchestrator.
-- **OutputMessageFormat**  Specifies the format of the output message.
-- **Result**  Reflects the state of the verification activity. Use this to send notifications or create reports for failed verifications.
+✅ **ContinueOnFailure** — Specifies if the automation should continue even when the activity throws an error. Default is `True`. If set to `False` and an error is thrown, execution stops. If `True`, execution continues regardless of any error.
+
+✅ **TakeScreenshotIfFailed** — If `True`, takes a screenshot of the target process if the verification fails.
+
+✅ **TakeScreenshotIfSucceded** — If `True`, takes a screenshot of the target process if the verification succeeds.
+
+✅ **AlternativeVerificationTitle** — Specifies an alternative display name, overriding the default `DisplayName` shown in Orchestrator.
+
+✅ **OutputMessageFormat** — Specifies the format of the output message.
+
+✅ **Result** — Reflects the state of the verification activity. Use this to send notifications or create reports for failed verifications.
 
 ## Test case
 
@@ -49,11 +54,11 @@ A **test case** is a specification of the input, execution conditions, testing p
 
 Widely adopted as a best practice for test case design:
 
-- **GIVEN**  Setup and prepare the conditions needed for the test. This includes initializing data, navigating to the correct page, and ensuring the application is in the right state.
+✅ **GIVEN** — Setup and prepare the conditions needed for the test. This includes initializing data, navigating to the correct page, and ensuring the application is in the right state.
 
-- **WHEN**  Execute the workflow or action being tested. Perform the steps that trigger the behavior you want to verify.
+✅ **WHEN** — Execute the workflow or action being tested. Perform the steps that trigger the behavior you want to verify.
 
-- **THEN**  Verify the expected results. Compare actual outcomes with expected outcomes, then clean up any test data or state changes made during the test.
+✅ **THEN** — Verify the expected results. Compare actual outcomes with expected outcomes, then clean up any test data or state changes made during the test.
 
 ---
 
