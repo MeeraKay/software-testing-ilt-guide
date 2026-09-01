@@ -247,6 +247,64 @@ th {
   font-size: 1.05em;
 }
 
+/* Image carousel (CSS-only, radio-driven) */
+.carousel {
+  position: relative;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+.carousel-slides {
+  position: relative;
+}
+
+.carousel input[type="radio"] {
+  display: none;
+}
+
+.carousel-slide {
+  display: none;
+}
+
+.carousel-slide img {
+  margin: 0 auto !important;
+}
+
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.carousel-nav label {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--light-bg);
+  border: 1px solid var(--primary-blue);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+[data-md-color-scheme="dark"] .carousel-nav label {
+  background-color: rgba(33, 150, 243, 0.15);
+}
+
+#carousel-slide-1:checked ~ .carousel-slides .slide-1,
+#carousel-slide-2:checked ~ .carousel-slides .slide-2,
+#carousel-slide-3:checked ~ .carousel-slides .slide-3,
+#carousel-slide-4:checked ~ .carousel-slides .slide-4 {
+  display: block;
+}
+
+#carousel-slide-1:checked ~ .carousel-nav .label-1,
+#carousel-slide-2:checked ~ .carousel-nav .label-2,
+#carousel-slide-3:checked ~ .carousel-nav .label-3,
+#carousel-slide-4:checked ~ .carousel-nav .label-4 {
+  background-color: var(--primary-blue);
+}
+
 .flip-card-back {
   background-color: var(--light-bg);
   color: #222;
@@ -257,6 +315,39 @@ th {
 [data-md-color-scheme="dark"] .flip-card-back {
   background-color: rgba(33, 150, 243, 0.1);
   color: #eee;
+}
+
+/* Comparison flip cards with more content */
+.comparison-flip-card {
+  height: auto;
+  min-height: auto;
+}
+
+.comparison-flip-card .flip-card-inner {
+  height: auto;
+  min-height: 420px;
+}
+
+/* Make all comparison flip cards equal height */
+.flip-card-grid:has(.comparison-flip-card) {
+  display: grid;
+  grid-auto-rows: 1fr;
+}
+
+.comparison-flip-card .flip-card-back {
+  height: 100%;
+  width: 100%;
+  white-space: normal;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Add spacing after comparison card grid */
+.flip-card-grid:has(.comparison-flip-card) {
+  margin-bottom: 60px;
 }
 
 /* Search results proportionate sizing */

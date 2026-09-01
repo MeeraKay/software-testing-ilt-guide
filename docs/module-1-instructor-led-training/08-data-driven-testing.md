@@ -11,13 +11,9 @@
     - Generate with Autopilot (AI-powered)
     - Data Service (Automation Cloud)
     - Existing Data (project-based)
-    - Test Data Queue (JSON schemas)
     - Auto Generate (path coverage)
-4. Generate synthetic test data:
-    - Using Activities
-    - Using Autopilot to generate contextually relevant test data
-5. Create data-driven test cases using multiple data sources.
-6. Apply best practices for test data management.
+4. Create data-driven test cases using multiple data sources.
+5. Apply best practices for test data management.
 
 Data-driven testing lets you execute a single test case multiple times with different input datasets, instead of creating a separate test case for every scenario.
 
@@ -118,6 +114,20 @@ Three primary strategies exist for creating test data:
   </div>
 </div>
 
+!!! note "Optional topics"
+    Generating synthetic test data (using Activities and Autopilot) and Auto Generate for path coverage are covered as optional topics in [Module 3 — Additional Topics](../module-3-additional-topics/05-generating-synthetic-test-data.md).
+
+
+## Data Driven Test Case
+
+A Data Driven Test Case is a specification of the multiple inputs, execution conditions, testing procedure, and expected results.
+
+### Creating a Data Driven Test Case
+
+To create a Data Driven Test Case, navigate to an already created Test Case and right click. You should now be able to select **Add Test Data**.
+
+![Add Test Data Menu Popup](../assets/images/Add%20Test%20Data%20Menu%20Popup.jpg)
+
 ## The six data source options
 
 ✅ **File** (Excel/JSON) for prepared data
@@ -128,77 +138,124 @@ Three primary strategies exist for creating test data:
 
 ✅ **Existing Data** from project folders
 
-✅ **Test Data Queue** using JSON schemas
-
 ✅ **Auto Generate** for path coverage optimization
 
-## Generating synthetic test data
+When you create a data-driven test case, the Import Data Variation Source wizard guides you through selecting your preferred data source. The following image showcases the interface where you'll choose and configure your data source option:
 
-### Using activities
+![Import data variations Window](../assets/images/Import%20data%20variations%20Window.jpg)
 
-UiPath provides activities that generate synthetic values directly in a workflow, including Address, Given/Last Names, Random Dates, Numbers, Strings, and custom Values.
+### Hands-on Practice
 
-### Using Autopilot
+We'll explore four approaches to data-driven test case creation through hands-on exercises. Each tab covers one data source type with step-by-step instructions to complete your exercise.
 
-Autopilot supports natural language prompts to generate contextually relevant test data for supported argument types, including `String`, `Int32`, `Int64`, `Double`, `Decimal`, and `Boolean`.
+=== "📊 File (Excel/JSON)"
 
-!!! example "Exercise 1: Synthetic test data creation using Test Data Activities"
-    1. Create approximately 10 records of synthetic test data matching the UiBank Loans application structure.
-    2. Store the generated data in an Excel file within the same folder.
-    3. **Optional extension:** generate 100 records following the same requirements structure.
+    File-based data sources let you drive a test case from an Excel spreadsheet or JSON file that you prepare and maintain outside of UiPath.
 
-    !!! note ""
-        The Address activity returns a Dictionary with key-value pairs (`Country`, `PostalCode`, `StreetNumber`, `StreetName`, `City`, `State`) accessible via bracket notation.
+    !!! example "Exercise 1: Create a data-driven test case using Excel"
+        :material-file-download: [**UiBankTestData.xlsx**](../assets/Files/UiBankTestData.xlsx) (9.2 KB) — sample data for this exercise
 
-!!! example "Exercise 2: Generate test data by giving instructions in natural language"
-    1. Create a new test case containing three arguments: `CountryName`, `CityName`, and `IBAN`.
-    2. Access Autopilot and enter this prompt: *"Generate a list of 20 European countries with names typical to the country, cities from the country, and IBANs in the country's format."*
-    3. Review and import the generated test data.
+        1. Navigate to an existing test case.
+        2. Right-click and select **Add Test Data**.
+        3. Choose the Excel or JSON file containing your input data.
+        4. Use the **UiBankTestData.xlsx** file above, matching the UiBank Loans application structure.
 
-## Auto Generate for path coverage
+=== "🤖 Generate with Autopilot"
 
-Auto Generate uses symbolic execution to intelligently create data variations that cover execution paths. It supports numeric, Boolean, and String types, as well as arrays.
+    Generate with Autopilot uses AI to create contextually relevant test data directly within Studio, based on a natural language prompt you provide.
 
-!!! example "Exercise 6: Generate a test case using Auto Generate"
-    1. Locate **Test Case - Generate Loan Quotes.xaml** in the **3. Test Data Management > AI Generated** folder and review its arguments.
-    2. Right-click the workflow and select **Create Test Case**.
-    3. Enter a unique test case name and proceed to the Test Data configuration.
-    4. In the Import Data Variation Source wizard, select **Auto Generate** from the Source dropdown.
-    5. Wait for and review the generated test data variations.
-    6. Execute the completed test case via Test Explorer and review all variations.
+    !!! example "Exercise 2: Generate test data by giving instructions in natural language"
+        1. Create a new test case containing three arguments: `CountryName`, `CityName`, and `IBAN`.
+        2. Access Autopilot and enter this prompt: *"Generate a list of 20 European countries with names typical to the country, cities from the country, and IBANs in the country's format."*
+        3. Review and import the generated test data.
 
-## Data Service
+=== "☁️ Data Service"
 
-Data Service (transitioning to the Data Fabric naming) enables centralized entity management, collaboration, and data variation updates without republishing test cases.
+    Data Service (transitioning to the Data Fabric naming) enables centralized entity management, collaboration, and data variation updates without republishing test cases.
 
-!!! example "Exercise 5: Create a data-driven test case using Data Service"
-    **Step 1: Create Data Service entities**
+    !!! example "Exercise 3: Create a data-driven test case using Data Service"
+        
+        1. Create a new data-driven test case for the UiBank create loan flow.
+        2. Link it to the `UiBankLoanData` entity.
+        3. Map workflow arguments to the Data Service entity.
+        4. Add a Verify activity to compare actual versus expected rate.
+        5. Execute the test case and observe the data variations.
 
-    1. Modify the `UiBankLoanDataSchema.json` file by adding a name suffix.
-    2. Import the schema to Data Service.
-    3. Add two records with different values.
-    4. Import data from `UiBankLoanData.csv`.
+=== "📁 Existing Data"
 
-    **Step 2: Create a test case using Data Service**
+    **Existing data** is a built-in data source option that allows you to link a test case to an existing JSON or Excel dataset that has already been stored directly inside your project's Test Data folder. This approach separates test logic from execution data, allowing you to run the same automated workflow against multiple variations without manually changing variables.
 
-    1. Create a new data-driven test case for the UiBank create loan flow.
-    2. Link it to the `UiBankLoanData` entity.
-    3. Map workflow arguments to the Data Service entity.
-    4. Add a Verify activity to compare actual versus expected rate.
-    5. Execute the test case and observe the data variations.
+    !!! example "Exercise 4: Create a data-driven test case using Existing Data"
+        1. **Locate the data file:** You will find the JSON file under the Test Data folder.
+        2. **Create a data-driven test case:** in Studio's Project panel, right-click on your workflow or folder, select **Add**, and choose **Data-Driven Test Case**. Provide a descriptive name for your test case.
+        3. **Select the data source:** in the configuration window, select **Existing data** from the list of data source types.
 
-## Creating data-driven test cases
+## Comparing Data Storage Approaches
 
-!!! example "Exercise 3: Create a data-driven test case using Excel"
-    1. Navigate to an existing test case.
-    2. Right-click and select **Add Test Data**.
-    3. Choose the Excel or JSON file containing your input data.
-    4. Use the Excel file created in the synthetic data exercise above.
+Each data source method has distinct advantages and limitations. Choose the approach that best aligns with your project requirements:
 
-!!! example "Exercise 4: Create a data-driven test case using Autopilot"
-    1. Generate 25 test data points for **Generate Loan Quotes.xaml**.
-    2. Provide specific instructions addressing edge cases in your prompt.
-    3. Import the refined results into your test case.
+<div class="flip-card-grid">
+  <div class="flip-card comparison-flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">📊 Files (Excel/JSON)</div>
+      <div class="flip-card-back">
+        <div class="flip-card-back-title">Pros & Cons</div>
+        <strong>✅ Pros:</strong>
+        <ul>
+          <li><strong>Ease of Use:</strong> Excel is widely used and requires little training as it's a familiar tool for most users.</li>
+          <li><strong>Readily Available Tool:</strong> No additional systems or licenses needed.</li>
+        </ul>
+        <strong>⚠️ Cons:</strong>
+        <ul>
+          <li><strong>Static Nature of Data:</strong> Excel files provide static test data. Any modifications require re-importing the updated file and re-publishing test cases to Orchestrator, which slows down the process and makes it unsustainable for dynamic testing.</li>
+          <li><strong>Limited Access Control:</strong> Excel doesn't inherently offer robust access control or security features.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card comparison-flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">📁 Existing Data </div>
+      <div class="flip-card-back">
+        <div class="flip-card-back-title">Pros & Cons</div>
+        <strong>✅ Pros:</strong>
+        <ul>
+          <li><strong>Ease of Setup and Maintenance:</strong> Using existing data simplifies the setup process as you don't need to generate new data for each test case. You can focus on implementing test cases instead of spending time creating datasets.</li>
+        </ul>
+        <strong>⚠️ Cons:</strong>
+        <ul>
+          <li><strong>Data Obsolescence and Maintenance Overhead:</strong> Existing data tends to become outdated quickly. Testers may need to frequently update the test data by manually making changes to files, which can introduce human error and slow down testing cycles.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card comparison-flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">☁️ Data Service</div>
+      <div class="flip-card-back">
+        <div class="flip-card-back-title">Pros & Cons</div>
+        <strong>✅ Pros:</strong>
+        <ul>
+          <li>No-code, seamless, fully integrated</li>
+          <li>Secure centralized storage</li>
+          <li>Direct Studio integration—no external tools needed</li>
+        </ul>
+        <strong>⚠️ Cons:</strong>
+        <ul>
+          <li>Requires initial configuration</li>
+          <li>10MB file size limit</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+## Summary
+
+By completing these exercises, you've learned how to create data-driven test cases using four different data source approaches. This flexibility allows you to choose the method that best fits your project's needs—whether it's Excel files for simplicity, Autopilot for AI-generated data, Data Service for centralized management, or Existing Data for project-based datasets. 
 
 ---
 

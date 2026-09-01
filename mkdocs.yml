@@ -34,6 +34,8 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tasklist
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -74,7 +76,8 @@ nav:
     - Testing Framework: module-3-additional-topics/02-testing-framework.md
     - Terminal Testing: module-3-additional-topics/03-terminal-testing.md
     - Best Practices: module-3-additional-topics/04-best-practices.md
-    - Database Testing: module-3-additional-topics/05-database-testing.md
-    - Other Agentic Features: module-3-additional-topics/06-other-agentic-features.md
-    - SAP Heatmap: module-3-additional-topics/07-sap-heatmap.md
-    - CI/CD: module-3-additional-topics/08-cicd.md
+    - Generating Synthetic Test Data: module-3-additional-topics/05-generating-synthetic-test-data.md
+    - Database Testing: module-3-additional-topics/06-database-testing.md
+    - Other Agentic Features: module-3-additional-topics/07-other-agentic-features.md
+    - SAP Heatmap: module-3-additional-topics/08-sap-heatmap.md
+    - CI/CD: module-3-additional-topics/09-cicd.md

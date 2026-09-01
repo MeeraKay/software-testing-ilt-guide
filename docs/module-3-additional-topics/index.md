@@ -8,10 +8,11 @@ Self-paced reference material to deepen your understanding and extend your skill
 - [Testing Framework](02-testing-framework.md)
 - [Terminal Testing](03-terminal-testing.md)
 - [Best Practices](04-best-practices.md)
-- [Database Testing](05-database-testing.md)
-- [Other Agentic Features in Test Manager](06-other-agentic-features.md)
-- [SAP Heatmap and Change Impact Analysis](07-sap-heatmap.md)
-- [CI/CD](08-cicd.md)
+- [Generating Synthetic Test Data](05-generating-synthetic-test-data.md)
+- [Database Testing](06-database-testing.md)
+- [Other Agentic Features in Test Manager](07-other-agentic-features.md)
+- [SAP Heatmap and Change Impact Analysis](08-sap-heatmap.md)
+- [CI/CD](09-cicd.md)
 
 ---
 
