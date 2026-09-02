@@ -41,6 +41,6 @@ Rules in the Application Testing category carry the `TA` code prefix and apply t
 
 ---
 
-[Next → Database Testing](05-database-testing.md){: .md-button .md-button--primary}
+[Next → Generating Synthetic Test Data](05-generating-synthetic-test-data.md){: .md-button .md-button--primary}
 
 ---

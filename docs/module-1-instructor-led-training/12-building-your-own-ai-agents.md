@@ -50,14 +50,6 @@ An **evaluation** pairs an input with an assertion (evaluator) made on the outpu
 - **Evaluation sets** are logical groupings of evaluations and evaluators.
 - **Evaluation results** are traces for completed evaluation runs, measuring the agent's accuracy, efficiency, and decision-making.
 
-### Traces
-
-**Traces** record how an agent and its evaluations ran, and help you troubleshoot and improve performance. There are two types:
-
-- Traces for agent runs.
-- Traces for evaluation runs.
-
-You can add past agent runs to evaluation sets if you decide past executions are a good basis for building evaluations.
 
 ## Summary
 
@@ -66,7 +58,6 @@ Agents handle tasks that robots may not be able to, while robots provide control
 !!! example "Exercise"
     Build an agent that generates data for the "Apply for a Loan" workflow, calls it as a tool, and reports the results.
 
-![SAP Agent Example](../assets/images/SAP conn.png)
 
 ---
 

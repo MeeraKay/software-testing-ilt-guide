@@ -11,17 +11,6 @@ To reinforce what you learned in the instructor-led session and qualify for your
 - Complete the additional graded exercises
 - Submit your work to receive credit
 
-## Steps
-
-- [Autopilot for Developers](01-autopilot-for-developers.md)
-- [Integration Service](02-integration-service.md)
-- [Create a Custom Connection](03-custom-connection-integration-service.md)
-- [API Testing](04-api-testing.md)
-- [Coded Test Cases](05-coded-test-cases.md)
-- [Additional Exercises](06-additional-exercises.md)
-
-Then head to [Receive Credit](you-did-it.md) to submit your work.
-
 ---
 
 [Next → Autopilot for Developers](01-autopilot-for-developers.md){: .md-button .md-button--primary}

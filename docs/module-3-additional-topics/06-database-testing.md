@@ -38,6 +38,6 @@ With UiPath Test Cloud, you can perform **Data Validation Testing**, a part of d
 
 ---
 
-[Next → Other Agentic Features](06-other-agentic-features.md){: .md-button .md-button--primary}
+[Next → Other Agentic Features](07-other-agentic-features.md){: .md-button .md-button--primary}
 
 ---

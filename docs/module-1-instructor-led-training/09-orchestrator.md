@@ -6,20 +6,23 @@ UiPath Orchestrator is the centralized platform for managing and executing test 
 
 ## Access management
 
-Effective access management in Orchestrator ensures that only authorized individuals can perform specific actions within the testing environment  crucial for maintaining integrity, security, and efficiency.
+Effective access management in Orchestrator ensures that only authorized individuals can perform specific actions within the testing environment — crucial for maintaining integrity, security, and efficiency.
 
 ### Roles and permissions
 
 **Roles** define a set of permissions that determine what actions a user or group can perform. They can be assigned at different scopes:
 
-- **Tenant-level roles**  apply across the entire Orchestrator tenant.
-- **Folder-level roles**  apply to specific folders within the tenant.
+✅ **Tenant-level roles** – apply across the entire Orchestrator tenant.
+
+✅ **Folder-level roles** – apply to specific folders within the tenant.
 
 Common roles include:
 
-- **Orchestrator Administrator**  full access to all features, including user, tenant, and folder management. Recommended for system administrators.
-- **Automation User**  can run jobs, manage triggers, view logs, and use most resources needed for automation execution.
-- **Folder Administrator**  minimum folder-level permissions needed to manage their own folders and subfolders.
+✅ **Orchestrator Administrator** – full access to all features, including user, tenant, and folder management. Recommended for system administrators.
+
+✅ **Automation User** – can run jobs, manage triggers, view logs, and use most resources needed for automation execution.
+
+✅ **Folder Administrator** – minimum folder-level permissions needed to manage their own folders and subfolders.
 
 Custom roles can also be created to tailor permissions to specific needs.
 
@@ -37,7 +40,7 @@ Custom roles can also be created to tailor permissions to specific needs.
 
 **Assigning to folders:**
 
-Folders in Orchestrator provide a hierarchical structure for organizing automation resources, including test cases, assets, and robots  enabling fine-grained access control and resource management. Orchestrator supports up to seven levels of folder hierarchy, and access permissions are inherited from parent folders.
+Folders in Orchestrator provide a hierarchical structure for organizing automation resources, including test cases, assets, and robots — enabling fine-grained access control and resource management. Orchestrator supports up to seven levels of folder hierarchy, and access permissions are inherited from parent folders.
 
 1. Go to **Tenant → Folders**.
 2. Select the desired folder.
@@ -47,10 +50,13 @@ Folders in Orchestrator provide a hierarchical structure for organizing automati
 6. Click **Assign** to finalize.
 
 !!! tip "Best practices for access control"
-    - **Principle of least privilege**  assign the minimum permissions necessary.
-    - **Use groups for role assignment**  simplifies administration and ensures consistency.
-    - **Regularly review access rights**  periodically audit user and group permissions.
-    - **Separate environments**  maintain distinct Dev/Test/Prod environments with appropriate access controls.
+    ✅ **Principle of least privilege** – assign the minimum permissions necessary.
+
+    ✅ **Use groups for role assignment** – simplifies administration and ensures consistency.
+
+    ✅ **Regularly review access rights** – periodically audit user and group permissions.
+
+    ✅ **Separate environments** – maintain distinct Dev/Test/Prod environments with appropriate access controls.
 
 ## License configuration
 
@@ -58,15 +64,16 @@ Folders in Orchestrator provide a hierarchical structure for organizing automati
 
 **User licenses**, assigned to individuals based on role:
 
-- **App Tester --“ Named User**  manage and execute tests, and handle other automated processes for application testing.
-- **App Test Developer --“ Named User**  includes all App Tester capabilities, plus the ability to create test automations in Studio and build Apps.
+✅ **App Tester – Named User** – manage and execute tests, and handle other automated processes for application testing.
+
+✅ **App Test Developer – Named User** – includes all App Tester capabilities, plus the ability to create test automations in Studio and build Apps.
 
 !!! info
-    The user licenses (App Tester and App Test Developer) grant access to all products available within Test Cloud  no additional user licenses are needed beyond these two.
+    The user licenses (App Tester and App Test Developer) grant access to all products available within Test Cloud — no additional user licenses are needed beyond these two.
 
 **Robot licenses**, which determine execution capabilities:
 
-- **App Test Robot**  execute application tests, RPA tests, and robotic process automations, for app testing use cases only.
+✅ **App Test Robot** – execute application tests, RPA tests, and robotic process automations, for app testing use cases only.
 
 To get started with Test Cloud, you need at least one Test Cloud-specific user license (App Tester or App Test Developer) and App Testing Robot runtimes assigned to the tenant.
 
@@ -102,41 +109,80 @@ To get started with Test Cloud, you need at least one Test Cloud-specific user l
 3. Under **Testing Robots**, click **See More** and allocate runtimes to machines or machine templates.
 
 !!! warning
-    The number of allocated runtimes determines how many test cases can be executed concurrently  don't exceed the total available.
+    The number of allocated runtimes determines how many test cases can be executed concurrently — don't exceed the total available.
 
 **Enabling or disabling machines:**
 
 In **Machines**, toggle the **Active** column off to disable a machine (preventing license consumption) or on to re-enable it. You cannot disable a machine while robots on it are running.
 
 !!! tip "Best practices"
-    - Regularly audit license allocations against current team structures and project needs.
-    - Optimize runtimes based on actual testing requirements.
-    - Educate team members on license consumption implications.
-    - Use group-based allocations for scalability.
+    ✅ Regularly audit license allocations against current team structures and project needs.
+
+    ✅ Optimize runtimes based on actual testing requirements.
+
+    ✅ Educate team members on license consumption implications.
+
+    ✅ Use group-based allocations for scalability.
 
 ## Resources: machines and assets
 
-### Machines  provisioning execution environments
+### Machines — provisioning execution environments
 
-- **Standard machines**  physical or virtual environments configured to closely mimic the production setup for running test cases.
-- **Machine templates**  reusable configurations applied to multiple machines, useful for consistency in large-scale testing environments.
-- **Serverless machines**  a scalable, maintenance-free environment managed by UiPath. Ideal for background, cross-platform automations, limited to jobs of up to 15 minutes.
+✅ **Standard machines** – physical or virtual environments configured to closely mimic the production setup for running test cases.
 
-### Assets  managing test data and configurations
+✅ **Machine templates** – reusable configurations applied to multiple machines, useful for consistency in large-scale testing environments.
 
-Assets store and manage data used across multiple automation projects, including test cases  text, boolean, integer, and credential types are supported.
+✅ **Serverless machines** – a scalable, maintenance-free environment managed by UiPath. Ideal for background, cross-platform automations, limited to jobs of up to 15 minutes.
 
-- Assets can have global values or values specific to a particular robot or account, enabling dynamic configuration based on execution context.
-- Assets with global values can be linked across multiple folders; assets with per-account values cannot be shared between folders, preserving data isolation.
+### Assets — managing test data and configurations
 
-!!! example "Exercise"
+Assets store and manage data used across multiple automation projects, including test cases — text, boolean, integer, and credential types are supported.
+
+✅ Assets can have global values or values specific to a particular robot or account, enabling dynamic configuration based on execution context.
+
+✅ Assets with global values can be linked across multiple folders; assets with per-account values cannot be shared between folders, preserving data isolation.
+
+!!! example "Exercise 1"
     Create and configure your own folder under the current ILT folder (e.g. "3-5 June") to run your tests.
 
-    1. Enable your user to run **Personal Automation + Personal workspace**, give it an **Automation Developer** role, and  in the Enterprise setup  use **Custom Windows credentials**, specifying your `domain\username` without the password. Then add your user to your folder.
-    2. Add an **App Test Robot** license to your machine, then add the machine to the folder you just created.
+    Enable your user to run **Personal Automation + Personal workspace**, give it an **Automation Developer** role, and — in the Enterprise setup — use **Custom Windows credentials**, specifying your `domain\username` without the password. Then add your user to your folder.
 
-    !!! note "Image needed"
-        Insert the Orchestrator screenshot walkthrough for folder/user setup and robot license allocation here.
+    <div class="carousel">
+      <input type="radio" name="oc-settings-carousel" id="carousel-slide-1" checked>
+      <input type="radio" name="oc-settings-carousel" id="carousel-slide-2">
+      <div class="carousel-slides">
+        <div class="carousel-slide slide-1">
+          <img src="../../assets/images/OC%20Settings%20Enterprize%20setup.png" alt="Orchestrator Enterprise setup settings">
+        </div>
+        <div class="carousel-slide slide-2">
+          <img src="../../assets/images/OC%20Settings%20Folder%20Admin.png" alt="Orchestrator Folder Admin settings">
+        </div>
+      </div>
+      <div class="carousel-nav">
+        <label class="label-1" for="carousel-slide-1"></label>
+        <label class="label-2" for="carousel-slide-2"></label>
+      </div>
+    </div>
+
+!!! example "Exercise 2"
+    Add an **App Test Robot** license to your machine, then add the machine to the folder you just created.
+
+    <div class="carousel">
+      <input type="radio" name="oc-exercise2-carousel" id="carousel-slide-3" checked>
+      <input type="radio" name="oc-exercise2-carousel" id="carousel-slide-4">
+      <div class="carousel-slides">
+        <div class="carousel-slide slide-3">
+          <img src="../../assets/images/OC%20App%20testing%20license.png" alt="Orchestrator App Testing license settings">
+        </div>
+        <div class="carousel-slide slide-4">
+          <img src="../../assets/images/OC%20Manage%20machine.png" alt="Orchestrator Manage Machine settings">
+        </div>
+      </div>
+      <div class="carousel-nav">
+        <label class="label-3" for="carousel-slide-3"></label>
+        <label class="label-4" for="carousel-slide-4"></label>
+      </div>
+    </div>
 
 ---
 

@@ -48,6 +48,6 @@ The report can include up to five sections, each with multiple insights. For eac
 
 ---
 
-[Next → SAP Heatmap](07-sap-heatmap.md){: .md-button .md-button--primary}
+[Next → SAP Heatmap](08-sap-heatmap.md){: .md-button .md-button--primary}
 
 ---
