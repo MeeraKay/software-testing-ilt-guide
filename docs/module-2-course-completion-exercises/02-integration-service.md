@@ -61,7 +61,7 @@ Ensure you are in **My Workspace**.
 
 <img src="../../assets/images/Integration Service My WS.png" alt="Integration Service My Workspace" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08); display: block; margin: 20px 0;">
 
-**4.** **Select**
+**4.** **Select Connector**
 
 In the connector catalog search box, search for **UiPath GenAI Activities**.
 
@@ -87,7 +87,7 @@ Verify that the connection appears under **Connections** and has a status of **C
 
 ### Exercise Steps
 
-**1.** Complete the Generate Low-Code Workflow exercise under **Autopilot for Everyone** folder in the ILT exercise.
+**1.** Complete the `Generate Low-Code Workflow.xaml` under **2. Autopilot for Everyone** folder in the ILT exercise.
 
 **2.** Observe the workflow annotation. A sample instruction is provided for generating the workflow.
 
@@ -103,7 +103,7 @@ Verify that the connection appears under **Connections** and has a status of **C
 
 ---
 
-[Next → Custom Connection](03-custom-connection-integration-service.md){: .md-button .md-button--primary}
+[Next → API Testing](03-api-testing.md){: .md-button .md-button--primary}
 
 ---
 

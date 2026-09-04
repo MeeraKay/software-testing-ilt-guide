@@ -10,6 +10,8 @@ Autopilot understands the context of your workflow — including variables, data
 
 **1.** Open `Correct expression _ rename.xaml` in the **2. Autopilot for Developers** folder.
 
+![Autopilot folder in Studio](../assets/images/Autopilot%20folder%20in%20Studio.png)
+
 **2.** Right-click the **Comment Out** activity and select **Enable Activity**.
 
 **3.** Notice validation errors appear in the workflow. Open the Expression Editor for the `To Variable` property, observe the `Files` variable, then close the editor.
@@ -62,9 +64,13 @@ Use the Autopilot option in the Expression Editor. Simply describe what you want
 
 **4.** Open Data Manager and inspect the data type of `FirstColumnAsList` — it's a complex type, making the required expression hard to write manually.
 
+![FirstColumnAsList Data Type](../assets/images/FirstColAsList.png)
+
 **5.** Open the Expression Editor for the `Set Value` property.
 
 **6.** Paste the copied instruction into the Autopilot prompt box at the bottom of the editor, then click the Autopilot icon.
+
+![Generate Expression](../assets/images/generate%20expression.png)
 
 **7.** Observe Autopilot replaces the `[Nothing]` expression with a valid one matching the instruction and required output type.
 

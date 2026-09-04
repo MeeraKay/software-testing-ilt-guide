@@ -4,18 +4,20 @@ Self-paced reference material to deepen your understanding and extend your skill
 
 ## Topics
 
-- [Templates](01-templates.md)
-- [Testing Framework](02-testing-framework.md)
-- [Terminal Testing](03-terminal-testing.md)
-- [Best Practices](04-best-practices.md)
-- [Generating Synthetic Test Data](05-generating-synthetic-test-data.md)
-- [Database Testing](06-database-testing.md)
-- [Other Agentic Features in Test Manager](07-other-agentic-features.md)
-- [SAP Heatmap and Change Impact Analysis](08-sap-heatmap.md)
-- [CI/CD](09-cicd.md)
+- [Introduction to Software Testing Concepts](01-introduction-to-software-testing-concepts.md)
+- [Templates](02-templates.md)
+- [Testing Framework](03-testing-framework.md)
+- [Terminal Testing](04-terminal-testing.md)
+- [Best Practices](05-best-practices.md)
+- [Generating Synthetic Test Data](06-generating-synthetic-test-data.md)
+- [Database Testing](07-database-testing.md)
+- [Create a Custom Connection (Integration Service)](08-custom-connection-integration-service.md)
+- [Additional Agentic Features in Test Manager](09-other-agentic-features.md)
+- [SAP Heatmap and Change Impact Analysis](10-sap-heatmap.md)
+- [CI/CD](11-cicd.md)
 
 ---
 
-[Next → Templates](01-templates.md){: .md-button .md-button--primary}
+[Next → Introduction to Software Testing Concepts](01-introduction-to-software-testing-concepts.md){: .md-button .md-button--primary}
 
 ---
