@@ -55,7 +55,7 @@ Before attending the training, ensure you have completed the following:
 
 ✅ Access to Automation Cloud environment verified
 
-✅ Downloaded: <a href="https://articulateusercontent.com/rise/courses/wbarvVGUFeVtnNnsoksCvGVOBH9YzS_J/7Xwfgsy_LGoBkxr3-Application%2520Testing%2520ILT%2520-%2520Students.zip" target="_blank">Application Testing ILT - Students.zip</a> (302.7 KB)
+✅ Downloaded: [**Application Testing ILT - Students.zip**](assets/Files/Application%20Testing%20ILT%20-%20Students.zip) (302.7 KB)
 
 ### Downloads & Resources
 

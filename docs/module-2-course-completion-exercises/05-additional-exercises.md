@@ -18,7 +18,7 @@ To receive your **Diploma of Completion**, you must complete the following exerc
 
     ✅ Using the data-driven method, check that for every hash method, the output matches the one returned by <a href="http://www.sha1-online.com/" target="_blank">sha1-online.com</a>.
 
-    :material-file-download: [**Results.xlsx**](https://articulateusercontent.com/rise/courses/wbarvVGUFeVtnNnsoksCvGVOBH9YzS_J/CcGwN40lyA8YqfFP-Results.xlsx) (20.1 KB) — download for the Hash Check exercise
+    :material-file-download: [**Results.xlsx**](../assets/Files/Results.xlsx) (20.1 KB) — download for the Hash Check exercise
 
 ---
 
