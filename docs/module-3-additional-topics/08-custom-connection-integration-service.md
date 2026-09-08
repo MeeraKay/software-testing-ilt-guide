@@ -3,7 +3,7 @@
 Follow these steps to create and connect a custom connector using UiPath Integration Service.
 
 !!! example "Step 1  Access Integration Service"
-    1. Go to [cloud.uipath.com](https://cloud.uipath.com){target=_blank} and log in.
+    1. Go to <a href="https://cloud.uipath.com" target="_blank">cloud.uipath.com</a> and log in.
     2. Select your tenant.
     3. Navigate to **Integration Service**.
     4. Choose the folder where this connector should be available.

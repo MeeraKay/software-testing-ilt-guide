@@ -2,20 +2,29 @@
 
 ## General best practices
 
-- Maintain test cases and update them after any change request.
-- Give activities descriptive names, add annotations for non-obvious behaviors, and make activity names reflect the action taken.
-- Consider using simulate click/type or send Windows messages whenever possible.
-- Use detailed logging and exception handling to debug the process and avoid false negative results.
-- Plan for recovery or retry at different stages to avoid failed results.
-- Use assets for variables that are likely to change and used many times.
-- Where an application's state must be validated before proceeding, use activities that wait for the desired state rather than hard-coded delays.
-- Use version control (Git/Automation Ops) to track test script changes and support collaboration.
+✅ Maintain test cases and update them after any change request.
+
+✅ Give activities descriptive names, add annotations for non-obvious behaviors, and make activity names reflect the action taken.
+
+✅ Consider using simulate click/type or send Windows messages whenever possible.
+
+✅ Use detailed logging and exception handling to debug the process and avoid false negative results.
+
+✅ Plan for recovery or retry at different stages to avoid failed results.
+
+✅ Use assets for variables that are likely to change and used many times.
+
+✅ Where an application's state must be validated before proceeding, use activities that wait for the desired state rather than hard-coded delays.
+
+✅ Use version control (Git/Automation Ops) to track test script changes and support collaboration.
 
 ## Optimize test execution performance
 
-- Run tests in unattended mode (background execution) for faster results.
-- Reduce execution time by avoiding unnecessary waits — replace static Delay activities with dynamic wait mechanisms.
-- Minimize UI interactions by using API and database validations where possible.
+✅ Run tests in unattended mode (background execution) for faster results.
+
+✅ Reduce execution time by avoiding unnecessary waits — replace static Delay activities with dynamic wait mechanisms.
+
+✅ Minimize UI interactions by using API and database validations where possible.
 
 ## Workflow Analyzer
 

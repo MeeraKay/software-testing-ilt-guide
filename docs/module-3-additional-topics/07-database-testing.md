@@ -7,30 +7,43 @@ With UiPath Test Cloud, you can perform **Data Validation Testing**, a part of d
 
 ## What database testing validates
 
-- Schema
-- Database tables
-- Columns
-- Keys and indexes
-- Stored procedures
-- Triggers
-- Database server validations
-- Data duplication validation
+✅ Schema
+
+✅ Database tables
+
+✅ Columns
+
+✅ Keys and indexes
+
+✅ Stored procedures
+
+✅ Triggers
+
+✅ Database server validations
+
+✅ Data duplication validation
 
 ## Advantages
 
-- Full control of test coverage and depth.
-- Many bugs can be found effectively in the early development stage.
+✅ Full control of test coverage and depth.
+
+✅ Many bugs can be found effectively in the early development stage.
 
 ![Database Testing](../assets/images/Database%20testing.jpg)
 
 ## Database Activities package
 
-- **Connect** — connects to a database using a standard connection string.
-- **Disconnect** — closes a connection to a database.
-- **Start Transaction** — connects to a database and wraps a sequence that can perform multiple transactions; closes the connection when the activity ends.
-- **Execute Query** — executes a query and returns the result in a `DataTable`.
-- **Execute Non Query** — executes a non-query statement; for UPDATE/INSERT/DELETE, returns the number of affected rows.
-- **Insert** — inserts a compatible `DataTable` into an existing table, returning the number of affected rows. If constraints aren't met, the activity fails and all written rows are rolled back.
+✅ **Connect** — connects to a database using a standard connection string.
+
+✅ **Disconnect** — closes a connection to a database.
+
+✅ **Start Transaction** — connects to a database and wraps a sequence that can perform multiple transactions; closes the connection when the activity ends.
+
+✅ **Execute Query** — executes a query and returns the result in a `DataTable`.
+
+✅ **Execute Non Query** — executes a non-query statement; for UPDATE/INSERT/DELETE, returns the number of affected rows.
+
+✅ **Insert** — inserts a compatible `DataTable` into an existing table, returning the number of affected rows. If constraints aren't met, the activity fails and all written rows are rolled back.
 
 !!! warning
     Windows projects require the 64-bit driver installed on the machine to establish a database connection.

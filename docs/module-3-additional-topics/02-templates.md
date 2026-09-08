@@ -20,9 +20,11 @@ Use test case templates as base models for your test cases — for example, a te
 
 ### Advantages of test case templates
 
-- **Consistency** — uniform structure across all test cases, making them easier to understand, execute, and evaluate.
-- **Efficiency** — a predefined structure saves time and reduces the risk of missing essential components.
-- **Thoroughness** — guides the tester through every necessary element of a test case.
+✅ **Consistency** — uniform structure across all test cases, making them easier to understand, execute, and evaluate.
+
+✅ **Efficiency** — a predefined structure saves time and reduces the risk of missing essential components.
+
+✅ **Thoroughness** — guides the tester through every necessary element of a test case.
 
 !!! example "Exercise"
     Create your own test case template using the Login workflow.
@@ -57,10 +59,13 @@ This activity is going to be replaced at runtime with an **Invoke** activity, ad
 
 ### Advantages of execution templates
 
-- **Standardization** — ensures different testers follow the same steps, maintaining consistency during the testing phase.
-- **Reusable** — templates are reusable across different types of tests and even different projects, promoting efficiency and reducing redundancy.
-- **Ease of Use** — execution templates guide the tester through the process step by step, making it easier for those unfamiliar with the application being tested.
-- **Quality Assurance** — by ensuring tests are performed consistently, execution templates contribute to the overall quality of the tested application, ensuring all functionalities are adequately verified.
+✅ **Standardization** — ensures different testers follow the same steps, maintaining consistency during the testing phase.
+
+✅ **Reusable** — templates are reusable across different types of tests and even different projects, promoting efficiency and reducing redundancy.
+
+✅ **Ease of Use** — execution templates guide the tester through the process step by step, making it easier for those unfamiliar with the application being tested.
+
+✅ **Quality Assurance** — by ensuring tests are performed consistently, execution templates contribute to the overall quality of the tested application, ensuring all functionalities are adequately verified.
 
 !!! example "Exercise"
     Create your own execution template with set-up (Login) and tear-down (Logout) parts.
