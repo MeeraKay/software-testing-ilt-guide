@@ -1,5 +1,7 @@
 # Receive Credit
 
+<img src="../../assets/images/UiPath%20Robot.png" alt="UiPath Robot celebrating" style="float: right; width: 140px; height: auto; box-shadow: none; border-radius: 0; margin: 0 0 12px 20px;">
+
 To be eligible for a **Diploma of Completion**, you must have attended at least 90% of the training session. If you meet this requirement, follow the instructions below and submit the required deliverables within **7 working days** of the training session.
 
 !!! example "Exercise completion confirmation"
