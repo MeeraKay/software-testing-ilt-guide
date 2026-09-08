@@ -2,7 +2,10 @@
 
 ## End of Instructor-Led Training
 
-**Congratulations!** You have completed the instructor-led portion of this course.
+<div style="display: flex; align-items: center; gap: 24px; flex-wrap: wrap; margin: 20px 0;">
+  <img src="../../assets/images/UiPath%20Robot.png" alt="UiPath Robot celebrating" style="width: 160px; height: auto; flex-shrink: 0; display: block; margin: 0;">
+  <p style="flex: 1; min-width: 260px; margin: 0;"><strong>Congratulations!</strong> You have completed the instructor-led portion of this course.</p>
+</div>
 
 To reinforce your learning and qualify for course completion, proceed with the following sections:
 
