@@ -15,7 +15,7 @@ A step-by-step learner's guide for the UiPath Software & Agentic Testing Instruc
 A couple of sections were incomplete in the original source material and are flagged inline with warning boxes rather than filled in with invented content:
 
 - Module 1, Step 8 — Data-Driven Testing (best-practices list cuts off)
-- Module 3 — Other Agentic Features in Test Manager (section ends without a close)
+- Module 3 — Additional Agentic Features in Test Manager (section ends without a close)
 
 Screenshots, diagrams, and embedded videos from the original course still need to be added — look for `[IMAGE: ...]` and `[VIDEO: ...]` notes throughout.
 
