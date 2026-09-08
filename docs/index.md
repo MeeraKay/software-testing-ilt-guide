@@ -1,5 +1,7 @@
 # Welcome to the 1 Day Software Testing ILT
 
+![Get robots that execute tests](assets/images/Get%20robots%20that%20execute%20tests.png)
+
 **Thank you for joining the UiPath Software & Agentic Testing Instructor-Led Training!**
 
 This **Learner's Handbook** is your practical guide for this 1-day training (plus exercise submission). Think of it less as a manual and more as a co-pilot: it will walk you through each step, explain what's happening and why, and help you build real, working test automation by the end of the session.
