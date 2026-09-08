@@ -2,6 +2,8 @@
 
 ## End of Instructor-Led Training
 
+<img src="../../assets/images/UiPath%20Robot.png" alt="UiPath Robot celebrating" style="float: right; width: 140px; height: auto; box-shadow: none; border-radius: 0; margin: 0 0 12px 20px;">
+
 **Congratulations!** You have completed the instructor-led portion of this course.
 
 To reinforce your learning and qualify for course completion, proceed with the following sections:
