@@ -12,6 +12,7 @@
     - Data Service (Automation Cloud)
     - Existing Data (project-based)
     - Auto Generate (path coverage)
+    - Test Data Queues (legacy, existing tenants only)
 4. Create data-driven test cases using multiple data sources.
 5. Apply best practices for test data management.
 
@@ -115,7 +116,7 @@ Three primary strategies exist for creating test data:
 </div>
 
 !!! note "Optional topics"
-    Generating synthetic test data (using Activities and Autopilot) and Auto Generate for path coverage are covered as optional topics in [Module 3 — Additional Topics](../module-3-additional-topics/05-generating-synthetic-test-data.md).
+    Generating synthetic test data (using Activities and Autopilot) and Auto Generate for path coverage are covered as optional topics in [Module 3 — Additional Topics](../module-3-additional-topics/06-generating-synthetic-test-data.md).
 
 
 ## Data Driven Test Case
@@ -139,6 +140,11 @@ To create a Data Driven Test Case, navigate to an already created Test Case and 
 ✅ **Existing Data** from project folders
 
 ✅ **Auto Generate** for path coverage optimization
+
+✅ **Test Data Queues** for queue-based data management
+
+!!! note "Test Data Queues not covered in this exercise"
+    Test Data Queues are not available for new tenants and are no longer covered as a hands-on exercise here. They remain supported for existing tenants that already use them.
 
 When you create a data-driven test case, the Import Data Variation Source wizard guides you through selecting your preferred data source. The following image showcases the interface where you'll choose and configure your data source option:
 

@@ -93,7 +93,7 @@ Pipelines are predefined jobs that clarify what needs to happen and when. Jobs r
 
 ## Further reading
 
-See "Implementing CI/CD pipelines for UiPath test automation" in the [UiPath Test Cloud Expert learning plan](https://academy.uipath.com/learning-plans/uipath-test-cloud-expert){target=_blank} on UiPath Academy.
+See "Implementing CI/CD pipelines for UiPath test automation" in the <a href="https://academy.uipath.com/learning-plans/uipath-test-cloud-expert" target="_blank">UiPath Test Cloud Expert learning plan</a> on UiPath Academy.
 
 ---
 

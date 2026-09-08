@@ -14,7 +14,7 @@ One of the biggest challenges is making testing an integral part of the developm
 
 ## How does Test Manager work?
 
-![Test Manager](../assets/images/Test Manager_Full.png)
+![Test Manager](../assets/images/Test%20Manager_Full.png)
 
 ## The typical testing flow with Test Manager
 
@@ -55,7 +55,7 @@ Importing the project follows a schema that converts external system projects (e
 
     This is the project you'll be working on for the rest of the day.
 
-    <a href="https://articulateusercontent.com/rise/courses/wbarvVGUFeVtnNnsoksCvGVOBH9YzS_J/RjVBhG7OV_uDYf4i-UIB_UiBank_2024_03_01_18_18_46_3481.tmh" target="_blank">**UIB_UiBank_2024_03_01_18_18_46_3481.tmh**</a> (7.2 KB)  project import file for Test Manager
+    :material-file-download: [**UIB_UiBank_2024_03_01_18_18_46_3481.tmh**](../assets/Files/UIB_UiBank_2024_03_01_18_18_46_3481.tmh) (7.2 KB) — project import file for Test Manager
 
 ---
 

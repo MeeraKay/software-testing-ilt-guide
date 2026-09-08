@@ -21,7 +21,7 @@ The **Terminal Session** activity connects to the host system, or via a third-pa
 Recovering from unexpected errors is one of the challenges of testing terminal-based applications. Because of their stateful nature, several actions may be needed to return the application to its "base state" where each test starts and stops. The solution: build a recovery step executed at the end of each test that identifies the current screen and calls its "Dismiss" action. Typing `F3` or `F12` may suffice for most screens; others may need a series of actions, or completing the current transaction. Either way, the recovery mechanism ensures the target application is at a known starting state before each test begins.
 
 !!! example "Exercise: Terminal Testing"
-    Create a test case that verifies the density of the Moon is greater than 3 g/cm³, using the [NASA Horizons System CLI](https://ssd.jpl.nasa.gov/?horizons){target=_blank} (no account or password required). Explore what commands are needed — and don't forget to install `Terminal Activities`.
+    Create a test case that verifies the density of the Moon is greater than 3 g/cm³, using the <a href="https://ssd.jpl.nasa.gov/?horizons" target="_blank">NASA Horizons System CLI</a> (no account or password required). Explore what commands are needed — and don't forget to install `Terminal Activities`.
 
     ### Step 1 — Test case
     Create a new test case.
