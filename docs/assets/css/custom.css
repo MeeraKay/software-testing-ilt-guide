@@ -1,19 +1,20 @@
-/* Primary blue theme color - #2196F3 */
+/* UiPath brand colors - Science Blue #0067DF, Pomegranate #FA4616, White #FFFFFF */
 :root {
-  --primary-blue: #2196F3;
-  --light-bg: #E3F2FD;
+  --primary-blue: #0067DF;
+  --accent-orange: #FA4616;
+  --light-bg: #E5F0FC;
 }
 
 /* Light mode */
 [data-md-color-scheme="light"] {
   --md-primary-fg-color: var(--primary-blue);
-  --md-accent-fg-color: var(--primary-blue);
+  --md-accent-fg-color: var(--accent-orange);
 }
 
 /* Dark mode */
 [data-md-color-scheme="dark"] {
-  --md-primary-fg-color: #64B5F6;
-  --md-accent-fg-color: #64B5F6;
+  --md-primary-fg-color: #4D9DE8;
+  --md-accent-fg-color: #FF7A54;
 }
 
 /* Consistent header hierarchy - single blue, varied sizes */
@@ -67,8 +68,8 @@ code {
 }
 
 [data-md-color-scheme="dark"] code {
-  background-color: rgba(33, 150, 243, 0.1);
-  color: #64B5F6;
+  background-color: rgba(0, 103, 223, 0.1);
+  color: #4D9DE8;
 }
 
 /* Buttons and interactive elements */
@@ -131,8 +132,8 @@ th {
 }
 
 [data-md-color-scheme="dark"] th {
-  background-color: rgba(33, 150, 243, 0.1);
-  color: #64B5F6;
+  background-color: rgba(0, 103, 223, 0.1);
+  color: #4D9DE8;
 }
 
 /* Accent boxes */
@@ -149,8 +150,8 @@ th {
 
 [data-md-color-scheme="dark"] .md-typeset .admonition.info > .admonition-title,
 [data-md-color-scheme="dark"] .md-typeset details.info > summary {
-  background-color: rgba(33, 150, 243, 0.1);
-  color: #64B5F6;
+  background-color: rgba(0, 103, 223, 0.1);
+  color: #4D9DE8;
 }
 
 /* Image styling - clean, integrated with shadow effect */
