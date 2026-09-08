@@ -23,6 +23,7 @@ extra_css:
 extra_javascript:
   - assets/js/mermaid.min.js
   - assets/js/mermaid-init.js
+  - assets/js/sidebar-toggle.js
 
 markdown_extensions:
   - attr_list
