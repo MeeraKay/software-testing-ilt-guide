@@ -87,7 +87,7 @@ Verify that the connection appears under **Connections** and has a status of **C
 
 ### Exercise Steps
 
-**1.** Complete the `Generate Low-Code Workflow.xaml` under **2. Autopilot for Everyone** folder in the ILT exercise.
+**1.** Complete the `Generate Low-Code Workflow.xaml` under **2. Autopilot for Developers** folder in the ILT exercise.
 
 **2.** Observe the workflow annotation. A sample instruction is provided for generating the workflow.
 
