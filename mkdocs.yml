@@ -20,12 +20,22 @@ theme:
 extra_css:
   - assets/css/custom.css
 
+extra_javascript:
+  - assets/js/mermaid.min.js
+  - assets/js/mermaid-init.js
+
 markdown_extensions:
   - attr_list
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tasklist
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -55,18 +65,20 @@ nav:
     - Overview: module-2-course-completion-exercises/index.md
     - Autopilot for Developers: module-2-course-completion-exercises/01-autopilot-for-developers.md
     - Integration Service: module-2-course-completion-exercises/02-integration-service.md
-    - Custom Connection: module-2-course-completion-exercises/03-custom-connection-integration-service.md
-    - API Testing: module-2-course-completion-exercises/04-api-testing.md
-    - Coded Test Cases: module-2-course-completion-exercises/05-coded-test-cases.md
-    - Additional Exercises: module-2-course-completion-exercises/06-additional-exercises.md
-    - You Did It!: module-2-course-completion-exercises/you-did-it.md
+    - API Testing: module-2-course-completion-exercises/03-api-testing.md
+    - Coded Test Cases: module-2-course-completion-exercises/04-coded-test-cases.md
+    - Additional Exercises: module-2-course-completion-exercises/05-additional-exercises.md
+    - Receive Credit: module-2-course-completion-exercises/you-did-it.md
   - Module 3 - Additional Topics:
     - Overview: module-3-additional-topics/index.md
-    - Templates: module-3-additional-topics/01-templates.md
-    - Testing Framework: module-3-additional-topics/02-testing-framework.md
-    - Terminal Testing: module-3-additional-topics/03-terminal-testing.md
-    - Best Practices: module-3-additional-topics/04-best-practices.md
-    - Database Testing: module-3-additional-topics/05-database-testing.md
-    - Other Agentic Features: module-3-additional-topics/06-other-agentic-features.md
-    - SAP Heatmap: module-3-additional-topics/07-sap-heatmap.md
-    - CI/CD: module-3-additional-topics/08-cicd.md
+    - Introduction to Software Testing Concepts: module-3-additional-topics/01-introduction-to-software-testing-concepts.md
+    - Templates: module-3-additional-topics/02-templates.md
+    - Testing Framework: module-3-additional-topics/03-testing-framework.md
+    - Terminal Testing: module-3-additional-topics/04-terminal-testing.md
+    - Best Practices: module-3-additional-topics/05-best-practices.md
+    - Generating Synthetic Test Data: module-3-additional-topics/06-generating-synthetic-test-data.md
+    - Database Testing: module-3-additional-topics/07-database-testing.md
+    - Custom Connection: module-3-additional-topics/08-custom-connection-integration-service.md
+    - Additional Agentic Features in Test Manager: module-3-additional-topics/09-other-agentic-features.md
+    - SAP Heatmap: module-3-additional-topics/10-sap-heatmap.md
+    - CI/CD: module-3-additional-topics/11-cicd.md

@@ -15,7 +15,7 @@ To show only relevant information, use the Test Explorer toolbar to filter test 
 
 ## Descriptor Coverage
 
-Descriptor Coverage is a panel showing information on object recognition UI elements covered during execution. Coverage results appear in the Test Explorer, in the Descriptor Coverage panel. Use this panel to view activity coverage when working with [Selectors](https://docs.uipath.com){target=_blank} or [Object Repository](https://docs.uipath.com){target=_blank}.
+Descriptor Coverage is a panel showing information on object recognition UI elements covered during execution. Coverage results appear in the Test Explorer, in the Descriptor Coverage panel. Use this panel to view activity coverage when working with <a href="https://docs.uipath.com/activities/other/latest/ui-automation/about-selectors" target="_blank">Selectors</a> or <a href="https://docs.uipath.com/studio/standalone/latest/user-guide/about-object-repository" target="_blank">Object Repository</a>.
 
 ![Descriptor Coverage Panel](../assets/images/Discriptor%20Cov.gif)
 
@@ -25,7 +25,8 @@ To view coverage during test execution, run a test case that invokes workflows c
 
 You can analyze selector coverage or debug workflows with failed coverage. If you run all your test cases, the panel shows the number of descriptor references that passed and provides details on failed selectors similar to Activity Coverage, you can view covered activities in the Design panel. Double-click a failed descriptor resolution to jump directly to the failed selector within the workflow.
 
-For test cases, the descriptor coverage percentage is relative to the total number of selectors that go into a test case execution. For example, if a test case has selectors and an invoked workflow also has selectors, coverage is calculated based on the total.
+!!! note "Coverage Calculation"
+    For test cases, the descriptor coverage percentage is relative to the total number of selectors that go into a test case execution. For example, if a test case has selectors and an invoked workflow also has selectors, coverage is calculated based on the total.
 
 ## Autopilot for developers
 
@@ -33,12 +34,17 @@ Designed to help developers create and test automations faster and more easily. 
 
 **Capabilities:**
 
-- Creating workflows, coded workflows, and test cases using natural language instructions.
-- Generating coded workflows and test cases using custom prompts within the code editor.
-- Generating and fixing complex expressions using natural language.
-- Suggesting next steps in your automation by creating sequences of activities.
-- Summarizing the inner workings of an activity or a sequence.
-- Generating apps from Data Service entities, `.pdf` files, images, or text prompts.
+✅ Creating workflows, coded workflows, and test cases using natural language instructions.
+
+✅ Generating coded workflows and test cases using custom prompts within the code editor.
+
+✅ Generating and fixing complex expressions using natural language.
+
+✅ Suggesting next steps in your automation by creating sequences of activities.
+
+✅ Summarizing the inner workings of an activity or a sequence.
+
+✅ Generating apps from Data Service entities, `.pdf` files, images, or text prompts.
 
 !!! example "Exercise: create your first automated test case using Autopilot for Developers"
     1. Based on the requirements created in the previous exercise and the Test Studio project already created.

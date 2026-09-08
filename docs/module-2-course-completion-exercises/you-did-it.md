@@ -14,7 +14,7 @@ To be eligible for a **Diploma of Completion**, you must have attended at least 
 
 Once submitted, you're free to continue on to [Module 3 — Additional Topics](../module-3-additional-topics/index.md) at your own pace.
 
-Until next time, happy automation!
+Until next time, happy testing!
 
 ---
 
