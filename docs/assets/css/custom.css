@@ -382,7 +382,10 @@ th {
   line-height: 1.4;
 }
 
-/* Sidebar collapse toggle (desktop only, matches Material's own sidebar breakpoint) */
+/* Sidebar collapse toggle (desktop only, matches Material's own sidebar breakpoint)
+   Fixed to the viewport at the top-left corner of the content pane, so it never
+   moves or scrolls. The content column gets a matching left gutter reserved for
+   it, so scrolled text never passes underneath the icon. */
 .sidebar-toggle-btn {
   display: none;
   align-items: center;
@@ -391,11 +394,10 @@ th {
   height: 2rem;
   border: none;
   border-radius: 4px;
-  background-color: transparent;
+  background-color: var(--md-default-bg-color, #fff);
   color: var(--md-default-fg-color, #333);
   cursor: pointer;
   padding: 0;
-  margin: 0 0 1rem 0;
 }
 
 .sidebar-toggle-btn:hover {
@@ -412,12 +414,27 @@ th {
 @media screen and (min-width: 76.25em) {
   .sidebar-toggle-btn {
     display: flex;
-    position: sticky;
-    top: 0.5rem;
+    position: fixed;
+    top: calc(var(--md-header-height, 2.4rem) + 0.75rem);
+    left: calc(12.1rem + 1.25rem);
     z-index: 10;
+  }
+
+  /* Reserve a permanent gutter in the content column so scrolled text never
+     renders underneath the fixed toggle button. */
+  .md-content__inner {
+    padding-left: 2.75rem;
   }
 
   body.sidebar-collapsed .md-sidebar--primary {
     display: none !important;
+  }
+
+  body.sidebar-collapsed .sidebar-toggle-btn {
+    left: 1.25rem;
+  }
+
+  body.sidebar-collapsed .md-content__inner {
+    padding-left: 2.75rem;
   }
 }
