@@ -66,6 +66,6 @@ Each sprint drives a full cycle: plan, design, implement, test, and deploy.
 
 ---
 
-[Next → Templates](02-templates.md){: .md-button .md-button--primary}
+[Next → ALM Tools Integration](02-alm-tools-integration.md){: .md-button .md-button--primary}
 
 ---
