@@ -26,8 +26,7 @@
   function insertToggleButton() {
     if (document.querySelector(".sidebar-toggle-btn")) return;
 
-    var content = document.querySelector(".md-content__inner");
-    if (!content) return;
+    var body = document.body;
 
     var button = document.createElement("button");
     button.type = "button";
@@ -40,7 +39,7 @@
       setCollapsed(!document.body.classList.contains("sidebar-collapsed"));
     });
 
-    content.insertAdjacentElement("afterbegin", button);
+    body.insertAdjacentElement("afterbegin", button);
   }
 
   applyState(isCollapsed());
