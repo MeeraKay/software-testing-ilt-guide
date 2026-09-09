@@ -416,7 +416,7 @@ th {
     display: flex;
     position: fixed;
     top: calc(var(--md-header-height, 2.4rem) + 0.75rem);
-    left: calc(12.1rem + 1.25rem);
+    left: 1.25rem;
     z-index: 10;
   }
 

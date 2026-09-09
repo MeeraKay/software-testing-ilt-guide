@@ -21,6 +21,7 @@
       /* localStorage unavailable, state just won't persist across pages */
     }
     applyState(collapsed);
+    positionToggleButton();
   }
 
   function insertToggleButton() {
@@ -40,6 +41,21 @@
     });
 
     body.insertAdjacentElement("afterbegin", button);
+    positionToggleButton();
+  }
+
+  function positionToggleButton() {
+    var button = document.querySelector(".sidebar-toggle-btn");
+    var sidebar = document.querySelector(".md-sidebar--primary");
+    if (!button) return;
+
+    if (!sidebar || document.body.classList.contains("sidebar-collapsed")) {
+      button.style.left = "";
+      return;
+    }
+
+    var rect = sidebar.getBoundingClientRect();
+    button.style.left = Math.round(rect.right + 20) + "px";
   }
 
   applyState(isCollapsed());
@@ -56,4 +72,6 @@
       applyState(isCollapsed());
     });
   }
+
+  window.addEventListener("resize", positionToggleButton);
 })();
