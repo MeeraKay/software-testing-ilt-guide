@@ -17,6 +17,11 @@
   --md-accent-fg-color: #FF7A54;
 }
 
+/* Hide "Made with Material for MkDocs" footer credit */
+.md-footer-meta__inner .md-copyright {
+  display: none;
+}
+
 /* Consistent header hierarchy - single blue, varied sizes */
 .md-typeset h1 {
   color: var(--primary-blue) !important;
