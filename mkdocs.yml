@@ -17,6 +17,9 @@ theme:
     - search.suggest
     - toc.integrate
 
+extra:
+  generator: false
+
 extra_css:
   - assets/css/custom.css
 
