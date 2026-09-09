@@ -383,58 +383,41 @@ th {
 }
 
 /* Sidebar collapse toggle (desktop only, matches Material's own sidebar breakpoint)
-   Fixed to the viewport at the top-left corner of the content pane, so it never
-   moves or scrolls. The content column gets a matching left gutter reserved for
-   it, so scrolled text never passes underneath the icon. */
+   Lives as the leading icon in the header bar itself (before the logo/title),
+   the same convention GitHub/GitLab/Docusaurus use for their nav toggles. The
+   header is part of the normal page chrome, so this never scrolls with content
+   and never needs to track sidebar geometry. */
 .sidebar-toggle-btn {
   display: none;
   align-items: center;
   justify-content: center;
-  width: 2rem;
-  height: 2rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0 0.8rem 0 0;
+  padding: 0;
   border: none;
   border-radius: 4px;
-  background-color: var(--md-default-bg-color, #fff);
-  color: var(--md-default-fg-color, #333);
+  background-color: transparent;
+  color: var(--md-primary-bg-color, #fff);
   cursor: pointer;
-  padding: 0;
 }
 
 .sidebar-toggle-btn:hover {
-  background-color: var(--light-bg);
-  color: var(--primary-blue);
+  opacity: 0.7;
 }
 
 .sidebar-toggle-btn svg {
-  width: 1.3rem;
-  height: 1.3rem;
+  width: 1.2rem;
+  height: 1.2rem;
   fill: currentColor;
 }
 
 @media screen and (min-width: 76.25em) {
   .sidebar-toggle-btn {
     display: flex;
-    position: fixed;
-    top: calc(var(--md-header-height, 2.4rem) + 0.75rem);
-    left: 1.25rem;
-    z-index: 10;
-  }
-
-  /* Reserve a permanent gutter in the content column so scrolled text never
-     renders underneath the fixed toggle button. */
-  .md-content__inner {
-    padding-left: 2.75rem;
   }
 
   body.sidebar-collapsed .md-sidebar--primary {
     display: none !important;
-  }
-
-  body.sidebar-collapsed .sidebar-toggle-btn {
-    left: 1.25rem;
-  }
-
-  body.sidebar-collapsed .md-content__inner {
-    padding-left: 2.75rem;
   }
 }

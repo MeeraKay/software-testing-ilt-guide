@@ -1,6 +1,7 @@
 (function () {
   var STORAGE_KEY = "guide-sidebar-collapsed";
-  var MENU_ICON = '<svg viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>';
+  var MENU_ICON =
+    '<svg viewBox="0 0 24 24"><path d="M4 4h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm5 2H5v12h4V6zm2 0v12h9V6h-9z"/></svg>';
 
   function applyState(collapsed) {
     document.body.classList.toggle("sidebar-collapsed", collapsed);
@@ -21,13 +22,13 @@
       /* localStorage unavailable, state just won't persist across pages */
     }
     applyState(collapsed);
-    positionToggleButton();
   }
 
   function insertToggleButton() {
     if (document.querySelector(".sidebar-toggle-btn")) return;
 
-    var body = document.body;
+    var header = document.querySelector(".md-header__inner");
+    if (!header) return;
 
     var button = document.createElement("button");
     button.type = "button";
@@ -40,22 +41,7 @@
       setCollapsed(!document.body.classList.contains("sidebar-collapsed"));
     });
 
-    body.insertAdjacentElement("afterbegin", button);
-    positionToggleButton();
-  }
-
-  function positionToggleButton() {
-    var button = document.querySelector(".sidebar-toggle-btn");
-    var sidebar = document.querySelector(".md-sidebar--primary");
-    if (!button) return;
-
-    if (!sidebar || document.body.classList.contains("sidebar-collapsed")) {
-      button.style.left = "";
-      return;
-    }
-
-    var rect = sidebar.getBoundingClientRect();
-    button.style.left = Math.round(rect.right + 20) + "px";
+    header.insertAdjacentElement("afterbegin", button);
   }
 
   applyState(isCollapsed());
@@ -72,6 +58,4 @@
       applyState(isCollapsed());
     });
   }
-
-  window.addEventListener("resize", positionToggleButton);
 })();
