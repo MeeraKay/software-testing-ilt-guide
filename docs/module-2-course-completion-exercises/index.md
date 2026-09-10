@@ -1,4 +1,4 @@
-# Module 2: Course Completion Exercises
+# 2: Course Completion Exercises
 
 To reinforce what you learned in the instructor-led session and qualify for your Diploma of Completion, work through these exercises on your own.
 

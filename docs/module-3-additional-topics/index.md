@@ -1,4 +1,4 @@
-# Module 3: Additional Topics
+# 3: Additional Topics
 
 Self-paced reference material to deepen your understanding and extend your skills beyond the core training. There's no completion requirement for this module — explore whatever's most relevant to your work.
 

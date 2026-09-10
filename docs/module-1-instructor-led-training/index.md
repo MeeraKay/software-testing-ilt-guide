@@ -1,4 +1,4 @@
-# Module 1: Instructor-Led Training
+# 1: Instructor-Led Training
 
 This module is the core of the day: you'll get oriented in Test Manager, see how Agentic Testing fits into the picture, then move into Studio to build, run, and manage automated tests end to end.
 
