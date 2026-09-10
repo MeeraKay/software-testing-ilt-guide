@@ -1,0 +1,1838 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="UiPath Software & Agentic Testing Instructor-Led Training">
+      
+      
+      
+      
+        <link rel="prev" href="../01-introduction-to-software-testing-concepts/">
+      
+      
+        <link rel="next" href="../03-templates/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>ALM Tools Integration - Test Manager Connect - Software Testing ILT Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="light" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#alm-tools-integration-test-manager-connect" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Software Testing ILT Guide" class="md-header__button md-logo" aria-label="Software Testing ILT Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Software Testing ILT Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ALM Tools Integration - Test Manager Connect
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="light" data-md-color-primary="blue" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="dark" data-md-color-primary="blue" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Software Testing ILT Guide" class="md-nav__button md-logo" aria-label="Software Testing ILT Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Software Testing ILT Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 - Instructor-Led Training
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1 - Instructor-Led Training
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/00-uipath-test-cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UiPath Test Cloud
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/01-getting-started-test-manager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started with Test Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/02-agentic-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agentic Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/03-getting-started-studio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started in Studio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/04-object-repository/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Object Repository
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/05-test-automation-project/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Test Automation Project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/06-connect-project-to-test-manager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Connect Project to Test Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/07-manual-to-automated-test-case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manual to Automated Test Case
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/08-data-driven-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data-Driven Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/09-orchestrator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Orchestrator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/10-publishing-test-cases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Publishing Test Cases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/11-execute-test-cases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Execute Test Cases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/12-building-your-own-ai-agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Building Your Own AI Agents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/you-did-it/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    You Did It!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2 - Course Completion Exercises
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2 - Course Completion Exercises
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2-course-completion-exercises/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2-course-completion-exercises/01-autopilot-for-developers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autopilot for Developers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2-course-completion-exercises/02-integration-service/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integration Service
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2-course-completion-exercises/03-api-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2-course-completion-exercises/04-coded-test-cases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coded Test Cases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2-course-completion-exercises/05-additional-exercises/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Additional Exercises
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2-course-completion-exercises/you-did-it/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Receive Credit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3 - Additional Topics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    3 - Additional Topics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-introduction-to-software-testing-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction to Software Testing Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ALM Tools Integration - Test Manager Connect
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ALM Tools Integration - Test Manager Connect
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-synchronization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requirements Synchronization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defect-synchronization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Defect Synchronization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Defect Synchronization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-defects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating Defects
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#benefits-of-defect-synchronization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Benefits of Defect Synchronization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alm-integration-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ALM Integration Patterns
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ALM Integration Patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-alm-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic ALM integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sidestep-alm-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sidestep ALM Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-alm-tools-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of ALM Tools Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of ALM Tools Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#native-integration-out-of-the-box-connectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Native Integration - Out Of The Box Connectors
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-manager-connect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test Manager Connect
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Test Manager Connect">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-uipath-test-manager-connect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is UiPath Test Manager Connect
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-connectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Connectors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#styles-of-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Styles of Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-based-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model-Based Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Model-Based Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-key-steps-to-set-up-model-based-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 Key Steps to Set-Up Model Based Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-testing-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing Framework
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-terminal-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terminal Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-best-practices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Best Practices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-generating-synthetic-test-data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generating Synthetic Test Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-database-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Database Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-custom-connection-integration-service/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom Connection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-other-agentic-features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Additional Agentic Features in Test Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-sap-heatmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SAP Heatmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-cicd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CI/CD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="alm-tools-integration-test-manager-connect">ALM Tools Integration - Test Manager Connect<a class="headerlink" href="#alm-tools-integration-test-manager-connect" title="Permanent link">&para;</a></h1>
+<h2 id="requirements-synchronization">Requirements Synchronization<a class="headerlink" href="#requirements-synchronization" title="Permanent link">&para;</a></h2>
+<p>Test Manager supports the synchronization of requirements from external tools as well as the creation of requirements from within Test Manager.</p>
+<p>In order to keep requirements from external ALM tools in sync with requirements from Test Manager, configure a connection first.</p>
+<p>Once a connection is configured properly, any requirement which is created in the external tool is also created in Test Manager. The name and description of those requirements are also kept in sync when changed in the external tool. In Test Manager, these attributes are read-only.</p>
+<h2 id="defect-synchronization">Defect Synchronization<a class="headerlink" href="#defect-synchronization" title="Permanent link">&para;</a></h2>
+<p>UiPath Test Manager enables seamless synchronization of test execution results with external Application Lifecycle Management (ALM) tools. This integration ensures that information such as execution results, logs, timestamps, and other details are shared with the connected ALM tool, facilitating efficient defect tracking and resolution.</p>
+<h3 id="creating-defects">Creating Defects<a class="headerlink" href="#creating-defects" title="Permanent link">&para;</a></h3>
+<p>Defects can be created directly from the test case logs within the Execution page of Test Manager:</p>
+<p><strong>1.</strong> Navigate to the <strong>Execution</strong> section.</p>
+<p><strong>2.</strong> Open a specific test result and click on the test case key to access the logs.</p>
+<p><strong>3.</strong> Click on <strong>Tasks</strong> and select <strong>Create Defect</strong>.</p>
+<p>This action creates a defect in the integrated external tool (e.g., Jira, Azure DevOps) and links it to the corresponding test execution result. You can then open the defect directly in the external tool for further analysis and resolution.</p>
+<p><img alt="Create Defect from Test Execution" src="../../assets/images/Defect%20sync.png" /></p>
+<h3 id="benefits-of-defect-synchronization">Benefits of Defect Synchronization<a class="headerlink" href="#benefits-of-defect-synchronization" title="Permanent link">&para;</a></h3>
+<p>✅ <strong>Streamlined Workflow</strong> — automates the process of defect creation and linking, reducing manual effort.</p>
+<p>✅ <strong>Enhanced Traceability</strong> — maintains a clear connection between test cases, execution results, and defects.</p>
+<p>✅ <strong>Improved Collaboration</strong> — facilitates communication between testing and development teams through integrated tools.</p>
+<p>✅ <strong>Efficient Defect Management</strong> — allows for quick identification and resolution of issues uncovered during testing.</p>
+<h2 id="alm-integration-patterns">ALM Integration Patterns<a class="headerlink" href="#alm-integration-patterns" title="Permanent link">&para;</a></h2>
+<p>Test Manager supports two ALM integration patterns with external tools. The integration patterns are independent of the CI/CD pipeline integrations.</p>
+<h3 id="basic-alm-integration">Basic ALM integration<a class="headerlink" href="#basic-alm-integration" title="Permanent link">&para;</a></h3>
+<p><img alt="Basic ALM Integration" src="../../assets/images/Basic%20ALM%20integration.png" /></p>
+<p>This integration pattern is useful for scenarios where external ALM tools for defect management, agile planning and requirements management are already in place but lack test management capabilities.</p>
+<p>This way of integration makes use of Test Manager for managing tests and results while integrating the testing process into the development lifecycle supported by the external toolset.</p>
+<p>In the diagram above, you can view which tasks are performed by which component (external or UiPath) for this ALM integration pattern. The direction of a relationship between the components is indicated by the arrows.</p>
+<p>In a real-life scenario, you will be using Studio to create automation and assign it to your tests, followed by test execution performed by Orchestrator, with the results being pushed to Test Manager for analysis and integration into the development process.</p>
+<p>In the context of a failed test, as a result of a test execution, you might want to create a defect. If you have an external tool for defect management, you can use Test Manager to create this new defect. The defect will be created in your tool and linked to all affected requirements. The defect will be enriched with detailed log information from the executing robots.</p>
+<h3 id="sidestep-alm-integration">Sidestep ALM Integration<a class="headerlink" href="#sidestep-alm-integration" title="Permanent link">&para;</a></h3>
+<p><img alt="Sidestep ALM Integration" src="../../assets/images/Sidestep%20Integration.png" /></p>
+<p>You can use this integration pattern to automate and execute your tests through Studio and Orchestrator, respectively, while using your external tools to create and manage the tests.</p>
+<p>Through this integration pattern, you will be using external tools for test management and only the server component of Test Manager (Test Manager Hub) will allow using automation in test cases created in the test management solution of your choice.</p>
+<p>In the diagram above, you can view which tasks are performed by which component (external or UiPath) for this ALM integration pattern. The direction of a relationship between the components is indicated by the arrows.</p>
+<p>For example, you can use Studio to assign automation to your test cases, execute them through Orchestrator, and then push the results directly to your external tool (e.g. Xray for Jira). Execution results are uploaded to Test Manager Hub and then pushed to your external tool through the connectors.</p>
+<h2 id="types-of-alm-tools-integration">Types of ALM Tools Integration<a class="headerlink" href="#types-of-alm-tools-integration" title="Permanent link">&para;</a></h2>
+<p>UiPath Test Manager supports 2 types of ALM Tools Integration:</p>
+<p>✅ <strong>Native Integration</strong> (limited functionality)</p>
+<p>✅ <strong>Using Test Manager Connect</strong></p>
+<h3 id="native-integration-out-of-the-box-connectors">Native Integration - Out Of The Box Connectors<a class="headerlink" href="#native-integration-out-of-the-box-connectors" title="Permanent link">&para;</a></h3>
+<p>Test Manager provides native integrations to widely-used Application Lifecycle Management (ALM) tools, like ServiceNow, SAP Solution Manager, Azure DevOps, Jira, and even Jira plugins like Xray.</p>
+<p>The connectors are libraries that connect external ALM tools with Test Manager. A generic interface defines how an external system is to be integrated. The connectors are out-of-the-box and provide the specific implementation of this interface in order to integrate certain ALM systems.</p>
+<p>You can configure the connectors in Test Manager for each project, individually. Any number of external systems and projects can be integrated with Test Manager.</p>
+<p>Access the <a href="https://docs.uipath.com/test-manager/automation-cloud/latest/user-guide/uipath-test-manager-connect#integrated-alm-tools-and-synchronization-matrix" target="_blank">Integrated ALM tools and Synchronization matrix</a> for an overview of the most common integrations between UiPath Test Manager and various ALM tools through Planview Hub.</p>
+<p>Here's a look at native integration with Jira and synchronization with Test Manager:</p>
+<video width="100%" controls style="border-radius: 6px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08); margin: 20px 0;">
+  <source src="../../assets/Videos/Integrating%20Jira%20Cloud%20with%20UiPath%20FINAL.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<h2 id="test-manager-connect">Test Manager Connect<a class="headerlink" href="#test-manager-connect" title="Permanent link">&para;</a></h2>
+<p>Test Manager Connect offered by Planview® allows seamless integration between Test Manager and a multitude of Application Lifecycle Management (ALM) tools, through the Planview® Hub.</p>
+<p>UiPath Test Manager Connect allows UiPath customers to stay in their favorite UiPath tools, while also synchronizing and implementing additional tools into their toolchain. UiPath offers over 60 different connectors and connects to your tools via REST APIs. Also, to ensure integrations are always working, UiPath Test Manager Connect conducts 500,000 API tests per day.</p>
+<h3 id="what-is-uipath-test-manager-connect">What is UiPath Test Manager Connect<a class="headerlink" href="#what-is-uipath-test-manager-connect" title="Permanent link">&para;</a></h3>
+<p>✅ 3 styles of integration including bi-directional synchronization</p>
+<p>✅ Out-of-the-box, point-and-click configuration; not custom services</p>
+<p>✅ Model based integration making it easy to scale to hundreds of projects</p>
+<p>✅ Maintain artifact relationships by mirroring relationships like parent-child</p>
+<h3 id="supported-connectors">Supported Connectors<a class="headerlink" href="#supported-connectors" title="Permanent link">&para;</a></h3>
+<p><img alt="Test Manager Connect Supported Connectors" src="../../assets/images/Supported%20connectors.jpg" /></p>
+<h3 id="styles-of-integration">Styles of Integration<a class="headerlink" href="#styles-of-integration" title="Permanent link">&para;</a></h3>
+<p>UiPath Test Manager Connect offers three different styles of integration: Synchronization, Gateway, and Enterprise Data Stream.</p>
+<p><img alt="Test Manager Connect Integration Styles" src="../../assets/images/Styles%20of%20Integration.jpg" /></p>
+<p>✅ <strong>Synchronization</strong> — the most used integration style. This integration style allows work items to flow bi-directionally between two separate tools (repositories).</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>UiPath Test Manager Connect can synchronize a UiPath Test Manager Requirement over to Atlassian Jira as an Epic.</p>
+</div>
+<p>✅ <strong>Gateway</strong> — a one-way push of information from a tool that UiPath Test Manager Connect does not have a connector for (example: Bitbucket) back to a UiPath Test Manager. There are two types of Gateway integrations:</p>
+<ul>
+<li><strong>Gateway Create</strong> is used to create new artifacts (work items) in UiPath Test Manager when artifacts are sent to UiPath Test Manager Connect through an inbound webhook.</li>
+<li><strong>Gateway Modify</strong> is used to modify existing artifacts in a UiPath Test Manager Connect tool when updates to artifacts are sent through an inbound webhook.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Examples</p>
+<p><strong>Gateway Create:</strong> When a Jenkins build fails, it will automatically create a defect in UiPath Test Manager.</p>
+<p><strong>Gateway Modify:</strong> When a developer commits code in Git, UiPath Test Manager Connect will modify the existing UiPath Test Manager Requirement referencing that code, creating traceability.</p>
+</div>
+<p>✅ <strong>Enterprise Data Stream</strong> — used to pull all the software lifecycle data that has been created or modified from the repositories that are connected to UiPath Test Manager Connect, normalizes the data through UiPath Test Manager Connect's Model Based Integration (reducing the need for heavy extracts, transforms, or loads), and pushes that data into a database. Once in the database, customers can use their BI tools to create custom reports across their ecosystem.</p>
+<h2 id="model-based-integration">Model-Based Integration<a class="headerlink" href="#model-based-integration" title="Permanent link">&para;</a></h2>
+<p>In basic terms, a model is simply a list of fields or attributes that define a certain artifact that you want to integrate. A model is a tool that makes the integration process scalable by defining the fields for each artifact type you would like to integrate.</p>
+<p>The value of this model is that instead of having all of the fields and field values managed separately in UiPath Test Manager and Azure DevOps, you can use the UiPath Test Manager Connect model in the center to act as a translator to easily direct information where it needs to go.</p>
+<p><img alt="Model Based Integration" src="../../assets/images/Model%20based%20integration.jpg" /></p>
+<h3 id="4-key-steps-to-set-up-model-based-integration">4 Key Steps to Set-Up Model Based Integration<a class="headerlink" href="#4-key-steps-to-set-up-model-based-integration" title="Permanent link">&para;</a></h3>
+<p>Setting up a model-based integration follows four key steps, moving from connecting your repositories through to running the finished integration:</p>
+<p><img alt="4 Key Steps to Set-Up Model Based Integration" src="../../assets/images/4%20Key%20Steps%20to%20set-up%20Model%20Based%20Integration.jpg" /></p>
+<p><strong>1. Connect Repositories</strong> — create your project in both UiPath Test Manager and the external tool (e.g. Azure DevOps), add the required custom fields to each, create an integration user with the right permissions, and connect both tools to the Planview Hub.</p>
+<p><strong>2. Define Model</strong> — start from a commonly used model in the Hub, then add the custom fields you'll need so the model has a good starting point to translate between systems.</p>
+<p><strong>3. Create Collection Mapping</strong> — create collections for each of the relevant work items in both UiPath Test Manager (Requirement, Test Set, Test Case, Test Execution, Test Case Log, Defect) and the external tool (Epics, Test Suite, Test Case, Test Run, Test Result, Defect).</p>
+<p><strong>4. Finalize Integration</strong> — create and run your integrations in the correct dependency order, and configure the artifact creation, routing, filtering, comment, and attachment flows for each.</p>
+<p>The video below walks through this setup end to end:</p>
+<video width="100%" controls style="border-radius: 6px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08); margin: 20px 0;">
+  <source src="../../assets/Videos/Planview%20inte%20with%20test%20manager.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<hr />
+<p><a class="md-button md-button--primary" href="../03-templates/">Next → Templates</a></p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../assets/js/mermaid.min.js"></script>
+      
+        <script src="../../assets/js/mermaid-init.js"></script>
+      
+        <script src="../../assets/js/sidebar-toggle.js"></script>
+      
+    
+  </body>
+</html>

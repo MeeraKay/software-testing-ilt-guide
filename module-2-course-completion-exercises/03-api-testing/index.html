@@ -1,0 +1,1849 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="UiPath Software & Agentic Testing Instructor-Led Training">
+      
+      
+      
+      
+        <link rel="prev" href="../02-integration-service/">
+      
+      
+        <link rel="next" href="../04-coded-test-cases/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>API Testing - Software Testing ILT Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="light" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#api-testing" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Software Testing ILT Guide" class="md-header__button md-logo" aria-label="Software Testing ILT Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Software Testing ILT Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              API Testing
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="light" data-md-color-primary="blue" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="dark" data-md-color-primary="blue" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Software Testing ILT Guide" class="md-nav__button md-logo" aria-label="Software Testing ILT Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Software Testing ILT Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 - Instructor-Led Training
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1 - Instructor-Led Training
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/00-uipath-test-cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UiPath Test Cloud
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/01-getting-started-test-manager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started with Test Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/02-agentic-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agentic Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/03-getting-started-studio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started in Studio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/04-object-repository/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Object Repository
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/05-test-automation-project/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Test Automation Project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/06-connect-project-to-test-manager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Connect Project to Test Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/07-manual-to-automated-test-case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manual to Automated Test Case
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/08-data-driven-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data-Driven Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/09-orchestrator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Orchestrator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/10-publishing-test-cases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Publishing Test Cases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/11-execute-test-cases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Execute Test Cases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/12-building-your-own-ai-agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Building Your Own AI Agents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1-instructor-led-training/you-did-it/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    You Did It!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2 - Course Completion Exercises
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2 - Course Completion Exercises
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-autopilot-for-developers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autopilot for Developers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-integration-service/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integration Service
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Testing
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-an-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is an API?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-api-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is API testing?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-testing-vs-gui-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API testing vs. GUI testing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-testing-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API testing approach
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-testing-in-uipath" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API testing in UiPath
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-postman" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is Postman?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-1-api-testing-using-http-activities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise 1: API Testing Using HTTP Activities
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercise 1: API Testing Using HTTP Activities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explore-the-uibank-api-home-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Explore the UiBank API home page
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-the-test-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build the test case
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-2-create-an-api-test-using-an-imported-openapi-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise 2: Create an API Test Using an Imported OpenAPI Definition
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optional-exercise-api-testing-using-integration-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optional Exercise: API Testing Using Integration Service
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-coded-test-cases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coded Test Cases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-additional-exercises/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Additional Exercises
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../you-did-it/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Receive Credit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3 - Additional Topics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    3 - Additional Topics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/01-introduction-to-software-testing-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction to Software Testing Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/02-alm-tools-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ALM Tools Integration - Test Manager Connect
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/03-templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/04-testing-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing Framework
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/05-terminal-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terminal Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/06-best-practices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Best Practices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/07-generating-synthetic-test-data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generating Synthetic Test Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/08-database-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Database Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/09-custom-connection-integration-service/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom Connection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/10-other-agentic-features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Additional Agentic Features in Test Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/11-sap-heatmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SAP Heatmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/12-cicd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CI/CD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="api-testing">API Testing<a class="headerlink" href="#api-testing" title="Permanent link">&para;</a></h1>
+<h2 id="what-is-an-api">What is an API?<a class="headerlink" href="#what-is-an-api" title="Permanent link">&para;</a></h2>
+<p>An <strong>API</strong> (Application Programming Interface) is a computing interface that enables communication and data exchange between two independent software systems. It defines how requests are made, what data formats are used, and what responses to expect.</p>
+<p>In simple terms, an API lets software components talk to each other — for example, a weather app might use an API to get data from a weather service.</p>
+<h2 id="what-is-api-testing">What is API testing?<a class="headerlink" href="#what-is-api-testing" title="Permanent link">&para;</a></h2>
+<p><strong>API testing</strong> verifies that APIs behave as expected. Instead of testing through the UI (clicking buttons, entering text), it interacts directly with the underlying service using requests and examines the responses.</p>
+<p>Key aspects tested:</p>
+<ul>
+<li><strong>Functionality</strong> — does the API do what it's supposed to?</li>
+<li><strong>Reliability</strong> — is the API available and stable over time?</li>
+<li><strong>Performance</strong> — how fast does the API respond?</li>
+<li><strong>Security</strong> — are unauthorized users kept out?</li>
+</ul>
+<h2 id="api-testing-vs-gui-testing">API testing vs. GUI testing<a class="headerlink" href="#api-testing-vs-gui-testing" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>API Testing</th>
+<th>GUI Testing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Focus</td>
+<td>Business logic layer</td>
+<td>User interface</td>
+</tr>
+<tr>
+<td>Input/Output</td>
+<td>Structured data (JSON/XML) via software</td>
+<td>User actions (keyboard, mouse)</td>
+</tr>
+<tr>
+<td>Speed</td>
+<td>Faster</td>
+<td>Slower</td>
+</tr>
+<tr>
+<td>Maintenance</td>
+<td>Easier</td>
+<td>More fragile</td>
+</tr>
+</tbody>
+</table>
+<h2 id="api-testing-approach">API testing approach<a class="headerlink" href="#api-testing-approach" title="Permanent link">&para;</a></h2>
+<p>A predefined strategy the QA team follows to conduct API testing once the build is ready:</p>
+<p>To effectively test APIs, follow this approach:</p>
+<ol>
+<li><strong>Understand the API's functionality</strong> — read the documentation, identify endpoints, methods (GET, POST, etc.), input parameters, and expected responses.</li>
+<li><strong>Design test cases</strong> — using techniques such as Equivalence Partitioning, Boundary Value Analysis, and Error Guessing.</li>
+<li><strong>Set input parameters</strong> — define what data each API request needs.</li>
+<li><strong>Execute and validate</strong> — run the test cases, compare actual vs. expected responses, log and retest issues.</li>
+</ol>
+<h2 id="api-testing-in-uipath">API testing in UiPath<a class="headerlink" href="#api-testing-in-uipath" title="Permanent link">&para;</a></h2>
+<p>API automation testing requires an application that can be interacted with via an API. Ways to interact with an API in UiPath:</p>
+<ul>
+<li><strong>HTTP Activities</strong> — use the HTTP Request activity to send requests directly.</li>
+<li><strong>Import API Definition (Swagger/OpenAPI)</strong> — bring structured API definitions into UiPath Studio.</li>
+<li><strong>Import Postman Collection</strong> — use existing Postman test collections within Studio.</li>
+<li><strong>Integration Service</strong> — use UiPath's pre-built connectors to work with SaaS platforms.</li>
+</ul>
+<h2 id="what-is-postman">What is Postman?<a class="headerlink" href="#what-is-postman" title="Permanent link">&para;</a></h2>
+<p>Postman is a collaboration platform for API development — its features simplify each step of building an API and streamline collaboration.</p>
+<p>Let's watch API Testing using UiPath.</p>
+<video width="100%" controls style="border-radius: 6px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08); margin: 20px 0;">
+  <source src="../../assets/videos/API-testing.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<hr />
+<h2 id="exercise-1-api-testing-using-http-activities">Exercise 1: API Testing Using HTTP Activities<a class="headerlink" href="#exercise-1-api-testing-using-http-activities" title="Permanent link">&para;</a></h2>
+<p><strong>Create an API test case that sends HTTP requests and validates response.</strong></p>
+<p>In this exercise, you will create an API test case for the UiBank application. Using the UiBank API, you will automate the testing of the loan application functionality by sending HTTP requests and validating the responses returned by the service.</p>
+<h3 id="explore-the-uibank-api-home-page">Explore the UiBank API home page<a class="headerlink" href="#explore-the-uibank-api-home-page" title="Permanent link">&para;</a></h3>
+<p><strong>1.</strong> Navigate to the <a href="https://uibank-api.uipath.com" target="_blank">UiBank API</a> website.</p>
+<p><strong>2.</strong> The UiBank API home page provides links to:</p>
+<p>✅ <strong>Explore API</strong> — interactive API documentation.</p>
+<p>✅ <strong>Swagger File</strong> — the OpenAPI/Swagger definition that can be imported into UiPath Studio.</p>
+<p><strong>3.</strong> <strong>Explore the available API endpoints and their specifications</strong></p>
+<p>Go to <strong>Explore API → Quote</strong> to view the available loan quote endpoints, then open the <code>/quote/newquote</code> endpoint and click <strong>Try it Out!</strong></p>
+<p><img alt="UiBank API Explorer" src="../../assets/images/UiBank%20API%20explorer.png" /></p>
+<p><strong>4.</strong> Copy the endpoint: <code>https://uibank-api.uipath.com/api/quotes/newquote</code></p>
+<p><strong>5.</strong> Explore the response — there are three fields: <code>accepted</code>, <code>rate</code>, and <code>quoteid</code>.</p>
+<h3 id="build-the-test-case">Build the test case<a class="headerlink" href="#build-the-test-case" title="Permanent link">&para;</a></h3>
+<p><strong>Step 1.  Create a new Test Case</strong> </p>
+<p>✅ Right-click the <strong>APIs</strong> folder in the ILT project</p>
+<p>✅ select <strong>Add → Test Case</strong> from the context menu.</p>
+<p><img alt="API Folder in Studio" src="../../assets/images/API%20folder%20in%20Studio.png" /></p>
+<p><strong>Step 2.  Enter the test case details</strong> </p>
+<p>✅ In the <strong>Name</strong> field, enter a name for the test case.</p>
+<p>✅ Leave the <strong>Location</strong> field unchanged.</p>
+<p>✅ From the <strong>Based On</strong> dropdown, select <strong>Empty Test Case Template</strong>.</p>
+<p>✅ Ensure <strong>Execution Template</strong> is set to <code>&lt;no execution template&gt;</code>.</p>
+<p>✅ Click <strong>Next</strong> to proceed to the <strong>Test Data</strong> configuration step. To add test data, from <strong>Source</strong> select <strong>file</strong>, browse to the <strong>API</strong> subfolder in the project, and select the file <code>APITestData.xlsx</code>.</p>
+<p>✅ Click <strong>Create</strong> to create the test case.</p>
+<p><img alt="New Test Case" src="../../assets/images/New%20Test%20Case.png" /></p>
+<p><strong>3.  HTTP Request activity</strong></p>
+<p>✅ In the Activities panel, search for the <code>HTTP Request</code> activity. </p>
+<p>✅ Drag and drop the activity onto the Designer canvas.</p>
+<p><img alt="HTTP Request" src="../../assets/images/http%20request.png" /></p>
+<p><strong>4. Configure Activity</strong> </p>
+<p>Configure the HTTP Request activity using the values from the UiBank API documentation:</p>
+<p>✅ Change <strong>Request method</strong> to <strong>Post</strong>.</p>
+<p>✅ Add the <strong>Request URL</strong> copied earlier.</p>
+<p>✅ Expand the <strong>Parameters</strong> section and add the parameter names (keys) as defined in the UiBank API documentation. For each parameter, map the corresponding test case argument as the value — the required arguments are already configured as part of this data-driven test case.</p>
+<p>✅ Set <strong>Request body type</strong> to <strong>none</strong>.</p>
+<p>✅ Create a variable in the output property <strong>Response content</strong>. Example: <code>APIResp</code>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Create variables directly from the Properties panel instead of using the Data Manager. When a variable is created from the Properties panel, UiPath automatically assigns the appropriate data type based on the property being configured — eliminating the need to manually search for and select the correct data type from the Data Manager.</p>
+</div>
+<p><strong>5.</strong> Deserialize the API response. The response (<code>APIResp</code>) is returned as an <code>HTTPResponseSummary</code> object.</p>
+<p>✅ Add a <strong>Deserialize JSON</strong> activity.</p>
+<p>✅ Set its input to <code>APIResp.TextContent</code>. This converts the JSON response payload into a format that can be used for validations and assertions.</p>
+<p>✅ Create a variable in the Properties panel for capturing the output. Example: <code>JSONObj</code>.</p>
+<p><img alt="Deserialize JSON" src="../../assets/images/deserialize%20json.png" /></p>
+<p><strong>6.</strong> Verify the result — you'll test whether the <code>accepted</code> parameter of the API response is <code>true</code> or <code>false</code>.</p>
+<p>✅ Add a <strong>Verify Expression With Operator</strong> activity.</p>
+<p>✅ In <strong>First Expression</strong>, add <code>JSONObj("accepted").ToString</code>.</p>
+<p>✅ In <strong>Second Expression</strong>, add the argument <code>Accepted</code>.</p>
+<p><img alt="Verify Expression" src="../../assets/images/verify%20expre.png" /></p>
+<p><strong>7.</strong> Execute this data-driven test case from the Test Explorer.</p>
+<hr />
+<h2 id="exercise-2-create-an-api-test-using-an-imported-openapi-definition">Exercise 2: Create an API Test Using an Imported OpenAPI Definition<a class="headerlink" href="#exercise-2-create-an-api-test-using-an-imported-openapi-definition" title="Permanent link">&para;</a></h2>
+<p>In this exercise, you will import an OpenAPI (Swagger) definition into UiPath Studio and use the generated API activities to create an automated test for the UiBank loan quote API.</p>
+<p><strong>Step 1.  Import the API definition</strong>  </p>
+<p>✅ From the top ribbon in UiPath Studio, click <strong>New Service</strong>.</p>
+<p><img alt="New Service in Studio" src="../../assets/images/New%20Service%20in%20Studio.png" /></p>
+<p><strong>Step 2.  Swagger URL</strong> </p>
+<p>✅ Add the Swagger URL in the link field and load. </p>
+<p>✅ Observe the namespace <code>uibankapi</code> created, then close the wizard.</p>
+<p><img alt="New Service Property" src="../../assets/images/new%20service%20property.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can check/uncheck to choose the APIs you want to import.</p>
+</div>
+<p><strong>Step 3.  UiBank Activity</strong> </p>
+<p>✅ From the Activities panel, search for <code>uibank</code>. </p>
+<p>✅ All the picked endpoints are now available as activities — this makes them convenient to configure. </p>
+<p>✅ Locate the generated activity <code>Quote_newquote</code>.</p>
+<p><img alt="UiBank NS Activity" src="../../assets/images/UiBank%20NS%20Activity.png" /></p>
+<p><strong>Step 4.  New Test Case</strong>
+✅ Create a new test case in the APIs folder by following the steps from the previous exercise</p>
+<p>✅ Add <code>APITestData.xlsx</code> as the test data source.</p>
+<p>✅ Drag the activity into the test case.</p>
+<p>✅ Configure the required input parameters.</p>
+<p><img alt="Quote Newquote" src="../../assets/images/quote%20newquote.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The API parameters expect values of type <code>Double</code>, while the test case arguments are provided as <code>String</code> values. Use the <code>CDbl()</code> method to convert the string arguments before mapping them to the API parameters.</p>
+<p>Create a variable within the activity by using <strong>Ctrl+K</strong>. </p>
+<p>The response variable is of type <code>Response15</code>, which provides strongly typed access to the API response fields, including <code>Accepted</code>, <code>Rate</code>, and <code>QuoteID</code>. These properties can be referenced directly in verification activities without additional deserialization.</p>
+</div>
+<p><strong>Step 5.  Output</strong> </p>
+<p>✅ Observe the output of the activity by adding a <strong>Log Message</strong> activity.</p>
+<p><img alt="APIResp" src="../../assets/images/apiresp.png" /></p>
+<p><strong>Step 6. Verify</strong> </p>
+<p>✅ Add a <strong>Verify Expression with Operator</strong> activity to validate the API response.</p>
+<p><img alt="Verify" src="../../assets/images/verify%202.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Trim</code> function removes leading and trailing spaces from the text.</p>
+</div>
+<p><strong>Execute this data-driven test case from the Test Explorer.</strong></p>
+<hr />
+<h2 id="optional-exercise-api-testing-using-integration-service">Optional Exercise: API Testing Using Integration Service<a class="headerlink" href="#optional-exercise-api-testing-using-integration-service" title="Permanent link">&para;</a></h2>
+<p>Create a data-driven test case to validate the UiBank API's Create Loan functionality. Use the two test records provided in <code>APITestData.xlsx</code>, execute the API request for each record, and verify that the returned results match the expected values.</p>
+<p><strong>1.</strong> Search for the <strong>Insert Record</strong> activity in Studio, choosing the API connection created in the previous exercise.</p>
+<p><strong>2.</strong> Select object: <code>QuotesNewquote</code>.</p>
+<p><strong>3.</strong> Transform (<code>CInt</code>) the properties to integers.</p>
+<p><strong>4.</strong> Verify that the <code>accepted</code> property from the API response matches what's expected.</p>
+<p><strong>5.</strong> Log the quote rate.</p>
+<p><strong>6.</strong> Check the parameters specified in the API explorer.</p>
+<hr />
+<p><a class="md-button md-button--primary" href="../04-coded-test-cases/">Next → Coded Test Cases</a></p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../assets/js/mermaid.min.js"></script>
+      
+        <script src="../../assets/js/mermaid-init.js"></script>
+      
+        <script src="../../assets/js/sidebar-toggle.js"></script>
+      
+    
+  </body>
+</html>

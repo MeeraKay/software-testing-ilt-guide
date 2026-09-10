@@ -1,0 +1,1905 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="UiPath Software & Agentic Testing Instructor-Led Training">
+      
+      
+      
+      
+        <link rel="prev" href="../07-manual-to-automated-test-case/">
+      
+      
+        <link rel="next" href="../09-orchestrator/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Data-Driven Testing - Software Testing ILT Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="light" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#data-driven-testing-and-test-data-management" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Software Testing ILT Guide" class="md-header__button md-logo" aria-label="Software Testing ILT Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Software Testing ILT Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Data-Driven Testing
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="light" data-md-color-primary="blue" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="dark" data-md-color-primary="blue" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Software Testing ILT Guide" class="md-nav__button md-logo" aria-label="Software Testing ILT Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Software Testing ILT Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 - Instructor-Led Training
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1 - Instructor-Led Training
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00-uipath-test-cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UiPath Test Cloud
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-getting-started-test-manager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started with Test Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-agentic-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agentic Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-getting-started-studio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started in Studio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-object-repository/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Object Repository
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-test-automation-project/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Test Automation Project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-connect-project-to-test-manager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Connect Project to Test Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-manual-to-automated-test-case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manual to Automated Test Case
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data-Driven Testing
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data-Driven Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-data-driven-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction to data-driven testing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-data-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test data management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Test data management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-creation-approaches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data creation approaches
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-driven-test-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Driven Test Case
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Driven Test Case">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-data-driven-test-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating a Data Driven Test Case
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-six-data-source-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The six data source options
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The six data source options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hands-on-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hands-on Practice
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparing-data-storage-approaches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparing Data Storage Approaches
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-orchestrator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Orchestrator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-publishing-test-cases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Publishing Test Cases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-execute-test-cases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Execute Test Cases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-building-your-own-ai-agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Building Your Own AI Agents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../you-did-it/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    You Did It!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2 - Course Completion Exercises
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2 - Course Completion Exercises
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2-course-completion-exercises/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2-course-completion-exercises/01-autopilot-for-developers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autopilot for Developers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2-course-completion-exercises/02-integration-service/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integration Service
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2-course-completion-exercises/03-api-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2-course-completion-exercises/04-coded-test-cases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coded Test Cases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2-course-completion-exercises/05-additional-exercises/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Additional Exercises
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2-course-completion-exercises/you-did-it/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Receive Credit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3 - Additional Topics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    3 - Additional Topics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/01-introduction-to-software-testing-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction to Software Testing Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/02-alm-tools-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ALM Tools Integration - Test Manager Connect
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/03-templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/04-testing-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing Framework
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/05-terminal-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terminal Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/06-best-practices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Best Practices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/07-generating-synthetic-test-data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generating Synthetic Test Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/08-database-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Database Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/09-custom-connection-integration-service/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom Connection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/10-other-agentic-features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Additional Agentic Features in Test Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/11-sap-heatmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SAP Heatmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-3-additional-topics/12-cicd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CI/CD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="data-driven-testing-and-test-data-management">Data-Driven Testing and Test Data Management<a class="headerlink" href="#data-driven-testing-and-test-data-management" title="Permanent link">&para;</a></h1>
+<h2 id="introduction-to-data-driven-testing">Introduction to data-driven testing<a class="headerlink" href="#introduction-to-data-driven-testing" title="Permanent link">&para;</a></h2>
+<p><strong>Learning objectives</strong>  by the end of this chapter, you will be able to:</p>
+<ol>
+<li>Understand data-driven testing.</li>
+<li>Manage test data.</li>
+<li>Compare the six different data source options available in UiPath:<ul>
+<li>File (Excel/JSON)</li>
+<li>Generate with Autopilot (AI-powered)</li>
+<li>Data Service (Automation Cloud)</li>
+<li>Existing Data (project-based)</li>
+<li>Auto Generate (path coverage)</li>
+<li>Test Data Queues (legacy, existing tenants only)</li>
+</ul>
+</li>
+<li>Create data-driven test cases using multiple data sources.</li>
+<li>Apply best practices for test data management.</li>
+</ol>
+<p>Data-driven testing lets you execute a single test case multiple times with different input datasets, instead of creating a separate test case for every scenario.</p>
+<p>✅ Test multiple scenarios efficiently</p>
+<p>✅ Separate test logic from test data</p>
+<p>✅ Easily add new test variations</p>
+<p>✅ Achieve better test coverage</p>
+<div class="admonition note">
+<p class="admonition-title">Prerequisites</p>
+<p>Orchestrator 2022.4 or later is required to use data-driven testing functionality.</p>
+</div>
+<h2 id="test-data-management">Test data management<a class="headerlink" href="#test-data-management" title="Permanent link">&para;</a></h2>
+<p>Test data management covers three main steps:</p>
+<p>✅ <strong>Designing</strong> the appropriate data for each test scenario</p>
+<p>✅ <strong>Provisioning</strong> that data into the environment where tests will run</p>
+<p>✅ <strong>Consuming</strong> the data during test execution</p>
+<p>This process can consume up to 50% of testing effort. Test data management presents the following challenges:</p>
+<p><img alt="Test Data Management Challenges" src="../../assets/images/test-data-challenges.png" /></p>
+<div class="flip-card-grid">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Manual complexity</div>
+      <div class="flip-card-back">Preparing datasets by hand is time-consuming and error-prone.</div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Specialized knowledge</div>
+      <div class="flip-card-back">Creating realistic, valid data often requires domain expertise.</div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Frequent refreshes</div>
+      <div class="flip-card-back">Data needs to be updated regularly to stay relevant as systems change.</div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Coverage gaps</div>
+      <div class="flip-card-back">Incorrect or incomplete data can lead to scenarios going untested.</div>
+    </div>
+  </div>
+</div>
+
+<h3 id="data-creation-approaches">Data creation approaches<a class="headerlink" href="#data-creation-approaches" title="Permanent link">&para;</a></h3>
+<p>Three primary strategies exist for creating test data:</p>
+<div class="flip-card-grid">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Production data</div>
+      <div class="flip-card-back">
+        <div class="flip-card-back-title">Use copy of existing production database</div>
+        <ul>
+          <li>GDPR</li>
+          <li>Low coverage</li>
+          <li>Outdated</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Anonymized production data</div>
+      <div class="flip-card-back">
+        <div class="flip-card-back-title">Use anonymized copy of production database</div>
+        <ul>
+          <li>Complex customization</li>
+          <li>Expensive</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Synthetic data</div>
+      <div class="flip-card-back">
+        <div class="flip-card-back-title">Generate data that mimics production</div>
+        <ul>
+          <li>High coverage</li>
+          <li>Reduced privacy risk</li>
+          <li>Easy reproduction</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="admonition note">
+<p class="admonition-title">Optional topics</p>
+<p>Generating synthetic test data (using Activities and Autopilot) and Auto Generate for path coverage are covered as optional topics in <a href="../module-3-additional-topics/06-generating-synthetic-test-data.md">Module 3 — Additional Topics</a>.</p>
+</div>
+<h2 id="data-driven-test-case">Data Driven Test Case<a class="headerlink" href="#data-driven-test-case" title="Permanent link">&para;</a></h2>
+<p>A Data Driven Test Case is a specification of the multiple inputs, execution conditions, testing procedure, and expected results.</p>
+<h3 id="creating-a-data-driven-test-case">Creating a Data Driven Test Case<a class="headerlink" href="#creating-a-data-driven-test-case" title="Permanent link">&para;</a></h3>
+<p>To create a Data Driven Test Case, navigate to an already created Test Case and right click. You should now be able to select <strong>Add Test Data</strong>.</p>
+<p><img alt="Add Test Data Menu Popup" src="../../assets/images/Add%20Test%20Data%20Menu%20Popup.jpg" /></p>
+<h2 id="the-six-data-source-options">The six data source options<a class="headerlink" href="#the-six-data-source-options" title="Permanent link">&para;</a></h2>
+<p>✅ <strong>File</strong> (Excel/JSON) for prepared data</p>
+<p>✅ <strong>Generate with Autopilot</strong> using AI capabilities</p>
+<p>✅ <strong>Data Service</strong> for consolidated cloud-based management</p>
+<p>✅ <strong>Existing Data</strong> from project folders</p>
+<p>✅ <strong>Auto Generate</strong> for path coverage optimization</p>
+<p>✅ <strong>Test Data Queues</strong> for queue-based data management</p>
+<div class="admonition note">
+<p class="admonition-title">Test Data Queues not covered in this exercise</p>
+<p>Test Data Queues are not available for new tenants and are no longer covered as a hands-on exercise here. They remain supported for existing tenants that already use them.</p>
+</div>
+<p>When you create a data-driven test case, the Import Data Variation Source wizard guides you through selecting your preferred data source. The following image showcases the interface where you'll choose and configure your data source option:</p>
+<p><img alt="Import data variations Window" src="../../assets/images/Import%20data%20variations%20Window.jpg" /></p>
+<h3 id="hands-on-practice">Hands-on Practice<a class="headerlink" href="#hands-on-practice" title="Permanent link">&para;</a></h3>
+<p>We'll explore four approaches to data-driven test case creation through hands-on exercises. Each tab covers one data source type with step-by-step instructions to complete your exercise.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">📊 File (Excel/JSON)</label><label for="__tabbed_1_2">🤖 Generate with Autopilot</label><label for="__tabbed_1_3">☁️ Data Service</label><label for="__tabbed_1_4">📁 Existing Data</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>File-based data sources let you drive a test case from an Excel spreadsheet or JSON file that you prepare and maintain outside of UiPath.</p>
+<div class="admonition example">
+<p class="admonition-title">Exercise 1: Create a data-driven test case using Excel</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h12c1.11 0 2-.89 2-2V8zm-2 17-4-4h2.5v-3h3v3H16zm1-10V3.5L18.5 9z"/></svg></span> <a href="../../assets/Files/UiBankTestData.xlsx"><strong>UiBankTestData.xlsx</strong></a> (9.2 KB) — sample data for this exercise</p>
+<ol>
+<li>Navigate to an existing test case.</li>
+<li>Right-click and select <strong>Add Test Data</strong>.</li>
+<li>Choose the Excel or JSON file containing your input data.</li>
+<li>Use the <strong>UiBankTestData.xlsx</strong> file above, matching the UiBank Loans application structure.</li>
+</ol>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Generate with Autopilot uses AI to create contextually relevant test data directly within Studio, based on a natural language prompt you provide.</p>
+<div class="admonition example">
+<p class="admonition-title">Exercise 2: Generate test data by giving instructions in natural language</p>
+<ol>
+<li>Create a new test case containing three arguments: <code>CountryName</code>, <code>CityName</code>, and <code>IBAN</code>.</li>
+<li>Access Autopilot and enter this prompt: <em>"Generate a list of 20 European countries with names typical to the country, cities from the country, and IBANs in the country's format."</em></li>
+<li>Review and import the generated test data.</li>
+</ol>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Data Service (transitioning to the Data Fabric naming) enables centralized entity management, collaboration, and data variation updates without republishing test cases.</p>
+<div class="admonition example">
+<p class="admonition-title">Exercise 3: Create a data-driven test case using Data Service</p>
+<ol>
+<li>Create a new data-driven test case for the UiBank create loan flow.</li>
+<li>Link it to the <code>UiBankLoanData</code> entity.</li>
+<li>Map workflow arguments to the Data Service entity.</li>
+<li>Add a Verify activity to compare actual versus expected rate.</li>
+<li>Execute the test case and observe the data variations.</li>
+</ol>
+</div>
+</div>
+<div class="tabbed-block">
+<p><strong>Existing data</strong> is a built-in data source option that allows you to link a test case to an existing JSON or Excel dataset that has already been stored directly inside your project's Test Data folder. This approach separates test logic from execution data, allowing you to run the same automated workflow against multiple variations without manually changing variables.</p>
+<div class="admonition example">
+<p class="admonition-title">Exercise 4: Create a data-driven test case using Existing Data</p>
+<ol>
+<li><strong>Locate the data file:</strong> You will find the JSON file under the Test Data folder.</li>
+<li><strong>Create a data-driven test case:</strong> in Studio's Project panel, right-click on your workflow or folder, select <strong>Add</strong>, and choose <strong>Data-Driven Test Case</strong>. Provide a descriptive name for your test case.</li>
+<li><strong>Select the data source:</strong> in the configuration window, select <strong>Existing data</strong> from the list of data source types.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<h2 id="comparing-data-storage-approaches">Comparing Data Storage Approaches<a class="headerlink" href="#comparing-data-storage-approaches" title="Permanent link">&para;</a></h2>
+<p>Each data source method has distinct advantages and limitations. Choose the approach that best aligns with your project requirements:</p>
+<div class="flip-card-grid">
+  <div class="flip-card comparison-flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">📊 Files (Excel/JSON)</div>
+      <div class="flip-card-back">
+        <div class="flip-card-back-title">Pros & Cons</div>
+        <strong>✅ Pros:</strong>
+        <ul>
+          <li><strong>Ease of Use:</strong> Excel is widely used and requires little training as it's a familiar tool for most users.</li>
+          <li><strong>Readily Available Tool:</strong> No additional systems or licenses needed.</li>
+        </ul>
+        <strong>⚠️ Cons:</strong>
+        <ul>
+          <li><strong>Static Nature of Data:</strong> Excel files provide static test data. Any modifications require re-importing the updated file and re-publishing test cases to Orchestrator, which slows down the process and makes it unsustainable for dynamic testing.</li>
+          <li><strong>Limited Access Control:</strong> Excel doesn't inherently offer robust access control or security features.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card comparison-flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">📁 Existing Data </div>
+      <div class="flip-card-back">
+        <div class="flip-card-back-title">Pros & Cons</div>
+        <strong>✅ Pros:</strong>
+        <ul>
+          <li><strong>Ease of Setup and Maintenance:</strong> Using existing data simplifies the setup process as you don't need to generate new data for each test case. You can focus on implementing test cases instead of spending time creating datasets.</li>
+        </ul>
+        <strong>⚠️ Cons:</strong>
+        <ul>
+          <li><strong>Data Obsolescence and Maintenance Overhead:</strong> Existing data tends to become outdated quickly. Testers may need to frequently update the test data by manually making changes to files, which can introduce human error and slow down testing cycles.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card comparison-flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">☁️ Data Service</div>
+      <div class="flip-card-back">
+        <div class="flip-card-back-title">Pros & Cons</div>
+        <strong>✅ Pros:</strong>
+        <ul>
+          <li>No-code, seamless, fully integrated</li>
+          <li>Secure centralized storage</li>
+          <li>Direct Studio integration—no external tools needed</li>
+        </ul>
+        <strong>⚠️ Cons:</strong>
+        <ul>
+          <li>Requires initial configuration</li>
+          <li>10MB file size limit</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<p>By completing these exercises, you've learned how to create data-driven test cases using four different data source approaches. This flexibility allows you to choose the method that best fits your project's needs—whether it's Excel files for simplicity, Autopilot for AI-generated data, Data Service for centralized management, or Existing Data for project-based datasets. </p>
+<hr />
+<p><a class="md-button md-button--primary" href="../09-orchestrator/">Next → Orchestrator</a></p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../assets/js/mermaid.min.js"></script>
+      
+        <script src="../../assets/js/mermaid-init.js"></script>
+      
+        <script src="../../assets/js/sidebar-toggle.js"></script>
+      
+    
+  </body>
+</html>
